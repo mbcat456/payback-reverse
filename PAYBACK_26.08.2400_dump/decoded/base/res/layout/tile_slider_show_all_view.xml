@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:tag="layout/tile_slider_show_all_view_0" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.floatingactionbutton.FloatingActionButton android:id="@id/fab" android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="wrap_content" app:backgroundTint="?colorSurface" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:srcCompat="@drawable/ds_ic_arrow_forward" app:tint="?colorPrimary" />
+    <TextView android:textAppearance="@style/TextAppearance.DesignSystem.Android.Button" android:textColor="?colorPrimary" android:gravity="center" android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ds_spacing_02" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/fab" />
+</androidx.constraintlayout.widget.ConstraintLayout>

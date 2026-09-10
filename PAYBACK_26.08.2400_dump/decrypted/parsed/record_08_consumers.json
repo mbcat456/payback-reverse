@@ -1,0 +1,99 @@
+{
+  "record": "assets.dat kind 8",
+  "table_global": "_DAT_001a8130",
+  "loader": {
+    "function": "FUN_segment_0__0014e774",
+    "alias": "dp_serial_denylist_load",
+    "address": "segment_0::0014e774",
+    "action": "Find kind 8, derive key/nonce with FUN_0018cab4, decrypt with FUN_00190ff4, install _DAT_001a8130",
+    "evidence": "FUN_0018d138(8,&local_40); local_48=0xc0e3145cd0148830; FUN_0018cab4(...); FUN_00190ff4(...); *_DAT_001a8130 == record_size-16"
+  },
+  "releaser": {
+    "function": "FUN_segment_0__0014e8f0",
+    "alias": null,
+    "address": "segment_0::0014e8f0",
+    "action": "Free the table buffer and clear _DAT_001a8130"
+  },
+  "lookup": {
+    "function": "FUN_segment_0__0014e90c",
+    "alias": "dp_serial_denylist_lookup",
+    "address": "segment_0::0014e90c",
+    "query": "serial-number DER INTEGER contents",
+    "query_length_field": "certificate record +0x48",
+    "query_pointer_field": "certificate record +0x50",
+    "algorithm": "leading-zero strip, exact length bucket, binary search with FUN_0014c4f4, return flag | 0xffffff80",
+    "evidence": "*(int *)(_DAT_001a8130 + 4); entry stride=key_length+1; FUN_0014c4f4(...); return *(byte *)(...)+flag offset | 0xffffff80"
+  },
+  "root_policy_classification": {
+    "function": "FUN_segment_0__00175c10",
+    "hash_input": "last certificate node +0x160, length node +0x158",
+    "hash": "SHA-256 via FUN_00192774",
+    "expected_digests": {
+      "DAT_00104b19": "feb2ea7551ee316ed4bb443c8293b884dbfdea40b603ee3e4f4a897e4580fbae",
+      "DAT_001036e8": "3ee44512a1af2beb39c889490c60ea3f82e43f5d5a5532f5ab9419f676cd07ec",
+      "DAT_001048f5": "9088e09e1c9ce45b8519169af96682cec51dea69db1fce64fcff1c16a6b8f8dd",
+      "DAT_00103a4a": "d5100c7942ef2e8310dc30ef82729680cf48d690735c3f68179a33c7c370f286"
+    },
+    "result_field": "param_2 + 4: 0, 1, 2 on match, otherwise 3"
+  },
+  "consumer_path": [
+    {
+      "function": "FUN_segment_0__00139f00",
+      "alias": "dp_supervisor_boot",
+      "role": "Supervisor boot, derives secret, enters asset installation"
+    },
+    {
+      "function": "FUN_segment_0__0013abec",
+      "alias": "dp_asset_record_install",
+      "role": "Calls the record-8 loader, runs the Keystore check, then releases the table"
+    },
+    {
+      "function": "FUN_segment_0__00172314",
+      "alias": "dp_keystore_attestation_gate",
+      "role": "Attestation orchestration and result classification"
+    },
+    {
+      "function": "FUN_segment_0__00172794",
+      "alias": "dp_attestation_challenge_setup",
+      "role": "Resolves KeyGenParameterSpec$Builder and setAttestationChallenge"
+    },
+    {
+      "function": "FUN_segment_0__001728b8",
+      "alias": "dp_attestation_run",
+      "role": "Runs KeyStore certificate-chain collection and calls the chain parser"
+    },
+    {
+      "function": "FUN_segment_0__001737a8",
+      "alias": "dp_attestation_chain_parse",
+      "role": "Calls getCertificateChain, decodes certs, hashes them, and applies the blocklist"
+    },
+    {
+      "function": "FUN_segment_0__001753b4",
+      "alias": "dp_certificate_chain_decode",
+      "role": "Decodes each Certificate entry through FUN_00149d34"
+    },
+    {
+      "function": "FUN_segment_0__00149d34",
+      "alias": "dp_certificate_parse",
+      "role": "Parses DER X.509 fields; serial length at +0x48 and serial bytes at +0x50"
+    },
+    {
+      "function": "FUN_segment_0__00175650",
+      "alias": "dp_attestation_chain_digest",
+      "role": "Computes SHA-256 over challenge and encoded certificate bytes"
+    },
+    {
+      "function": "FUN_segment_0__00175c10",
+      "alias": "dp_serial_denylist_apply",
+      "role": "Traverses parsed certificates and calls FUN_0014e90c for every serial"
+    }
+  ],
+  "reach_condition": [
+    "FUN_00172794 must return an odd value",
+    "FUN_001225c8 must return nonzero (Android Keystore service probe)",
+    "FUN_001728b8 Keystore/JNI calls must succeed",
+    "getCertificateChain must return at least two certificates",
+    "FUN_001753b4, FUN_00175650, and FUN_00175c10 must reach their success paths"
+  ],
+  "post_call_classification": "Google-brand and version checks after FUN_001728b8 select the result code; they do not prevent the already executed lookup."
+}

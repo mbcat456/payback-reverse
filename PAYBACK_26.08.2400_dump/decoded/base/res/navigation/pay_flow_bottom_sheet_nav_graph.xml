@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/pay_flow_bottom_sheet_nav_graph" app:startDestination="@id/pin_validation_fragment"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:name="de.payback.pay.ui.payflow.pinvalidation.PayFlowPinValidationFragment" android:id="@id/pin_validation_fragment">
+        <argument android:name="isPinValidationOnly" android:defaultValue="false" app:argType="boolean" />
+        <argument android:name="isRedemptionOnly" android:defaultValue="false" app:argType="boolean" />
+        <argument android:name="paybackPayErrorValue" android:defaultValue="@null" app:argType="de.payback.pay.sdk.legacy.PaybackPayError" app:nullable="true" />
+        <argument android:name="redeemPoints" android:defaultValue="0" app:argType="integer" />
+        <argument android:name="authorizationType" android:defaultValue="SIMPLE" app:argType="de.payback.pay.ui.payflow.pinvalidation.PayFlowPinActivity$AuthorizationType" />
+        <argument android:name="paymentMethod" android:defaultValue="@null" app:argType="de.payback.pay.model.PaymentMethodInfo" app:nullable="true" />
+    </fragment>
+    <dialog android:label="@string/pay_pinpad_popup_fingerprint_headline_a" android:name="de.payback.pay.legacy.ui.fingerprintdialogpay.FingerprintPayEnableLegacyDialogFragment" android:id="@id/fingerprint_enable_dialog" />
+    <action android:id="@id/to_pin_validation" app:destination="@id/pin_validation_fragment" app:enterAnim="@anim/slide_and_fade_in_bottom" app:exitAnim="@anim/slide_empty_no_animation" app:popEnterAnim="@anim/slide_and_fade_in_bottom" app:popExitAnim="@anim/slide_empty_no_animation" app:popUpTo="@id/pin_validation_fragment" app:popUpToInclusive="true" />
+    <action android:id="@id/to_biometric_enable_dialog" app:destination="@id/fingerprint_enable_dialog" app:popUpTo="@id/fingerprint_enable_dialog" app:popUpToInclusive="true" />
+</navigation>

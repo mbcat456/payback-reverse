@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:tag="layout/countdown_button_widget_0" android:layout_width="fill_parent" android:layout_height="wrap_content" android:animateLayoutChanges="true" android:paddingVertical="2.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.progressindicator.LinearProgressIndicator android:id="@id/progress_indicator" android:tag="binding_1" android:layout_width="0.0dip" android:layout_height="wrap_content" android:progress="0" android:minHeight="@dimen/ds_button_min_height" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:trackCornerRadius="@dimen/ds_corner_radius_medium" app:trackThickness="44.0dip" />
+    <Button android:id="@id/button" android:layout_width="0.0dip" android:layout_height="wrap_content" android:minHeight="@dimen/ds_button_min_height" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/Widget.DesignSystem.Button.Countdown" />
+</androidx.constraintlayout.widget.ConstraintLayout>

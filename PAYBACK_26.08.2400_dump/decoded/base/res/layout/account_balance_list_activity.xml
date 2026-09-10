@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:tag="layout/account_balance_list_activity_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:id="@id/app_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:elevation="0.0dip">
+        <de.payback.core.ui.ds.topappbar.TopAppBarView android:theme="@style/ThemeOverlay.DesignSystem.TopAppBar.Surface" android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="?actionBarSize" style="@style/Widget.DesignSystem.TopAppBar.Surface" />
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <com.google.android.material.tabs.TabLayout android:id="@id/transactions_tab_layout" android:tag="binding_1" android:layout_width="0.0dip" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:tabInlineLabel="true" />
+        <androidx.viewpager2.widget.ViewPager2 android:orientation="horizontal" android:id="@id/transactions_pager" android:layout_width="0.0dip" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/transactions_tab_layout" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <View android:id="@id/bottom_sheet_shadow" android:background="@drawable/account_balance_bottom_sheet_shadow_shape" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="16.0dip" app:layout_anchor="@id/bottom_sheet_view_container" />
+    <com.google.android.material.card.MaterialCardView android:id="@id/bottom_sheet_view_container" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" app:behavior_peekHeight="0.0dip" app:cardCornerRadius="12.0dip" app:cardElevation="12.0dip" app:gestureInsetBottomIgnored="true" app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+        <androidx.fragment.app.FragmentContainerView android:id="@id/bottom_sheet_fragment_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </com.google.android.material.card.MaterialCardView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,19 @@
+.class public final Landroidx/compose/runtime/tooling/g;
+.super Ljava/lang/Object;
+.source "r8-map-id-c6e95f02a960cec3b4177d8b5b818c3f23768df7db706782552fe3d06a1d57cb"
+
+# interfaces
+.implements Lkotlin/coroutines/j;
+
+
+# virtual methods
+.method public final toString()Ljava/lang/String;
+    .locals 0
+
+    .prologue
+    .line 1
+    const-string p0, "CompositionErrorContext"
+
+    .line 3
+    return-object p0
+.end method

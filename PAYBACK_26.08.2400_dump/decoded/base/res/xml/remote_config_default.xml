@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<defaultsMap>
+    <entry>
+        <key>adform_programmatic_tracking_enabled</key>
+        <value>false</value>
+    </entry>
+    <entry>
+        <key>inappbrowser_enabled</key>
+        <value>true</value>
+    </entry>
+    <entry>
+        <key>token_sharing_consumer_whitelist</key>
+        <value>50,144,299</value>
+    </entry>
+    <entry>
+        <key>token_sharing_domain_whitelist</key>
+        <value>pb2go.payback.net,www.payback.net,campaign.payback.com</value>
+    </entry>
+    <entry>
+        <key>url_whitelist_to_open_in_systembrowser</key>
+        <value />
+    </entry>
+    <entry>
+        <key>renewal_overlay_cache_days</key>
+        <value>30</value>
+    </entry>
+    <entry>
+        <key>renewal_overlay_enabled</key>
+        <value>false</value>
+    </entry>
+    <entry>
+        <key>newsletter_overlay_cache_days</key>
+        <value>30</value>
+    </entry>
+    <entry>
+        <key>reworked_newsletter_enabled</key>
+        <value>false</value>
+    </entry>
+    <entry>
+        <key>pay_benefits_excluded_endings</key>
+        <value>1,2</value>
+    </entry>
+</defaultsMap>

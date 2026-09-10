@@ -1,0 +1,90 @@
+.class final Lcom/cardinalcommerce/a/setOnCapturedPointerListener$configure$5;
+.super Lcom/cardinalcommerce/a/setOnCapturedPointerListener$configure;
+.source "r8-map-id-c6e95f02a960cec3b4177d8b5b818c3f23768df7db706782552fe3d06a1d57cb"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/cardinalcommerce/a/setOnCapturedPointerListener$configure;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
+
+
+# instance fields
+.field private synthetic cca_continue:Ljava/lang/reflect/Method;
+
+
+# direct methods
+.method public constructor <init>(Ljava/lang/reflect/Method;)V
+    .locals 0
+
+    .prologue
+    .line 1
+    iput-object p1, p0, Lcom/cardinalcommerce/a/setOnCapturedPointerListener$configure$5;->cca_continue:Ljava/lang/reflect/Method;
+
+    .line 3
+    const/4 p1, 0x0
+
+    .line 4
+    invoke-direct {p0, p1}, Lcom/cardinalcommerce/a/setOnCapturedPointerListener$configure;-><init>(I)V
+
+    .line 7
+    return-void
+.end method
+
+
+# virtual methods
+.method public final configure(Ljava/lang/reflect/AccessibleObject;Ljava/lang/Object;)Z
+    .locals 0
+
+    .prologue
+    .line 1
+    :try_start_0
+    iget-object p0, p0, Lcom/cardinalcommerce/a/setOnCapturedPointerListener$configure$5;->cca_continue:Ljava/lang/reflect/Method;
+
+    .line 3
+    filled-new-array {p2}, [Ljava/lang/Object;
+
+    .line 6
+    move-result-object p2
+
+    .line 7
+    invoke-virtual {p0, p1, p2}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 10
+    move-result-object p0
+
+    .line 11
+    check-cast p0, Ljava/lang/Boolean;
+
+    .line 13
+    invoke-virtual {p0}, Ljava/lang/Boolean;->booleanValue()Z
+
+    .line 16
+    move-result p0
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 17
+    return p0
+
+    .line 18
+    :catch_0
+    move-exception p0
+
+    .line 19
+    const-string p1, "Failed invoking canAccess"
+
+    .line 21
+    invoke-static {p1, p0}, Landroidx/work/impl/model/u;->m(Ljava/lang/String;Ljava/lang/Throwable;)V
+
+    .line 24
+    const/4 p0, 0x0
+
+    .line 25
+    return p0
+.end method

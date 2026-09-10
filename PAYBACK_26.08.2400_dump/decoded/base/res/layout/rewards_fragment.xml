@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <WebView android:id="@id/rewards_webview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="?actionBarSize" />
+    <RelativeLayout android:orientation="vertical" android:id="@id/progress_overlay" android:background="?colorBackground" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.google.android.material.progressindicator.CircularProgressIndicator android:id="@id/progressbutton_progress" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <de.payback.core.ui.widget.EmptyViewLegacy android:id="@id/empty_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" app:body="@string/general_info_message_offline_mode" app:headLine="@string/general_info_message_offline_mode_hl" app:image="@null" />
+</RelativeLayout>

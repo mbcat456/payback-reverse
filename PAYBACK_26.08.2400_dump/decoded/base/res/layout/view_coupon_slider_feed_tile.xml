@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/coupon_slider_container" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginHorizontal="@dimen/ds_spacing_02" android:layout_marginVertical="@dimen/ds_spacing_01"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

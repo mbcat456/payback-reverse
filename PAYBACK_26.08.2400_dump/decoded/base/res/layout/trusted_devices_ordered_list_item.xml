@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:tag="layout/trusted_devices_ordered_list_item_0" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingVertical="@dimen/ds_spacing_01"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/trusted_devices_ordered_list_image" android:layout_width="24.0dip" android:layout_height="24.0dip" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <TextView android:textAppearance="@style/TextAppearance.DesignSystem.Android.Body1" android:id="@id/trusted_devices_ordered_list_text" android:tag="binding_1" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginStart="@dimen/ds_spacing_02" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/trusted_devices_ordered_list_image" app:layout_constraintTop_toTopOf="@id/trusted_devices_ordered_list_image" />
+</androidx.constraintlayout.widget.ConstraintLayout>

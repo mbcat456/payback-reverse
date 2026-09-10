@@ -1,0 +1,692 @@
+.class public final Lde/payback/core/api/data/GetMember_ResponseJsonAdapter;
+.super Lcom/squareup/moshi/JsonAdapter;
+.source "r8-map-id-c6e95f02a960cec3b4177d8b5b818c3f23768df7db706782552fe3d06a1d57cb"
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lcom/squareup/moshi/JsonAdapter<",
+        "Lde/payback/core/api/data/GetMember$Response;",
+        ">;"
+    }
+.end annotation
+
+
+# instance fields
+.field private final memberMasterInfoAdapter:Lcom/squareup/moshi/JsonAdapter;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lcom/squareup/moshi/JsonAdapter<",
+            "Lde/payback/core/api/data/MemberMasterInfo;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private final memberPostalAddressAdapter:Lcom/squareup/moshi/JsonAdapter;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lcom/squareup/moshi/JsonAdapter<",
+            "Lde/payback/core/api/data/MemberPostalAddress;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private final nullableAddressCorrectnessAdapter:Lcom/squareup/moshi/JsonAdapter;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lcom/squareup/moshi/JsonAdapter<",
+            "Lde/payback/core/api/data/AddressCorrectness;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private final nullableIntAdapter:Lcom/squareup/moshi/JsonAdapter;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lcom/squareup/moshi/JsonAdapter<",
+            "Ljava/lang/Integer;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private final nullableListOfAssignedAliasAdapter:Lcom/squareup/moshi/JsonAdapter;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lcom/squareup/moshi/JsonAdapter<",
+            "Ljava/util/List<",
+            "Lde/payback/core/api/data/AssignedAlias;",
+            ">;>;"
+        }
+    .end annotation
+.end field
+
+.field private final nullableMemberContactAdapter:Lcom/squareup/moshi/JsonAdapter;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lcom/squareup/moshi/JsonAdapter<",
+            "Lde/payback/core/api/data/MemberContact;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private final options:Lcom/squareup/moshi/JsonReader$Options;
+
+
+# direct methods
+.method public constructor <init>(Lcom/squareup/moshi/Moshi;)V
+    .locals 6
+
+    .prologue
+    .line 1
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 4
+    invoke-direct {p0}, Lcom/squareup/moshi/JsonAdapter;-><init>()V
+
+    .line 7
+    const-string v4, "assignedAlias"
+
+    .line 9
+    const-string v5, "subProgram"
+
+    .line 11
+    const-string v0, "masterInfo"
+
+    .line 13
+    const-string v1, "postalAddress"
+
+    .line 15
+    const-string v2, "contactInfo"
+
+    .line 17
+    const-string v3, "addressCorrectness"
+
+    .line 19
+    filled-new-array/range {v0 .. v5}, [Ljava/lang/String;
+
+    .line 22
+    move-result-object v0
+
+    .line 23
+    invoke-static {v0}, Lcom/squareup/moshi/JsonReader$Options;->a([Ljava/lang/String;)Lcom/squareup/moshi/JsonReader$Options;
+
+    .line 26
+    move-result-object v0
+
+    .line 27
+    iput-object v0, p0, Lde/payback/core/api/data/GetMember_ResponseJsonAdapter;->options:Lcom/squareup/moshi/JsonReader$Options;
+
+    .line 29
+    sget-object v0, Lkotlin/collections/b0;->INSTANCE:Lkotlin/collections/b0;
+
+    .line 31
+    const-string v1, "masterInfo"
+
+    .line 33
+    const-class v2, Lde/payback/core/api/data/MemberMasterInfo;
+
+    .line 35
+    invoke-virtual {p1, v2, v0, v1}, Lcom/squareup/moshi/Moshi;->b(Ljava/lang/reflect/Type;Ljava/util/Set;Ljava/lang/String;)Lcom/squareup/moshi/JsonAdapter;
+
+    .line 38
+    move-result-object v1
+
+    .line 39
+    iput-object v1, p0, Lde/payback/core/api/data/GetMember_ResponseJsonAdapter;->memberMasterInfoAdapter:Lcom/squareup/moshi/JsonAdapter;
+
+    .line 41
+    const-class v1, Lde/payback/core/api/data/MemberPostalAddress;
+
+    .line 43
+    const-string v2, "postalAddress"
+
+    .line 45
+    invoke-virtual {p1, v1, v0, v2}, Lcom/squareup/moshi/Moshi;->b(Ljava/lang/reflect/Type;Ljava/util/Set;Ljava/lang/String;)Lcom/squareup/moshi/JsonAdapter;
+
+    .line 48
+    move-result-object v1
+
+    .line 49
+    iput-object v1, p0, Lde/payback/core/api/data/GetMember_ResponseJsonAdapter;->memberPostalAddressAdapter:Lcom/squareup/moshi/JsonAdapter;
+
+    .line 51
+    const-class v1, Lde/payback/core/api/data/MemberContact;
+
+    .line 53
+    const-string v2, "contactInfo"
+
+    .line 55
+    invoke-virtual {p1, v1, v0, v2}, Lcom/squareup/moshi/Moshi;->b(Ljava/lang/reflect/Type;Ljava/util/Set;Ljava/lang/String;)Lcom/squareup/moshi/JsonAdapter;
+
+    .line 58
+    move-result-object v1
+
+    .line 59
+    iput-object v1, p0, Lde/payback/core/api/data/GetMember_ResponseJsonAdapter;->nullableMemberContactAdapter:Lcom/squareup/moshi/JsonAdapter;
+
+    .line 61
+    const-class v1, Lde/payback/core/api/data/AddressCorrectness;
+
+    .line 63
+    const-string v2, "addressCorrectness"
+
+    .line 65
+    invoke-virtual {p1, v1, v0, v2}, Lcom/squareup/moshi/Moshi;->b(Ljava/lang/reflect/Type;Ljava/util/Set;Ljava/lang/String;)Lcom/squareup/moshi/JsonAdapter;
+
+    .line 68
+    move-result-object v1
+
+    .line 69
+    iput-object v1, p0, Lde/payback/core/api/data/GetMember_ResponseJsonAdapter;->nullableAddressCorrectnessAdapter:Lcom/squareup/moshi/JsonAdapter;
+
+    .line 71
+    const/4 v1, 0x1
+
+    .line 72
+    new-array v1, v1, [Ljava/lang/reflect/Type;
+
+    .line 74
+    const-class v2, Lde/payback/core/api/data/AssignedAlias;
+
+    .line 76
+    const/4 v3, 0x0
+
+    .line 77
+    aput-object v2, v1, v3
+
+    .line 79
+    const-class v2, Ljava/util/List;
+
+    .line 81
+    invoke-static {v2, v1}, Lcom/google/android/gms/internal/mlkit_vision_barcode/z1;->e(Ljava/lang/Class;[Ljava/lang/reflect/Type;)Lcom/squareup/moshi/internal/d;
+
+    .line 84
+    move-result-object v1
+
+    .line 85
+    const-string v2, "assignedAlias"
+
+    .line 87
+    invoke-virtual {p1, v1, v0, v2}, Lcom/squareup/moshi/Moshi;->b(Ljava/lang/reflect/Type;Ljava/util/Set;Ljava/lang/String;)Lcom/squareup/moshi/JsonAdapter;
+
+    .line 90
+    move-result-object v1
+
+    .line 91
+    iput-object v1, p0, Lde/payback/core/api/data/GetMember_ResponseJsonAdapter;->nullableListOfAssignedAliasAdapter:Lcom/squareup/moshi/JsonAdapter;
+
+    .line 93
+    const-class v1, Ljava/lang/Integer;
+
+    .line 95
+    const-string v2, "subProgram"
+
+    .line 97
+    invoke-virtual {p1, v1, v0, v2}, Lcom/squareup/moshi/Moshi;->b(Ljava/lang/reflect/Type;Ljava/util/Set;Ljava/lang/String;)Lcom/squareup/moshi/JsonAdapter;
+
+    .line 100
+    move-result-object p1
+
+    .line 101
+    iput-object p1, p0, Lde/payback/core/api/data/GetMember_ResponseJsonAdapter;->nullableIntAdapter:Lcom/squareup/moshi/JsonAdapter;
+
+    .line 103
+    return-void
+.end method
+
+
+# virtual methods
+.method public fromJson(Lcom/squareup/moshi/JsonReader;)Lde/payback/core/api/data/GetMember$Response;
+    .locals 9
+
+    .prologue
+    .line 1
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 4
+    invoke-virtual {p1}, Lcom/squareup/moshi/JsonReader;->f()V
+
+    .line 7
+    const/4 v0, 0x0
+
+    .line 8
+    move-object v2, v0
+
+    .line 9
+    move-object v3, v2
+
+    .line 10
+    move-object v4, v3
+
+    .line 11
+    move-object v5, v4
+
+    .line 12
+    move-object v6, v5
+
+    .line 13
+    move-object v7, v6
+
+    .line 14
+    :goto_0
+    invoke-virtual {p1}, Lcom/squareup/moshi/JsonReader;->x()Z
+
+    .line 17
+    move-result v0
+
+    .line 18
+    const-string v1, "masterInfo"
+
+    .line 20
+    const-string v8, "postalAddress"
+
+    .line 22
+    if-eqz v0, :cond_2
+
+    .line 24
+    iget-object v0, p0, Lde/payback/core/api/data/GetMember_ResponseJsonAdapter;->options:Lcom/squareup/moshi/JsonReader$Options;
+
+    .line 26
+    invoke-virtual {p1, v0}, Lcom/squareup/moshi/JsonReader;->s0(Lcom/squareup/moshi/JsonReader$Options;)I
+
+    .line 29
+    move-result v0
+
+    .line 30
+    packed-switch v0, :pswitch_data_0
+
+    .line 33
+    goto :goto_0
+
+    .line 34
+    :pswitch_0
+    iget-object v0, p0, Lde/payback/core/api/data/GetMember_ResponseJsonAdapter;->nullableIntAdapter:Lcom/squareup/moshi/JsonAdapter;
+
+    .line 36
+    invoke-virtual {v0, p1}, Lcom/squareup/moshi/JsonAdapter;->fromJson(Lcom/squareup/moshi/JsonReader;)Ljava/lang/Object;
+
+    .line 39
+    move-result-object v0
+
+    .line 40
+    move-object v7, v0
+
+    .line 41
+    check-cast v7, Ljava/lang/Integer;
+
+    .line 43
+    goto :goto_0
+
+    .line 44
+    :pswitch_1
+    iget-object v0, p0, Lde/payback/core/api/data/GetMember_ResponseJsonAdapter;->nullableListOfAssignedAliasAdapter:Lcom/squareup/moshi/JsonAdapter;
+
+    .line 46
+    invoke-virtual {v0, p1}, Lcom/squareup/moshi/JsonAdapter;->fromJson(Lcom/squareup/moshi/JsonReader;)Ljava/lang/Object;
+
+    .line 49
+    move-result-object v0
+
+    .line 50
+    move-object v6, v0
+
+    .line 51
+    check-cast v6, Ljava/util/List;
+
+    .line 53
+    goto :goto_0
+
+    .line 54
+    :pswitch_2
+    iget-object v0, p0, Lde/payback/core/api/data/GetMember_ResponseJsonAdapter;->nullableAddressCorrectnessAdapter:Lcom/squareup/moshi/JsonAdapter;
+
+    .line 56
+    invoke-virtual {v0, p1}, Lcom/squareup/moshi/JsonAdapter;->fromJson(Lcom/squareup/moshi/JsonReader;)Ljava/lang/Object;
+
+    .line 59
+    move-result-object v0
+
+    .line 60
+    move-object v5, v0
+
+    .line 61
+    check-cast v5, Lde/payback/core/api/data/AddressCorrectness;
+
+    .line 63
+    goto :goto_0
+
+    .line 64
+    :pswitch_3
+    iget-object v0, p0, Lde/payback/core/api/data/GetMember_ResponseJsonAdapter;->nullableMemberContactAdapter:Lcom/squareup/moshi/JsonAdapter;
+
+    .line 66
+    invoke-virtual {v0, p1}, Lcom/squareup/moshi/JsonAdapter;->fromJson(Lcom/squareup/moshi/JsonReader;)Ljava/lang/Object;
+
+    .line 69
+    move-result-object v0
+
+    .line 70
+    move-object v4, v0
+
+    .line 71
+    check-cast v4, Lde/payback/core/api/data/MemberContact;
+
+    .line 73
+    goto :goto_0
+
+    .line 74
+    :pswitch_4
+    iget-object v0, p0, Lde/payback/core/api/data/GetMember_ResponseJsonAdapter;->memberPostalAddressAdapter:Lcom/squareup/moshi/JsonAdapter;
+
+    .line 76
+    invoke-virtual {v0, p1}, Lcom/squareup/moshi/JsonAdapter;->fromJson(Lcom/squareup/moshi/JsonReader;)Ljava/lang/Object;
+
+    .line 79
+    move-result-object v0
+
+    .line 80
+    move-object v3, v0
+
+    .line 81
+    check-cast v3, Lde/payback/core/api/data/MemberPostalAddress;
+
+    .line 83
+    if-eqz v3, :cond_0
+
+    .line 85
+    goto :goto_0
+
+    .line 86
+    :cond_0
+    invoke-static {v8, v8, p1}, Lcom/squareup/moshi/internal/f;->l(Ljava/lang/String;Ljava/lang/String;Lcom/squareup/moshi/JsonReader;)Lcom/squareup/moshi/JsonDataException;
+
+    .line 89
+    move-result-object p0
+
+    .line 90
+    throw p0
+
+    .line 91
+    :pswitch_5
+    iget-object v0, p0, Lde/payback/core/api/data/GetMember_ResponseJsonAdapter;->memberMasterInfoAdapter:Lcom/squareup/moshi/JsonAdapter;
+
+    .line 93
+    invoke-virtual {v0, p1}, Lcom/squareup/moshi/JsonAdapter;->fromJson(Lcom/squareup/moshi/JsonReader;)Ljava/lang/Object;
+
+    .line 96
+    move-result-object v0
+
+    .line 97
+    move-object v2, v0
+
+    .line 98
+    check-cast v2, Lde/payback/core/api/data/MemberMasterInfo;
+
+    .line 100
+    if-eqz v2, :cond_1
+
+    .line 102
+    goto :goto_0
+
+    .line 103
+    :cond_1
+    invoke-static {v1, v1, p1}, Lcom/squareup/moshi/internal/f;->l(Ljava/lang/String;Ljava/lang/String;Lcom/squareup/moshi/JsonReader;)Lcom/squareup/moshi/JsonDataException;
+
+    .line 106
+    move-result-object p0
+
+    .line 107
+    throw p0
+
+    .line 108
+    :pswitch_6
+    invoke-virtual {p1}, Lcom/squareup/moshi/JsonReader;->v0()V
+
+    .line 111
+    invoke-virtual {p1}, Lcom/squareup/moshi/JsonReader;->x0()V
+
+    .line 114
+    goto :goto_0
+
+    .line 115
+    :cond_2
+    invoke-virtual {p1}, Lcom/squareup/moshi/JsonReader;->r()V
+
+    .line 118
+    move-object p0, v1
+
+    .line 119
+    new-instance v1, Lde/payback/core/api/data/GetMember$Response;
+
+    .line 121
+    if-eqz v2, :cond_4
+
+    .line 123
+    if-eqz v3, :cond_3
+
+    .line 125
+    invoke-direct/range {v1 .. v7}, Lde/payback/core/api/data/GetMember$Response;-><init>(Lde/payback/core/api/data/MemberMasterInfo;Lde/payback/core/api/data/MemberPostalAddress;Lde/payback/core/api/data/MemberContact;Lde/payback/core/api/data/AddressCorrectness;Ljava/util/List;Ljava/lang/Integer;)V
+
+    .line 128
+    return-object v1
+
+    .line 129
+    :cond_3
+    invoke-static {v8, v8, p1}, Lcom/squareup/moshi/internal/f;->f(Ljava/lang/String;Ljava/lang/String;Lcom/squareup/moshi/JsonReader;)Lcom/squareup/moshi/JsonDataException;
+
+    .line 132
+    move-result-object p0
+
+    .line 133
+    throw p0
+
+    .line 134
+    :cond_4
+    invoke-static {p0, p0, p1}, Lcom/squareup/moshi/internal/f;->f(Ljava/lang/String;Ljava/lang/String;Lcom/squareup/moshi/JsonReader;)Lcom/squareup/moshi/JsonDataException;
+
+    .line 137
+    move-result-object p0
+
+    .line 138
+    throw p0
+
+    .line 30
+    :pswitch_data_0
+    .packed-switch -0x1
+        :pswitch_6
+        :pswitch_5
+        :pswitch_4
+        :pswitch_3
+        :pswitch_2
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
+.end method
+
+.method public bridge synthetic fromJson(Lcom/squareup/moshi/JsonReader;)Ljava/lang/Object;
+    .locals 0
+
+    .prologue
+    .line 139
+    invoke-virtual {p0, p1}, Lde/payback/core/api/data/GetMember_ResponseJsonAdapter;->fromJson(Lcom/squareup/moshi/JsonReader;)Lde/payback/core/api/data/GetMember$Response;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public toJson(Lcom/squareup/moshi/JsonWriter;Lde/payback/core/api/data/GetMember$Response;)V
+    .locals 2
+
+    .prologue
+    .line 1
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 4
+    if-eqz p2, :cond_0
+
+    .line 6
+    invoke-virtual {p1}, Lcom/squareup/moshi/JsonWriter;->f()Lcom/squareup/moshi/JsonWriter;
+
+    .line 9
+    const-string v0, "masterInfo"
+
+    .line 11
+    invoke-virtual {p1, v0}, Lcom/squareup/moshi/JsonWriter;->B(Ljava/lang/String;)Lcom/squareup/moshi/JsonWriter;
+
+    .line 14
+    iget-object v0, p0, Lde/payback/core/api/data/GetMember_ResponseJsonAdapter;->memberMasterInfoAdapter:Lcom/squareup/moshi/JsonAdapter;
+
+    .line 16
+    invoke-virtual {p2}, Lde/payback/core/api/data/GetMember$Response;->getMasterInfo()Lde/payback/core/api/data/MemberMasterInfo;
+
+    .line 19
+    move-result-object v1
+
+    .line 20
+    invoke-virtual {v0, p1, v1}, Lcom/squareup/moshi/JsonAdapter;->toJson(Lcom/squareup/moshi/JsonWriter;Ljava/lang/Object;)V
+
+    .line 23
+    const-string v0, "postalAddress"
+
+    .line 25
+    invoke-virtual {p1, v0}, Lcom/squareup/moshi/JsonWriter;->B(Ljava/lang/String;)Lcom/squareup/moshi/JsonWriter;
+
+    .line 28
+    iget-object v0, p0, Lde/payback/core/api/data/GetMember_ResponseJsonAdapter;->memberPostalAddressAdapter:Lcom/squareup/moshi/JsonAdapter;
+
+    .line 30
+    invoke-virtual {p2}, Lde/payback/core/api/data/GetMember$Response;->getPostalAddress()Lde/payback/core/api/data/MemberPostalAddress;
+
+    .line 33
+    move-result-object v1
+
+    .line 34
+    invoke-virtual {v0, p1, v1}, Lcom/squareup/moshi/JsonAdapter;->toJson(Lcom/squareup/moshi/JsonWriter;Ljava/lang/Object;)V
+
+    .line 37
+    const-string v0, "contactInfo"
+
+    .line 39
+    invoke-virtual {p1, v0}, Lcom/squareup/moshi/JsonWriter;->B(Ljava/lang/String;)Lcom/squareup/moshi/JsonWriter;
+
+    .line 42
+    iget-object v0, p0, Lde/payback/core/api/data/GetMember_ResponseJsonAdapter;->nullableMemberContactAdapter:Lcom/squareup/moshi/JsonAdapter;
+
+    .line 44
+    invoke-virtual {p2}, Lde/payback/core/api/data/GetMember$Response;->getContactInfo()Lde/payback/core/api/data/MemberContact;
+
+    .line 47
+    move-result-object v1
+
+    .line 48
+    invoke-virtual {v0, p1, v1}, Lcom/squareup/moshi/JsonAdapter;->toJson(Lcom/squareup/moshi/JsonWriter;Ljava/lang/Object;)V
+
+    .line 51
+    const-string v0, "addressCorrectness"
+
+    .line 53
+    invoke-virtual {p1, v0}, Lcom/squareup/moshi/JsonWriter;->B(Ljava/lang/String;)Lcom/squareup/moshi/JsonWriter;
+
+    .line 56
+    iget-object v0, p0, Lde/payback/core/api/data/GetMember_ResponseJsonAdapter;->nullableAddressCorrectnessAdapter:Lcom/squareup/moshi/JsonAdapter;
+
+    .line 58
+    invoke-virtual {p2}, Lde/payback/core/api/data/GetMember$Response;->getAddressCorrectness()Lde/payback/core/api/data/AddressCorrectness;
+
+    .line 61
+    move-result-object v1
+
+    .line 62
+    invoke-virtual {v0, p1, v1}, Lcom/squareup/moshi/JsonAdapter;->toJson(Lcom/squareup/moshi/JsonWriter;Ljava/lang/Object;)V
+
+    .line 65
+    const-string v0, "assignedAlias"
+
+    .line 67
+    invoke-virtual {p1, v0}, Lcom/squareup/moshi/JsonWriter;->B(Ljava/lang/String;)Lcom/squareup/moshi/JsonWriter;
+
+    .line 70
+    iget-object v0, p0, Lde/payback/core/api/data/GetMember_ResponseJsonAdapter;->nullableListOfAssignedAliasAdapter:Lcom/squareup/moshi/JsonAdapter;
+
+    .line 72
+    invoke-virtual {p2}, Lde/payback/core/api/data/GetMember$Response;->getAssignedAlias()Ljava/util/List;
+
+    .line 75
+    move-result-object v1
+
+    .line 76
+    invoke-virtual {v0, p1, v1}, Lcom/squareup/moshi/JsonAdapter;->toJson(Lcom/squareup/moshi/JsonWriter;Ljava/lang/Object;)V
+
+    .line 79
+    const-string v0, "subProgram"
+
+    .line 81
+    invoke-virtual {p1, v0}, Lcom/squareup/moshi/JsonWriter;->B(Ljava/lang/String;)Lcom/squareup/moshi/JsonWriter;
+
+    .line 84
+    iget-object p0, p0, Lde/payback/core/api/data/GetMember_ResponseJsonAdapter;->nullableIntAdapter:Lcom/squareup/moshi/JsonAdapter;
+
+    .line 86
+    invoke-virtual {p2}, Lde/payback/core/api/data/GetMember$Response;->getSubProgram()Ljava/lang/Integer;
+
+    .line 89
+    move-result-object p2
+
+    .line 90
+    invoke-virtual {p0, p1, p2}, Lcom/squareup/moshi/JsonAdapter;->toJson(Lcom/squareup/moshi/JsonWriter;Ljava/lang/Object;)V
+
+    .line 93
+    invoke-virtual {p1}, Lcom/squareup/moshi/JsonWriter;->t()Lcom/squareup/moshi/JsonWriter;
+
+    .line 96
+    return-void
+
+    .line 97
+    :cond_0
+    const-string p0, "value_ was null! Wrap in .nullSafe() to write nullable values."
+
+    .line 99
+    invoke-static {p0}, Lde/payback/core/util/placeholder/h;->f(Ljava/lang/String;)V
+
+    .line 102
+    return-void
+.end method
+
+.method public bridge synthetic toJson(Lcom/squareup/moshi/JsonWriter;Ljava/lang/Object;)V
+    .locals 0
+
+    .prologue
+    .line 103
+    check-cast p2, Lde/payback/core/api/data/GetMember$Response;
+
+    invoke-virtual {p0, p1, p2}, Lde/payback/core/api/data/GetMember_ResponseJsonAdapter;->toJson(Lcom/squareup/moshi/JsonWriter;Lde/payback/core/api/data/GetMember$Response;)V
+
+    return-void
+.end method
+
+.method public toString()Ljava/lang/String;
+    .locals 1
+
+    .prologue
+    .line 1
+    const/16 p0, 0x28
+
+    .line 3
+    const-string v0, "GeneratedJsonAdapter(GetMember.Response)"
+
+    .line 5
+    invoke-static {p0, v0}, Lde/payback/app/inappbrowser/interactor/j0;->h(ILjava/lang/String;)Ljava/lang/String;
+
+    .line 8
+    move-result-object p0
+
+    .line 9
+    return-object p0
+.end method

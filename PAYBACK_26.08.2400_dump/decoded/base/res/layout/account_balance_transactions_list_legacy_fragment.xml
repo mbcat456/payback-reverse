@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@id/swipe_refresh_layout" android:tag="layout/account_balance_transactions_list_legacy_fragment_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <de.payback.core.ui.widget.EmptyViewLegacy android:id="@id/account_balance_empty_view" android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="64.0dip" app:image="@null" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/account_balance_transactions_list_recyclerview" android:tag="binding_2" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+    </LinearLayout>
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

@@ -1,0 +1,48 @@
+{
+  ConstraintSets: {
+    start: {
+      navigation_icon: {
+        start: ['parent', 'start'],
+        top: ['parent', 'top'],
+      },
+      headline: {
+        height: 'wrap',
+        centerHorizontally: 'parent',
+        bottom: ['subtitle', 'top', 0],
+        custom: {
+          fontSize: 20.0
+        },
+        translationY: 0,
+      },
+      subtitle: {
+        height: 'wrap',
+        center: 'parent',
+        custom: {
+          fontSize: 32.0
+        }
+      },
+    },
+    end: {
+      navigation_icon: {
+        start: ['parent', 'start'],
+        top: ['parent', 'top'],
+      },
+      headline: {
+        height: 'wrap',
+        centerHorizontally: 'parent',
+        bottom: ['subtitle', 'top', 0],
+        custom: {
+          fontSize: 0.0
+        },
+        translationY: -200,
+      },
+      subtitle: {
+        height: 'wrap',
+        center: 'parent',
+        custom: {
+          fontSize: 24.0
+        }
+      }
+    }
+  }
+}

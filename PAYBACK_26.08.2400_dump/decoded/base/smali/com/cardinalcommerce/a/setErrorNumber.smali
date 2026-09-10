@@ -1,0 +1,113 @@
+.class public final Lcom/cardinalcommerce/a/setErrorNumber;
+.super Lcom/cardinalcommerce/a/setCCAUrl;
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    .prologue
+    .line 6
+    invoke-direct {p0}, Lcom/cardinalcommerce/a/setCCAUrl;-><init>()V
+
+    return-void
+.end method
+
+.method public constructor <init>(Lcom/cardinalcommerce/a/setRequestTimeout;)V
+    .locals 1
+
+    .prologue
+    .line 1
+    const/4 v0, 0x0
+
+    .line 2
+    invoke-direct {p0, p1, v0}, Lcom/cardinalcommerce/a/setCCAUrl;-><init>(Lcom/cardinalcommerce/a/setRequestTimeout;Z)V
+
+    .line 5
+    return-void
+.end method
+
+
+# virtual methods
+.method public final Cardinal(Z)I
+    .locals 4
+
+    .prologue
+    .line 1
+    if-eqz p1, :cond_0
+
+    .line 3
+    const/4 p1, 0x4
+
+    .line 4
+    goto :goto_0
+
+    .line 5
+    :cond_0
+    const/4 p1, 0x3
+
+    .line 6
+    :goto_0
+    iget-object v0, p0, Lcom/cardinalcommerce/a/setCCAUrl;->configure:[Lcom/cardinalcommerce/a/CardinalConfigurationParameters;
+
+    .line 8
+    array-length v0, v0
+
+    .line 9
+    const/4 v1, 0x0
+
+    .line 10
+    :goto_1
+    if-ge v1, v0, :cond_1
+
+    .line 12
+    iget-object v2, p0, Lcom/cardinalcommerce/a/setCCAUrl;->configure:[Lcom/cardinalcommerce/a/CardinalConfigurationParameters;
+
+    .line 14
+    aget-object v2, v2, v1
+
+    .line 16
+    invoke-interface {v2}, Lcom/cardinalcommerce/a/CardinalConfigurationParameters;->onValidated()Lcom/cardinalcommerce/a/setLocationDataConsentGiven;
+
+    .line 19
+    move-result-object v2
+
+    .line 20
+    const/4 v3, 0x1
+
+    .line 21
+    invoke-virtual {v2, v3}, Lcom/cardinalcommerce/a/setLocationDataConsentGiven;->Cardinal(Z)I
+
+    .line 24
+    move-result v2
+
+    .line 25
+    add-int/2addr p1, v2
+
+    .line 26
+    add-int/lit8 v1, v1, 0x1
+
+    .line 28
+    goto :goto_1
+
+    .line 29
+    :cond_1
+    return p1
+.end method
+
+.method public final configure(Lcom/cardinalcommerce/a/CardinalUiType;Z)V
+    .locals 1
+
+    .prologue
+    .line 1
+    const/16 v0, 0x31
+
+    .line 3
+    iget-object p0, p0, Lcom/cardinalcommerce/a/setCCAUrl;->configure:[Lcom/cardinalcommerce/a/CardinalConfigurationParameters;
+
+    .line 5
+    invoke-virtual {p1, p2, v0, p0}, Lcom/cardinalcommerce/a/CardinalUiType;->Cardinal(ZI[Lcom/cardinalcommerce/a/CardinalConfigurationParameters;)V
+
+    .line 8
+    return-void
+.end method

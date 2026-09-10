@@ -1,0 +1,317 @@
+.class public final Landroidx/compose/animation/core/f3;
+.super Ljava/lang/Object;
+.source "r8-map-id-c6e95f02a960cec3b4177d8b5b818c3f23768df7db706782552fe3d06a1d57cb"
+
+# interfaces
+.implements Landroidx/compose/animation/core/z2;
+
+
+# static fields
+.field public static final $stable:I = 0x8
+
+
+# instance fields
+.field public final a:Landroidx/compose/animation/core/y2;
+
+.field public final b:Landroidx/compose/animation/core/RepeatMode;
+
+.field public final c:J
+
+.field public final d:J
+
+
+# direct methods
+.method public constructor <init>(Landroidx/compose/animation/core/y2;Landroidx/compose/animation/core/RepeatMode;J)V
+    .locals 2
+
+    .prologue
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 4
+    iput-object p1, p0, Landroidx/compose/animation/core/f3;->a:Landroidx/compose/animation/core/y2;
+
+    .line 6
+    iput-object p2, p0, Landroidx/compose/animation/core/f3;->b:Landroidx/compose/animation/core/RepeatMode;
+
+    .line 8
+    invoke-interface {p1}, Landroidx/compose/animation/core/y2;->d()I
+
+    .line 11
+    move-result p2
+
+    .line 12
+    invoke-interface {p1}, Landroidx/compose/animation/core/y2;->g()I
+
+    .line 15
+    move-result p1
+
+    .line 16
+    add-int/2addr p1, p2
+
+    .line 17
+    int-to-long p1, p1
+
+    .line 18
+    const-wide/32 v0, 0xf4240
+
+    .line 21
+    mul-long/2addr p1, v0
+
+    .line 22
+    iput-wide p1, p0, Landroidx/compose/animation/core/f3;->c:J
+
+    .line 24
+    mul-long/2addr p3, v0
+
+    .line 25
+    iput-wide p3, p0, Landroidx/compose/animation/core/f3;->d:J
+
+    .line 27
+    return-void
+.end method
+
+
+# virtual methods
+.method public final b(Landroidx/compose/animation/core/s;Landroidx/compose/animation/core/s;Landroidx/compose/animation/core/s;)J
+    .locals 2
+
+    .prologue
+    .line 1
+    iget-wide p1, p0, Landroidx/compose/animation/core/f3;->c:J
+
+    .line 3
+    iget-wide v0, p0, Landroidx/compose/animation/core/f3;->d:J
+
+    .line 5
+    sub-long/2addr p1, v0
+
+    .line 6
+    return-wide p1
+.end method
+
+.method public final c(JLandroidx/compose/animation/core/s;Landroidx/compose/animation/core/s;Landroidx/compose/animation/core/s;)Landroidx/compose/animation/core/s;
+    .locals 6
+
+    .prologue
+    .line 1
+    move-wide v1, p1
+
+    .line 2
+    invoke-virtual {p0, v1, v2}, Landroidx/compose/animation/core/f3;->h(J)J
+
+    .line 5
+    move-result-wide p1
+
+    .line 6
+    move-object v0, p0
+
+    .line 7
+    move-object v3, p3
+
+    .line 8
+    move-object v5, p4
+
+    .line 9
+    move-object v4, p5
+
+    .line 10
+    invoke-virtual/range {v0 .. v5}, Landroidx/compose/animation/core/f3;->i(JLandroidx/compose/animation/core/s;Landroidx/compose/animation/core/s;Landroidx/compose/animation/core/s;)Landroidx/compose/animation/core/s;
+
+    .line 13
+    move-result-object p5
+
+    .line 14
+    iget-object p0, v0, Landroidx/compose/animation/core/f3;->a:Landroidx/compose/animation/core/y2;
+
+    .line 16
+    invoke-interface/range {p0 .. p5}, Landroidx/compose/animation/core/w2;->c(JLandroidx/compose/animation/core/s;Landroidx/compose/animation/core/s;Landroidx/compose/animation/core/s;)Landroidx/compose/animation/core/s;
+
+    .line 19
+    move-result-object p0
+
+    .line 20
+    return-object p0
+.end method
+
+.method public final f(JLandroidx/compose/animation/core/s;Landroidx/compose/animation/core/s;Landroidx/compose/animation/core/s;)Landroidx/compose/animation/core/s;
+    .locals 6
+
+    .prologue
+    .line 1
+    move-wide v1, p1
+
+    .line 2
+    invoke-virtual {p0, v1, v2}, Landroidx/compose/animation/core/f3;->h(J)J
+
+    .line 5
+    move-result-wide p1
+
+    .line 6
+    move-object v0, p0
+
+    .line 7
+    move-object v3, p3
+
+    .line 8
+    move-object v5, p4
+
+    .line 9
+    move-object v4, p5
+
+    .line 10
+    invoke-virtual/range {v0 .. v5}, Landroidx/compose/animation/core/f3;->i(JLandroidx/compose/animation/core/s;Landroidx/compose/animation/core/s;Landroidx/compose/animation/core/s;)Landroidx/compose/animation/core/s;
+
+    .line 13
+    move-result-object p5
+
+    .line 14
+    iget-object p0, v0, Landroidx/compose/animation/core/f3;->a:Landroidx/compose/animation/core/y2;
+
+    .line 16
+    invoke-interface/range {p0 .. p5}, Landroidx/compose/animation/core/w2;->f(JLandroidx/compose/animation/core/s;Landroidx/compose/animation/core/s;Landroidx/compose/animation/core/s;)Landroidx/compose/animation/core/s;
+
+    .line 19
+    move-result-object p0
+
+    .line 20
+    return-object p0
+.end method
+
+.method public final h(J)J
+    .locals 8
+
+    .prologue
+    .line 1
+    iget-wide v0, p0, Landroidx/compose/animation/core/f3;->d:J
+
+    .line 3
+    add-long/2addr p1, v0
+
+    .line 4
+    const-wide/16 v0, 0x0
+
+    .line 6
+    cmp-long v2, p1, v0
+
+    .line 8
+    if-gtz v2, :cond_0
+
+    .line 10
+    return-wide v0
+
+    .line 11
+    :cond_0
+    iget-wide v2, p0, Landroidx/compose/animation/core/f3;->c:J
+
+    .line 13
+    div-long v4, p1, v2
+
+    .line 15
+    invoke-static {v4, v5, v0, v1}, Ljava/lang/Math;->min(JJ)J
+
+    .line 18
+    move-result-wide v4
+
+    .line 19
+    iget-object p0, p0, Landroidx/compose/animation/core/f3;->b:Landroidx/compose/animation/core/RepeatMode;
+
+    .line 21
+    sget-object v6, Landroidx/compose/animation/core/RepeatMode;->Restart:Landroidx/compose/animation/core/RepeatMode;
+
+    .line 23
+    if-eq p0, v6, :cond_2
+
+    .line 25
+    const-wide/16 v6, 0x2
+
+    .line 27
+    rem-long v6, v4, v6
+
+    .line 29
+    cmp-long p0, v6, v0
+
+    .line 31
+    if-nez p0, :cond_1
+
+    .line 33
+    goto :goto_0
+
+    .line 34
+    :cond_1
+    const-wide/16 v0, 0x1
+
+    .line 36
+    add-long/2addr v4, v0
+
+    .line 37
+    mul-long/2addr v4, v2
+
+    .line 38
+    sub-long/2addr v4, p1
+
+    .line 39
+    return-wide v4
+
+    .line 40
+    :cond_2
+    :goto_0
+    mul-long/2addr v4, v2
+
+    .line 41
+    sub-long/2addr p1, v4
+
+    .line 42
+    return-wide p1
+.end method
+
+.method public final i(JLandroidx/compose/animation/core/s;Landroidx/compose/animation/core/s;Landroidx/compose/animation/core/s;)Landroidx/compose/animation/core/s;
+    .locals 10
+
+    .prologue
+    .line 1
+    iget-wide v0, p0, Landroidx/compose/animation/core/f3;->d:J
+
+    .line 3
+    add-long/2addr p1, v0
+
+    .line 4
+    iget-wide v2, p0, Landroidx/compose/animation/core/f3;->c:J
+
+    .line 6
+    cmp-long p1, p1, v2
+
+    .line 8
+    if-lez p1, :cond_0
+
+    .line 10
+    sub-long v5, v2, v0
+
+    .line 12
+    move-object v4, p0
+
+    .line 13
+    move-object v7, p3
+
+    .line 14
+    move-object v8, p4
+
+    .line 15
+    move-object v9, p5
+
+    .line 16
+    invoke-virtual/range {v4 .. v9}, Landroidx/compose/animation/core/f3;->c(JLandroidx/compose/animation/core/s;Landroidx/compose/animation/core/s;Landroidx/compose/animation/core/s;)Landroidx/compose/animation/core/s;
+
+    .line 19
+    move-result-object p0
+
+    .line 20
+    return-object p0
+
+    .line 21
+    :cond_0
+    move-object v8, p4
+
+    .line 22
+    return-object v8
+.end method

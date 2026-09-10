@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:tag="layout/shopping_list_edit_dialog_fragment_0" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <de.payback.app.shoppinglist.ui.widget.ClearableEmojiAppCompatEditText android:textAppearance="@style/TextAppearance.DesignSystem.Android.Body2" android:textColor="?colorPrimary" android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:hint="@string/shoppinglist_edit_box_prefil" android:maxLines="2" android:inputType="textCapSentences|textMultiLine|textShortMessage" android:imeOptions="actionDone" />
+</FrameLayout>

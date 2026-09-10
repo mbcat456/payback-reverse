@@ -1,0 +1,135 @@
+.class public final Lcom/airbnb/lottie/model/content/l;
+.super Ljava/lang/Object;
+.source "r8-map-id-c6e95f02a960cec3b4177d8b5b818c3f23768df7db706782552fe3d06a1d57cb"
+
+
+# instance fields
+.field public final a:Ljava/util/ArrayList;
+
+.field public b:Landroid/graphics/PointF;
+
+.field public c:Z
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 1
+
+    .prologue
+    .line 16
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 17
+    new-instance v0, Ljava/util/ArrayList;
+
+    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
+
+    iput-object v0, p0, Lcom/airbnb/lottie/model/content/l;->a:Ljava/util/ArrayList;
+
+    return-void
+.end method
+
+.method public constructor <init>(Landroid/graphics/PointF;ZLjava/util/List;)V
+    .locals 0
+
+    .prologue
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 4
+    iput-object p1, p0, Lcom/airbnb/lottie/model/content/l;->b:Landroid/graphics/PointF;
+
+    .line 6
+    iput-boolean p2, p0, Lcom/airbnb/lottie/model/content/l;->c:Z
+
+    .line 8
+    new-instance p1, Ljava/util/ArrayList;
+
+    .line 10
+    invoke-direct {p1, p3}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
+
+    .line 13
+    iput-object p1, p0, Lcom/airbnb/lottie/model/content/l;->a:Ljava/util/ArrayList;
+
+    .line 15
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a(FF)V
+    .locals 1
+
+    .prologue
+    .line 1
+    iget-object v0, p0, Lcom/airbnb/lottie/model/content/l;->b:Landroid/graphics/PointF;
+
+    .line 3
+    if-nez v0, :cond_0
+
+    .line 5
+    new-instance v0, Landroid/graphics/PointF;
+
+    .line 7
+    invoke-direct {v0}, Landroid/graphics/PointF;-><init>()V
+
+    .line 10
+    iput-object v0, p0, Lcom/airbnb/lottie/model/content/l;->b:Landroid/graphics/PointF;
+
+    .line 12
+    :cond_0
+    iget-object p0, p0, Lcom/airbnb/lottie/model/content/l;->b:Landroid/graphics/PointF;
+
+    .line 14
+    invoke-virtual {p0, p1, p2}, Landroid/graphics/PointF;->set(FF)V
+
+    .line 17
+    return-void
+.end method
+
+.method public final toString()Ljava/lang/String;
+    .locals 2
+
+    .prologue
+    .line 1
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    .line 3
+    const-string v1, "ShapeData{numCurves="
+
+    .line 5
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    .line 8
+    iget-object v1, p0, Lcom/airbnb/lottie/model/content/l;->a:Ljava/util/ArrayList;
+
+    .line 10
+    invoke-virtual {v1}, Ljava/util/ArrayList;->size()I
+
+    .line 13
+    move-result v1
+
+    .line 14
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    .line 17
+    const-string v1, "closed="
+
+    .line 19
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 22
+    iget-boolean p0, p0, Lcom/airbnb/lottie/model/content/l;->c:Z
+
+    .line 24
+    const/16 v1, 0x7d
+
+    .line 26
+    invoke-static {v0, p0, v1}, Landroidx/compose/foundation/gestures/b2;->q(Ljava/lang/StringBuilder;ZC)Ljava/lang/String;
+
+    .line 29
+    move-result-object p0
+
+    .line 30
+    return-object p0
+.end method

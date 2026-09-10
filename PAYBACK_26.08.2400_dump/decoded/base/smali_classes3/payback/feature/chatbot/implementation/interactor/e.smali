@@ -1,0 +1,105 @@
+.class public final Lpayback/feature/chatbot/implementation/interactor/e;
+.super Ljava/lang/Object;
+.source "r8-map-id-c6e95f02a960cec3b4177d8b5b818c3f23768df7db706782552fe3d06a1d57cb"
+
+# interfaces
+.implements Lpayback/feature/chatbot/api/interactor/a;
+
+
+# static fields
+.field public static final $stable:I
+
+
+# instance fields
+.field public final a:Lpayback/feature/manager/legacy/implementation/interactor/a;
+
+.field public final b:Lpayback/feature/remoteconfig/implementation/b;
+
+
+# direct methods
+.method public constructor <init>(Lpayback/feature/manager/legacy/implementation/interactor/a;Lpayback/feature/remoteconfig/implementation/b;)V
+    .locals 0
+
+    .prologue
+    .line 1
+    invoke-virtual {p2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 4
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 7
+    iput-object p1, p0, Lpayback/feature/chatbot/implementation/interactor/e;->a:Lpayback/feature/manager/legacy/implementation/interactor/a;
+
+    .line 9
+    iput-object p2, p0, Lpayback/feature/chatbot/implementation/interactor/e;->b:Lpayback/feature/remoteconfig/implementation/b;
+
+    .line 11
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a()Z
+    .locals 3
+
+    .prologue
+    .line 1
+    sget-object v0, Lpayback/feature/chatbot/implementation/feature/ChatBotFeature;->CHATBOT:Lpayback/feature/chatbot/implementation/feature/ChatBotFeature;
+
+    .line 3
+    invoke-virtual {v0}, Lpayback/feature/chatbot/implementation/feature/ChatBotFeature;->getFeature()Lpayback/feature/manager/legacy/api/b;
+
+    .line 6
+    move-result-object v1
+
+    .line 7
+    iget-object v1, v1, Lpayback/feature/manager/legacy/api/b;->a:Ljava/lang/String;
+
+    .line 9
+    iget-object v2, p0, Lpayback/feature/chatbot/implementation/interactor/e;->b:Lpayback/feature/remoteconfig/implementation/b;
+
+    .line 11
+    invoke-virtual {v2, v1}, Lpayback/feature/remoteconfig/implementation/b;->a(Ljava/lang/String;)Z
+
+    .line 14
+    move-result v1
+
+    .line 15
+    if-nez v1, :cond_1
+
+    .line 17
+    iget-object p0, p0, Lpayback/feature/chatbot/implementation/interactor/e;->a:Lpayback/feature/manager/legacy/implementation/interactor/a;
+
+    .line 19
+    invoke-virtual {v0}, Lpayback/feature/chatbot/implementation/feature/ChatBotFeature;->getFeature()Lpayback/feature/manager/legacy/api/b;
+
+    .line 22
+    move-result-object v0
+
+    .line 23
+    invoke-virtual {p0, v0}, Lpayback/feature/manager/legacy/implementation/interactor/a;->a(Lpayback/feature/manager/legacy/api/b;)Z
+
+    .line 26
+    move-result p0
+
+    .line 27
+    if-eqz p0, :cond_0
+
+    .line 29
+    goto :goto_0
+
+    .line 30
+    :cond_0
+    const/4 p0, 0x0
+
+    .line 31
+    return p0
+
+    .line 32
+    :cond_1
+    :goto_0
+    const/4 p0, 0x1
+
+    .line 33
+    return p0
+.end method

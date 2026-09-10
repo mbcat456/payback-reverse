@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Base.Theme.DesignSystem.Payback.DayNight" parent="@style/Base.Theme.DesignSystem.DayNight">
+        <item name="android:windowBackground">@color/ds_windows_background_payback_dark</item>
+        <item name="android:statusBarColor">?colorSurface</item>
+        <item name="android:navigationBarColor">?android:colorBackground</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowLightNavigationBar">false</item>
+        <item name="android:navigationBarDividerColor">?colorControlHighlight</item>
+    </style>
+    <style name="Base.Theme.SplashScreen.DayNight" parent="@style/Base.Theme.SplashScreen">
+        <item name="isLightTheme">false</item>
+    </style>
+    <style name="Theme.AppCompat.DayNight" parent="@style/Theme.AppCompat" />
+    <style name="Theme.AppCompat.DayNight.DarkActionBar" parent="@style/Theme.AppCompat" />
+    <style name="Theme.AppCompat.DayNight.Dialog" parent="@style/Theme.AppCompat.Dialog" />
+    <style name="Theme.AppCompat.DayNight.Dialog.Alert" parent="@style/Theme.AppCompat.Dialog.Alert" />
+    <style name="Theme.AppCompat.DayNight.Dialog.MinWidth" parent="@style/Theme.AppCompat.Dialog.MinWidth" />
+    <style name="Theme.AppCompat.DayNight.DialogWhenLarge" parent="@style/Theme.AppCompat.DialogWhenLarge" />
+    <style name="Theme.AppCompat.DayNight.NoActionBar" parent="@style/Theme.AppCompat.NoActionBar" />
+    <style name="Theme.DesignSystem.Payback.Colored.DayNight" parent="@style/Base.Theme.DesignSystem.Payback.DayNight">
+        <item name="android:colorBackground">#ff1e1e1e</item>
+        <item name="android:textColorPrimary">#ffffffde</item>
+        <item name="android:textColorSecondary">#b3ffffff</item>
+        <item name="android:textColorPrimaryInverse">#de000000</item>
+        <item name="android:textColorSecondaryInverse">#8a000000</item>
+        <item name="android:textColorLink">#ff5987c8</item>
+        <item name="android:textColorTertiary">#b3ffffff</item>
+        <item name="android:textColorTertiaryInverse">#8a000000</item>
+        <item name="android:textColorLinkInverse">#ff0046aa</item>
+        <item name="colorBackground">#ff1e1e1e</item>
+        <item name="colorBackgroundGradientEnd">#ff000000</item>
+        <item name="colorBackgroundGradientStart">#ff000000</item>
+        <item name="colorControlActivated">#ff5987c8</item>
+        <item name="colorError">#ffd75975</item>
+        <item name="colorGold">#ffe5d095</item>
+        <item name="colorInfo">#ffacc2e3</item>
+        <item name="colorNegative">#ffd75975</item>
+        <item name="colorOnBackground">#ffffffff</item>
+        <item name="colorOnError">#ffffffff</item>
+        <item name="colorOnInfo">#ffffffff</item>
+        <item name="colorOnNegative">#ff000000</item>
+        <item name="colorOnPositive">#ff000000</item>
+        <item name="colorOnPrimary">#ff000000</item>
+        <item name="colorOnPrimarySurface">#ffffffff</item>
+        <item name="colorOnSecondary">#ff000000</item>
+        <item name="colorOnSurface">#ffffffff</item>
+        <item name="colorOnWarning">#ff000000</item>
+        <item name="colorPositive">#ffa8cf6c</item>
+        <item name="colorPrimary">#ff5987c8</item>
+        <item name="colorPrimarySurface">#ff5987c8</item>
+        <item name="colorPrimaryVariant">#ff00207a</item>
+        <item name="colorSecondary">#ff5987c8</item>
+        <item name="colorSecondaryVariant">#ff00207a</item>
+        <item name="colorSurface">#ff121212</item>
+        <item name="colorWarning">#ffffe959</item>
+    </style>
+    <style name="Theme.DesignSystem.Payback.DayNight" parent="@style/Base.Theme.DesignSystem.Payback.DayNight">
+        <item name="android:colorBackground">#ff1e1e1e</item>
+        <item name="android:textColorPrimary">#ffffffde</item>
+        <item name="android:textColorSecondary">#b3ffffff</item>
+        <item name="android:textColorPrimaryInverse">#de000000</item>
+        <item name="android:textColorSecondaryInverse">#8a000000</item>
+        <item name="android:textColorLink">#ff5987c8</item>
+        <item name="android:textColorTertiary">#b3ffffff</item>
+        <item name="android:textColorTertiaryInverse">#8a000000</item>
+        <item name="android:textColorLinkInverse">#ff0046aa</item>
+        <item name="colorBackground">#ff1e1e1e</item>
+        <item name="colorBackgroundGradientEnd">#ff000000</item>
+        <item name="colorBackgroundGradientStart">#ff000000</item>
+        <item name="colorControlActivated">#ff5987c8</item>
+        <item name="colorError">#ffd75975</item>
+        <item name="colorGold">#ffe5d095</item>
+        <item name="colorInfo">#ffacc2e3</item>
+        <item name="colorNegative">#ffd75975</item>
+        <item name="colorOnBackground">#ffffffff</item>
+        <item name="colorOnError">#ffffffff</item>
+        <item name="colorOnInfo">#ffffffff</item>
+        <item name="colorOnNegative">#ff000000</item>
+        <item name="colorOnPositive">#ff000000</item>
+        <item name="colorOnPrimary">#ff000000</item>
+        <item name="colorOnPrimarySurface">#ffffffff</item>
+        <item name="colorOnSecondary">#ff000000</item>
+        <item name="colorOnSurface">#ffffffff</item>
+        <item name="colorOnWarning">#ff000000</item>
+        <item name="colorPositive">#ffa8cf6c</item>
+        <item name="colorPrimary">#ff5987c8</item>
+        <item name="colorPrimarySurface">#ff5987c8</item>
+        <item name="colorPrimaryVariant">#ff00207a</item>
+        <item name="colorSecondary">#ff5987c8</item>
+        <item name="colorSecondaryVariant">#ff00207a</item>
+        <item name="colorSurface">#ff121212</item>
+        <item name="colorWarning">#ffffe959</item>
+    </style>
+    <style name="Theme.DesignSystem.Payback.DayNight.Translucent" parent="@style/Theme.DesignSystem.Payback.DayNight.Transparent">
+        <item name="android:windowBackground">@color/ds_windows_background_payback_dark_translucent</item>
+    </style>
+    <style name="Theme.DesignSystem.Payback.DayNight.Transparent" parent="@style/Theme.DesignSystem.Payback.DayNight">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+    <style name="Theme.Material3.DayNight.NoActionBar" parent="@style/Theme.Material3.Dark.NoActionBar" />
+    <style name="Theme.MaterialComponents.DayNight" parent="@style/Theme.MaterialComponents" />
+    <style name="Theme.MaterialComponents.DayNight.BottomSheetDialog" parent="@style/Theme.MaterialComponents.BottomSheetDialog" />
+    <style name="Theme.MaterialComponents.DayNight.Bridge" parent="@style/Theme.MaterialComponents.Bridge" />
+    <style name="Theme.MaterialComponents.DayNight.DarkActionBar" parent="@style/Theme.MaterialComponents" />
+    <style name="Theme.MaterialComponents.DayNight.DarkActionBar.Bridge" parent="@style/Theme.MaterialComponents.Bridge" />
+    <style name="Theme.MaterialComponents.DayNight.DarkActionBar.FocusRings" parent="@style/Theme.MaterialComponents.FocusRings" />
+    <style name="Theme.MaterialComponents.DayNight.Dialog" parent="@style/Theme.MaterialComponents.Dialog" />
+    <style name="Theme.MaterialComponents.DayNight.Dialog.Alert" parent="@style/Theme.MaterialComponents.Dialog.Alert" />
+    <style name="Theme.MaterialComponents.DayNight.Dialog.Alert.Bridge" parent="@style/Theme.MaterialComponents.Dialog.Alert.Bridge" />
+    <style name="Theme.MaterialComponents.DayNight.Dialog.Alert.FocusRings" parent="@style/Theme.MaterialComponents.Dialog.Alert.FocusRings" />
+    <style name="Theme.MaterialComponents.DayNight.Dialog.Bridge" parent="@style/Theme.MaterialComponents.Dialog.Bridge" />
+    <style name="Theme.MaterialComponents.DayNight.Dialog.FixedSize" parent="@style/Theme.MaterialComponents.Dialog.FixedSize" />
+    <style name="Theme.MaterialComponents.DayNight.Dialog.FixedSize.Bridge" parent="@style/Theme.MaterialComponents.Dialog.FixedSize.Bridge" />
+    <style name="Theme.MaterialComponents.DayNight.Dialog.FixedSize.FocusRings" parent="@style/Theme.MaterialComponents.Dialog.FixedSize.FocusRings" />
+    <style name="Theme.MaterialComponents.DayNight.Dialog.FocusRings" parent="@style/Theme.MaterialComponents.Dialog.FocusRings" />
+    <style name="Theme.MaterialComponents.DayNight.Dialog.MinWidth" parent="@style/Theme.MaterialComponents.Dialog.MinWidth" />
+    <style name="Theme.MaterialComponents.DayNight.Dialog.MinWidth.Bridge" parent="@style/Theme.MaterialComponents.Dialog.MinWidth.Bridge" />
+    <style name="Theme.MaterialComponents.DayNight.Dialog.MinWidth.FocusRings" parent="@style/Theme.MaterialComponents.Dialog.MinWidth.FocusRings" />
+    <style name="Theme.MaterialComponents.DayNight.DialogWhenLarge" parent="@style/Theme.MaterialComponents.DialogWhenLarge" />
+    <style name="Theme.MaterialComponents.DayNight.FocusRings" parent="@style/Theme.MaterialComponents.FocusRings" />
+    <style name="Theme.MaterialComponents.DayNight.NoActionBar" parent="@style/Theme.MaterialComponents.NoActionBar" />
+    <style name="Theme.MaterialComponents.DayNight.NoActionBar.Bridge" parent="@style/Theme.MaterialComponents.NoActionBar.Bridge" />
+    <style name="Theme.MaterialComponents.DayNight.NoActionBar.FocusRings" parent="@style/Theme.MaterialComponents.NoActionBar.FocusRings" />
+    <style name="Widget.MaterialComponents.Toolbar.PrimarySurface" parent="@style/Widget.MaterialComponents.Toolbar.Surface" />
+</resources>

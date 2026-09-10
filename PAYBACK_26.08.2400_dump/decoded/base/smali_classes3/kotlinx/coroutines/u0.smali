@@ -1,0 +1,500 @@
+.class public abstract Lkotlinx/coroutines/u0;
+.super Ljava/lang/Object;
+.source "r8-map-id-c6e95f02a960cec3b4177d8b5b818c3f23768df7db706782552fe3d06a1d57cb"
+
+# interfaces
+.implements Ljava/lang/Runnable;
+.implements Ljava/lang/Comparable;
+.implements Lkotlinx/coroutines/o0;
+
+
+# instance fields
+.field private volatile _heap:Ljava/lang/Object;
+
+.field public a:J
+
+.field public b:I
+
+
+# direct methods
+.method public constructor <init>(J)V
+    .locals 0
+
+    .prologue
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 4
+    iput-wide p1, p0, Lkotlinx/coroutines/u0;->a:J
+
+    .line 6
+    const/4 p1, -0x1
+
+    .line 7
+    iput p1, p0, Lkotlinx/coroutines/u0;->b:I
+
+    .line 9
+    return-void
+.end method
+
+
+# virtual methods
+.method public final b(JLkotlinx/coroutines/v0;Lkotlinx/coroutines/w0;)I
+    .locals 8
+
+    .prologue
+    .line 1
+    monitor-enter p0
+
+    .line 2
+    :try_start_0
+    iget-object v0, p0, Lkotlinx/coroutines/u0;->_heap:Ljava/lang/Object;
+
+    .line 4
+    sget-object v1, Lkotlinx/coroutines/b0;->a:Lkotlinx/coroutines/internal/v;
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 6
+    if-ne v0, v1, :cond_0
+
+    .line 8
+    monitor-exit p0
+
+    .line 9
+    const/4 p0, 0x2
+
+    .line 10
+    return p0
+
+    .line 11
+    :cond_0
+    :try_start_1
+    monitor-enter p3
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    .line 12
+    :try_start_2
+    iget-object v0, p3, Lkotlinx/coroutines/internal/a0;->a:[Lkotlinx/coroutines/u0;
+
+    .line 14
+    const/4 v1, 0x0
+
+    .line 15
+    if-eqz v0, :cond_1
+
+    .line 17
+    aget-object v0, v0, v1
+
+    .line 19
+    goto :goto_0
+
+    .line 20
+    :cond_1
+    const/4 v0, 0x0
+
+    .line 21
+    :goto_0
+    sget-object v2, Lkotlinx/coroutines/w0;->h:Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;
+
+    .line 23
+    invoke-virtual {v2, p4}, Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;->get(Ljava/lang/Object;)I
+
+    .line 26
+    move-result p4
+    :try_end_2
+    .catchall {:try_start_2 .. :try_end_2} :catchall_1
+
+    .line 27
+    const/4 v2, 0x1
+
+    .line 28
+    if-ne p4, v2, :cond_2
+
+    .line 30
+    move p4, v2
+
+    .line 31
+    goto :goto_1
+
+    .line 32
+    :cond_2
+    move p4, v1
+
+    .line 33
+    :goto_1
+    if-eqz p4, :cond_3
+
+    .line 35
+    :try_start_3
+    monitor-exit p3
+    :try_end_3
+    .catchall {:try_start_3 .. :try_end_3} :catchall_0
+
+    .line 36
+    monitor-exit p0
+
+    .line 37
+    return v2
+
+    .line 38
+    :catchall_0
+    move-exception p1
+
+    .line 39
+    goto :goto_5
+
+    .line 40
+    :cond_3
+    const-wide/16 v2, 0x0
+
+    .line 42
+    if-nez v0, :cond_4
+
+    .line 44
+    :try_start_4
+    iput-wide p1, p3, Lkotlinx/coroutines/v0;->c:J
+
+    .line 46
+    goto :goto_3
+
+    .line 47
+    :catchall_1
+    move-exception p1
+
+    .line 48
+    goto :goto_4
+
+    .line 49
+    :cond_4
+    iget-wide v4, v0, Lkotlinx/coroutines/u0;->a:J
+
+    .line 51
+    sub-long v6, v4, p1
+
+    .line 53
+    cmp-long p4, v6, v2
+
+    .line 55
+    if-ltz p4, :cond_5
+
+    .line 57
+    goto :goto_2
+
+    .line 58
+    :cond_5
+    move-wide p1, v4
+
+    .line 59
+    :goto_2
+    iget-wide v4, p3, Lkotlinx/coroutines/v0;->c:J
+
+    .line 61
+    sub-long v4, p1, v4
+
+    .line 63
+    cmp-long p4, v4, v2
+
+    .line 65
+    if-lez p4, :cond_6
+
+    .line 67
+    iput-wide p1, p3, Lkotlinx/coroutines/v0;->c:J
+
+    .line 69
+    :cond_6
+    :goto_3
+    iget-wide p1, p0, Lkotlinx/coroutines/u0;->a:J
+
+    .line 71
+    iget-wide v4, p3, Lkotlinx/coroutines/v0;->c:J
+
+    .line 73
+    sub-long/2addr p1, v4
+
+    .line 74
+    cmp-long p1, p1, v2
+
+    .line 76
+    if-gez p1, :cond_7
+
+    .line 78
+    iput-wide v4, p0, Lkotlinx/coroutines/u0;->a:J
+
+    .line 80
+    :cond_7
+    invoke-virtual {p3, p0}, Lkotlinx/coroutines/internal/a0;->a(Lkotlinx/coroutines/u0;)V
+    :try_end_4
+    .catchall {:try_start_4 .. :try_end_4} :catchall_1
+
+    .line 83
+    :try_start_5
+    monitor-exit p3
+    :try_end_5
+    .catchall {:try_start_5 .. :try_end_5} :catchall_0
+
+    .line 84
+    monitor-exit p0
+
+    .line 85
+    return v1
+
+    .line 86
+    :goto_4
+    :try_start_6
+    monitor-exit p3
+
+    .line 87
+    throw p1
+    :try_end_6
+    .catchall {:try_start_6 .. :try_end_6} :catchall_0
+
+    .line 88
+    :goto_5
+    monitor-exit p0
+
+    .line 89
+    throw p1
+.end method
+
+.method public final c(Lkotlinx/coroutines/v0;)V
+    .locals 2
+
+    .prologue
+    .line 1
+    iget-object v0, p0, Lkotlinx/coroutines/u0;->_heap:Ljava/lang/Object;
+
+    .line 3
+    sget-object v1, Lkotlinx/coroutines/b0;->a:Lkotlinx/coroutines/internal/v;
+
+    .line 5
+    if-eq v0, v1, :cond_0
+
+    .line 7
+    iput-object p1, p0, Lkotlinx/coroutines/u0;->_heap:Ljava/lang/Object;
+
+    .line 9
+    return-void
+
+    .line 10
+    :cond_0
+    const-string p0, "Failed requirement."
+
+    .line 12
+    invoke-static {p0}, Lkotlinx/serialization/json/q;->t(Ljava/lang/String;)V
+
+    .line 15
+    return-void
+.end method
+
+.method public final compareTo(Ljava/lang/Object;)I
+    .locals 2
+
+    .prologue
+    .line 1
+    check-cast p1, Lkotlinx/coroutines/u0;
+
+    .line 3
+    iget-wide v0, p0, Lkotlinx/coroutines/u0;->a:J
+
+    .line 5
+    iget-wide p0, p1, Lkotlinx/coroutines/u0;->a:J
+
+    .line 7
+    sub-long/2addr v0, p0
+
+    .line 8
+    const-wide/16 p0, 0x0
+
+    .line 10
+    cmp-long p0, v0, p0
+
+    .line 12
+    if-lez p0, :cond_0
+
+    .line 14
+    const/4 p0, 0x1
+
+    .line 15
+    return p0
+
+    .line 16
+    :cond_0
+    if-gez p0, :cond_1
+
+    .line 18
+    const/4 p0, -0x1
+
+    .line 19
+    return p0
+
+    .line 20
+    :cond_1
+    const/4 p0, 0x0
+
+    .line 21
+    return p0
+.end method
+
+.method public final dispose()V
+    .locals 5
+
+    .prologue
+    .line 1
+    monitor-enter p0
+
+    .line 2
+    :try_start_0
+    iget-object v0, p0, Lkotlinx/coroutines/u0;->_heap:Ljava/lang/Object;
+
+    .line 4
+    sget-object v1, Lkotlinx/coroutines/b0;->a:Lkotlinx/coroutines/internal/v;
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 6
+    if-ne v0, v1, :cond_0
+
+    .line 8
+    monitor-exit p0
+
+    .line 9
+    return-void
+
+    .line 10
+    :cond_0
+    :try_start_1
+    instance-of v2, v0, Lkotlinx/coroutines/v0;
+
+    .line 12
+    const/4 v3, 0x0
+
+    .line 13
+    if-eqz v2, :cond_1
+
+    .line 15
+    check-cast v0, Lkotlinx/coroutines/v0;
+
+    .line 17
+    goto :goto_0
+
+    .line 18
+    :catchall_0
+    move-exception v0
+
+    .line 19
+    goto :goto_3
+
+    .line 20
+    :cond_1
+    move-object v0, v3
+
+    .line 21
+    :goto_0
+    if-eqz v0, :cond_4
+
+    .line 23
+    monitor-enter v0
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    .line 24
+    :try_start_2
+    iget-object v2, p0, Lkotlinx/coroutines/u0;->_heap:Ljava/lang/Object;
+
+    .line 26
+    instance-of v4, v2, Lkotlinx/coroutines/internal/a0;
+
+    .line 28
+    if-eqz v4, :cond_2
+
+    .line 30
+    move-object v3, v2
+
+    .line 31
+    check-cast v3, Lkotlinx/coroutines/internal/a0;
+
+    .line 33
+    :cond_2
+    if-nez v3, :cond_3
+
+    .line 35
+    goto :goto_1
+
+    .line 36
+    :cond_3
+    iget v2, p0, Lkotlinx/coroutines/u0;->b:I
+
+    .line 38
+    invoke-virtual {v0, v2}, Lkotlinx/coroutines/internal/a0;->b(I)Lkotlinx/coroutines/u0;
+    :try_end_2
+    .catchall {:try_start_2 .. :try_end_2} :catchall_1
+
+    .line 41
+    :goto_1
+    :try_start_3
+    monitor-exit v0
+
+    .line 42
+    goto :goto_2
+
+    .line 43
+    :catchall_1
+    move-exception v1
+
+    .line 44
+    monitor-exit v0
+
+    .line 45
+    throw v1
+
+    .line 46
+    :cond_4
+    :goto_2
+    iput-object v1, p0, Lkotlinx/coroutines/u0;->_heap:Ljava/lang/Object;
+    :try_end_3
+    .catchall {:try_start_3 .. :try_end_3} :catchall_0
+
+    .line 48
+    monitor-exit p0
+
+    .line 49
+    return-void
+
+    .line 50
+    :goto_3
+    monitor-exit p0
+
+    .line 51
+    throw v0
+.end method
+
+.method public toString()Ljava/lang/String;
+    .locals 3
+
+    .prologue
+    .line 1
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    .line 3
+    const-string v1, "Delayed[nanos="
+
+    .line 5
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    .line 8
+    iget-wide v1, p0, Lkotlinx/coroutines/u0;->a:J
+
+    .line 10
+    const/16 p0, 0x5d
+
+    .line 12
+    invoke-static {v0, v1, v2, p0}, Landroidx/privacysandbox/ads/adservices/java/internal/a;->t(Ljava/lang/StringBuilder;JC)Ljava/lang/String;
+
+    .line 15
+    move-result-object p0
+
+    .line 16
+    return-object p0
+.end method

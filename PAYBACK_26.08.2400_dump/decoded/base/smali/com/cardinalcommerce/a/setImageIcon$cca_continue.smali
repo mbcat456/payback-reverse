@@ -1,0 +1,82 @@
+.class final Lcom/cardinalcommerce/a/setImageIcon$cca_continue;
+.super Ljava/lang/Object;
+
+# interfaces
+.implements Lcom/cardinalcommerce/a/setFocusableInTouchMode;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/cardinalcommerce/a/setImageIcon;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x9
+    name = "cca_continue"
+.end annotation
+
+
+# instance fields
+.field private final Cardinal:I
+
+.field private final cca_continue:I
+
+.field private final cleanup:I
+
+.field private final configure:I
+
+.field private final getInstance:I
+
+.field private final getWarnings:I
+
+.field private final init:Z
+
+
+# direct methods
+.method public constructor <init>(ZIIIII)V
+    .locals 0
+
+    .prologue
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 4
+    iput-boolean p1, p0, Lcom/cardinalcommerce/a/setImageIcon$cca_continue;->init:Z
+
+    .line 6
+    iput p2, p0, Lcom/cardinalcommerce/a/setImageIcon$cca_continue;->configure:I
+
+    .line 8
+    const/16 p1, 0x10
+
+    .line 10
+    iput p1, p0, Lcom/cardinalcommerce/a/setImageIcon$cca_continue;->Cardinal:I
+
+    .line 12
+    iput p3, p0, Lcom/cardinalcommerce/a/setImageIcon$cca_continue;->cca_continue:I
+
+    .line 14
+    iput p4, p0, Lcom/cardinalcommerce/a/setImageIcon$cca_continue;->getInstance:I
+
+    .line 16
+    iput p5, p0, Lcom/cardinalcommerce/a/setImageIcon$cca_continue;->cleanup:I
+
+    .line 18
+    iput p6, p0, Lcom/cardinalcommerce/a/setImageIcon$cca_continue;->getWarnings:I
+
+    .line 20
+    return-void
+.end method
+
+
+# virtual methods
+.method public final getInstance()I
+    .locals 0
+
+    .prologue
+    .line 1
+    iget p0, p0, Lcom/cardinalcommerce/a/setImageIcon$cca_continue;->configure:I
+
+    .line 3
+    return p0
+.end method

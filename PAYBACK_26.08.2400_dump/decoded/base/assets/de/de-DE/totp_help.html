@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0, user-scalable=no" name="viewport">
+    <title>Sicherheits-Code</title>
+    </script>
+
+    <style>
+
+        *, ::after, ::before {
+        	 box-sizing: border-box;
+        }
+
+
+        img {
+        	max-width: 100%;
+        }
+
+        .details-wrapper {
+        	width: 100%;
+        	margin: 0 auto;
+        	background-color: #e5ecf6;
+        	box-shadow:0 -1px 1px 5px #e5ecf6;
+        }
+        details {
+        	padding: .5rem;
+        	font: 1rem/1.2 sans-serif;
+        }
+
+        summary {
+        	padding: .25rem 1rem;
+        	background-color: #FFFFFF;
+        	font: bold 1.25rem/2 sans-serif;
+        	color:#2A62C5;
+        	border: none;
+        	border-radius: 5px;
+        	box-shadow: 1px 1px 1px 1px #A5A5A6;
+          	cursor: pointer;
+        	list-style: none;*/
+        }
+        /* Triangle not shown */
+        summary::-webkit-details-marker {
+        	display: none;
+        }
+        summary::before {
+        	padding-right: .25rem;
+        	content: '+ ';*/  /* Instead of Triangle closed */
+        }
+        details[open] summary::before {
+        	padding-right: .25rem;
+            box-shadow: 0 -1px 1px 1px #2A62C5;
+        	content: '- ';*/ /* Instead of Triangle open */
+        }
+
+        /* Styling the summary in case of open 'details' */
+        details[open] summary {
+        	border-radius: 5px 5px 0 0;
+            background-color: #2A62C5;
+            color: #ffffff;
+            box-shadow: 0 -1px 1px 1px #2A62C5;
+        }
+
+        .details-content {
+        	margin: 0;
+        	padding: .25rem 1rem;
+        	background-color: #ffffff;
+        	border-radius: 0px 0px 5px 5px;
+            box-shadow: 0 1px 1px 1px #2A62C5;
+          	color: #313133;
+        }
+        .details-content p {
+        	font: 1.1rem/1.5 sans-serif;
+        }
+
+
+        *{
+        	margin: 0;
+        	padding: 0;
+        	outline: 0;
+        }
+
+        body {
+            font-family: 'Roboto',sans-serif;
+            background: #e5ecf6;
+            color: #4b4b4d;
+        	padding: 5px;
+        	line-height: 24px;
+        	margin: 5px;
+        }
+
+
+        h1 {
+
+            font-size: 19px;
+            padding-top: 6px;
+        	padding-bottom: 6px;
+        }
+
+        h2 {
+
+            font-size: 16px;
+            line-height: 21px;
+        	padding-top: 6px;
+        	padding-bottom: 4px;
+        }
+
+        h3,h4,h5,h6 {
+            font-size: 15px;
+            line-height: 21px;
+        	margin: 8px 0 0 0;
+        }
+
+        a {
+            color: #0046aa;
+            text-decoration: none;
+        }
+
+        section {
+            padding-top: 5px;
+        	padding-right: 10px;
+        	padding-bottom: 5px;
+        	padding-left: 10px;
+        	display: block;
+        }
+
+        ul {
+        	padding-left: 13px;
+        	padding-right: 10px;
+        }
+        p {
+
+        	padding-top: 5px;
+        	padding-right: 2px;
+        	padding-bottom: 5px;
+        	padding-left: 1px;
+        	font-size: 15px;
+        }
+
+        #mainNavigation {
+            list-style-type: none;
+            display: block;
+            background: #fff;
+            border-top: 1px solid #7fa2d4;
+            border-bottom: 1px solid #7fa2d4;
+            margin-top: 25px;
+        	padding-left: 8px;
+        	padding-right: 8px;
+        }
+
+        #mainNavigation li {
+        	font-family: 'Roboto',sans-serif;
+            background: none;
+            margin: 0 0 -1px 5px;
+            border-bottom: 1px solid #7fa2d4;
+        }
+
+        #mainNavigation li last-child {
+            border-bottom: 0 solid #7fa2d4;
+        }
+
+        #mainNavigation li a {
+            line-height: 40px;
+            display: block;
+        	font-size: 15px;
+        }
+
+        ol {
+            padding: 0 0 0 20px;
+            margin: 0 0 0 0;
+        }
+
+        dd {
+            padding: 0 2px 0 15px;
+        }
+
+
+
+        li {
+        	font-size: 15px;
+        	padding-left: 2px;
+        }
+
+        #myBtn {
+          display: none;
+          position: fixed;
+          right: 20px;
+          bottom: 20px;
+          z-index: 99;
+          font-size: 18px;
+          border: none;
+          outline: none;
+          color: white;
+          cursor: pointer;
+          padding: 15px;
+          border-radius: 30px;
+          opacity: 0.4;
+        }
+
+        #myBtn:hover {
+          background-color: #555;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">&#8679;</button>
+    <h1>Was ist der 2SV Code?</h1>
+    <h2>Hier findest du alles zum 2SV Code der 2-Schritt-Verifizierung</h2>
+
+    <div class="details-wrapper">
+        <details>
+        <summary>Was ist der 2SV Code?</summary>
+        <div class="details-content">
+            <p>In einigen Situationen kannst du die Login-Anfragen nicht mit der Standardmethode genehmigen (d.h. durch eine Push Nachricht oder eine Nachricht innerhalb der App). Dann benötigst du den 2SV Code als alternative Methode zur Genehmigung. Hier erklären wir dir, in welchen Situationen du den 2SV Code brauchst.
+        </div><!-- end details-content -->
+    </details>
+    <details>
+        <summary>Wie funktioniert die 2-Schritt-Verifizierung beim Punkte Einlösen an der Kasse?</summary>
+        <div class="details-content">
+            <p> Wenn du an der Kasse Punkte einlöst, dann musst du den 2SV Code eingeben,
+            nachdem du deine (digitale) Karte gescannt hast. Gib den 2SV Code am Display
+            in das Feld ein, das "PIN" heißt.
+            </br>
+            Hiervon ausgenommen ist die Punkteeinlösung innerhalb der App! Dabei brauchst du keinen 2SV Code.</p>
+        </div>
+    </details>
+    <details>
+        <summary>Wie funktioniert die 2-Schritt-Verifizierung am Servicepunkt?</summary>
+        <div class="details-content">
+            <p> An den PAYBACK Servicepunkten in den Filialen von REWE, PENNY, real, Globus und Alnatura Super
+            Natur Markt kannst du den 2SV Code anstelle deiner bisherigen PIN nutzen.
+            </br>
+            Falls du ein Passwort verwendest, wirst du danach aufgefordert, dich mit der App zu authentifizieren, indem du eine Push-Nachricht bestätigst.
+            Möglicherweise kannst du das nicht tun, weil die Internetverbindung nicht stabil ist.
+            Dann kannst du stattdessen mit der Authentifizierung durch den 2SV Code fortfahren.</br>
+            Der 2SV Code funktioniert nämlich auch ohne Internetverbindung.</p>
+        </div>
+    </details>    
+    <details>
+        <summary>Wie sicher ist der 2SV Code?</summary>
+        <div class="details-content">
+            <p>Für größtmögliche Sicherheit wird alle 60 Sekunden automatisch ein neuer Code generiert. Nur mit dem jeweils aktuell gültigen Code aus deinem vertrauenswürdigen Gerät kannst du dich authentifizieren. 
+				Damit du an der Kasse nicht in Stress gerätst, wenn der aktuelle Code nur noch kurze Zeit gültig ist, kannst du dir auch schon früher einen neuen Code generieren lassen.
+			</p>
+        </div>
+    </details>
+
+    <script>
+      //Get the button
+      var mybutton = document.getElementById("myBtn");
+
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function() {scrollFunction()};
+
+      function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+              mybutton.style.display = "block";
+          } else {
+              mybutton.style.display = "none";
+          }
+      }
+
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+      }
+
+      var acc = document.getElementsByClassName("accordion");
+      var i;
+
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var panel = this.nextElementSibling;
+          if (panel.style.display === "block") {
+            panel.style.display = "none";
+          } else {
+            panel.style.display = "block";
+          }
+        });
+      }
+    </script>
+
+</body>
+</html>

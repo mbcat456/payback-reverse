@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/trusted_devices_authenticate_nav_graph" app:startDestination="@id/trusted_devices_authenticate_confirm_dest"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:name="payback.feature.trusteddevices.implementation.ui.authenticate.approval.review.AuthenticationReviewFragment" android:id="@id/trusted_devices_authenticate_confirm_dest">
+        <argument android:name="pendingRequest" app:argType="de.payback.core.api.data.PendingAuthorizationRequest" />
+        <action android:id="@id/to_deny" app:destination="@id/trusted_devices_authenticate_deny_dest" app:enterAnim="@animator/pb_fragment_fade_enter" app:exitAnim="@animator/pb_fragment_fade_exit" app:popEnterAnim="@animator/pb_fragment_fade_enter" app:popExitAnim="@animator/pb_fragment_fade_exit" />
+        <action android:id="@id/to_accept" app:destination="@id/trusted_devices_authenticate_accept_dest" app:enterAnim="@animator/pb_fragment_fade_enter" app:exitAnim="@animator/pb_fragment_fade_exit" app:popEnterAnim="@animator/pb_fragment_fade_enter" app:popExitAnim="@animator/pb_fragment_fade_exit" />
+    </fragment>
+    <fragment android:name="payback.feature.trusteddevices.implementation.ui.authenticate.approval.deny.AuthenticationDeniedFragment" android:id="@id/trusted_devices_authenticate_deny_dest" />
+    <fragment android:name="payback.feature.trusteddevices.implementation.ui.authenticate.approval.accept.AuthenticationApprovedFragment" android:id="@id/trusted_devices_authenticate_accept_dest" />
+    <fragment android:label="@string/mfa_requestlist_title" android:name="payback.feature.trusteddevices.implementation.ui.management.pendingrequests.PendingRequestsFragment" android:id="@id/pending_requests_dest">
+        <argument android:name="pendingRequests" app:argType="de.payback.core.api.data.PendingAuthorizationRequest[]" />
+        <action android:id="@id/to_pending_request" app:destination="@id/trusted_devices_authenticate_confirm_dest" app:enterAnim="@animator/pb_fragment_fade_enter" app:exitAnim="@animator/pb_fragment_fade_exit" app:popEnterAnim="@animator/pb_fragment_fade_enter" app:popExitAnim="@animator/pb_fragment_fade_exit" app:popUpTo="@id/trusted_devices_push_login_info_dest" app:popUpToInclusive="true" />
+    </fragment>
+    <fragment android:name="payback.feature.trusteddevices.implementation.ui.push.PushLoginInfoFragment" android:id="@id/trusted_devices_push_login_info_dest">
+        <action android:id="@id/to_pending_requests" app:destination="@id/pending_requests_dest" app:enterAnim="@animator/pb_fragment_fade_enter" app:exitAnim="@animator/pb_fragment_fade_exit" app:popEnterAnim="@animator/pb_fragment_fade_enter" app:popExitAnim="@animator/pb_fragment_fade_exit" app:popUpTo="@id/trusted_devices_push_login_info_dest" app:popUpToInclusive="true" />
+        <action android:id="@id/to_pending_request" app:destination="@id/trusted_devices_authenticate_confirm_dest" app:enterAnim="@animator/pb_fragment_fade_enter" app:exitAnim="@animator/pb_fragment_fade_exit" app:popEnterAnim="@animator/pb_fragment_fade_enter" app:popExitAnim="@animator/pb_fragment_fade_exit" app:popUpTo="@id/trusted_devices_push_login_info_dest" app:popUpToInclusive="true" />
+    </fragment>
+</navigation>

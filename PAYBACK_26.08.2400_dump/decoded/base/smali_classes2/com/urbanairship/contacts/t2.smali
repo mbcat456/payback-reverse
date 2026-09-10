@@ -1,0 +1,154 @@
+.class public final Lcom/urbanairship/contacts/t2;
+.super Lcom/urbanairship/contacts/y2;
+.source "r8-map-id-c6e95f02a960cec3b4177d8b5b818c3f23768df7db706782552fe3d06a1d57cb"
+
+
+# instance fields
+.field public final c:Lcom/urbanairship/contacts/v0;
+
+
+# direct methods
+.method public constructor <init>(Lcom/urbanairship/json/JsonValue;)V
+    .locals 2
+
+    .prologue
+    .line 1
+    sget-object v0, Lcom/urbanairship/contacts/v0;->Companion:Lcom/urbanairship/contacts/k0;
+
+    .line 3
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 6
+    invoke-static {p1}, Lcom/urbanairship/contacts/k0;->a(Lcom/urbanairship/json/JsonValue;)Lcom/urbanairship/contacts/v0;
+
+    .line 9
+    move-result-object p1
+
+    .line 10
+    sget-object v0, Lcom/urbanairship/contacts/ContactOperation$Type;->RESEND:Lcom/urbanairship/contacts/ContactOperation$Type;
+
+    .line 12
+    sget-object v1, Lcom/urbanairship/json/JsonValue;->Companion:Lcom/urbanairship/json/l;
+
+    .line 14
+    invoke-virtual {v1, p1}, Lcom/urbanairship/json/l;->i(Ljava/lang/Object;)Lcom/urbanairship/json/JsonValue;
+
+    .line 17
+    move-result-object v1
+
+    .line 18
+    invoke-direct {p0, v0, v1}, Lcom/urbanairship/contacts/y2;-><init>(Lcom/urbanairship/contacts/ContactOperation$Type;Lcom/urbanairship/json/JsonValue;)V
+
+    .line 21
+    iput-object p1, p0, Lcom/urbanairship/contacts/t2;->c:Lcom/urbanairship/contacts/v0;
+
+    .line 23
+    return-void
+.end method
+
+
+# virtual methods
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 3
+
+    .prologue
+    .line 1
+    const/4 v0, 0x1
+
+    .line 2
+    if-ne p0, p1, :cond_0
+
+    .line 4
+    return v0
+
+    .line 5
+    :cond_0
+    instance-of v1, p1, Lcom/urbanairship/contacts/t2;
+
+    .line 7
+    const/4 v2, 0x0
+
+    .line 8
+    if-nez v1, :cond_1
+
+    .line 10
+    return v2
+
+    .line 11
+    :cond_1
+    check-cast p1, Lcom/urbanairship/contacts/t2;
+
+    .line 13
+    iget-object p0, p0, Lcom/urbanairship/contacts/t2;->c:Lcom/urbanairship/contacts/v0;
+
+    .line 15
+    iget-object p1, p1, Lcom/urbanairship/contacts/t2;->c:Lcom/urbanairship/contacts/v0;
+
+    .line 17
+    invoke-static {p0, p1}, Lkotlin/jvm/internal/r;->d(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 20
+    move-result p0
+
+    .line 21
+    if-nez p0, :cond_2
+
+    .line 23
+    return v2
+
+    .line 24
+    :cond_2
+    return v0
+.end method
+
+.method public final hashCode()I
+    .locals 0
+
+    .prologue
+    .line 1
+    iget-object p0, p0, Lcom/urbanairship/contacts/t2;->c:Lcom/urbanairship/contacts/v0;
+
+    .line 3
+    invoke-virtual {p0}, Ljava/lang/Object;->hashCode()I
+
+    .line 6
+    move-result p0
+
+    .line 7
+    return p0
+.end method
+
+.method public final toString()Ljava/lang/String;
+    .locals 2
+
+    .prologue
+    .line 1
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    .line 3
+    const-string v1, "Resend(channel="
+
+    .line 5
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    .line 8
+    iget-object p0, p0, Lcom/urbanairship/contacts/t2;->c:Lcom/urbanairship/contacts/v0;
+
+    .line 10
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    .line 13
+    const-string p0, ")"
+
+    .line 15
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 18
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 21
+    move-result-object p0
+
+    .line 22
+    return-object p0
+.end method

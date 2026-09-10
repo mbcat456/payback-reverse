@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/trusted_device_authenticate_pending_nav_graph" app:startDestination="@id/trusted_devices_authentication_recovery_choice_dest"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include app:graph="@navigation/trusted_devices_nav_graph" />
+    <fragment android:name="payback.feature.trusteddevices.implementation.ui.authenticate.recovery.choice.AuthenticationRecoveryChoiceFragment" android:id="@id/trusted_devices_authentication_recovery_choice_dest">
+        <argument android:name="multifactorAuthentication" app:argType="de.payback.core.api.data.MultifactorAuthentication" />
+        <argument android:name="membershipIdentifier" app:argType="string" />
+        <action android:id="@id/to_recovery_sms" app:destination="@id/trusted_devices_recovery_sms_code_entry_dest" app:enterAnim="@animator/pb_fragment_fade_enter" app:exitAnim="@animator/pb_fragment_fade_exit" app:popEnterAnim="@animator/pb_fragment_fade_enter" app:popExitAnim="@animator/pb_fragment_fade_exit" />
+        <action android:id="@id/to_recovery_post" app:destination="@id/trusted_devices_recovery_postal_recovery_dest" app:enterAnim="@animator/pb_fragment_fade_enter" app:exitAnim="@animator/pb_fragment_fade_exit" app:popEnterAnim="@animator/pb_fragment_fade_enter" app:popExitAnim="@animator/pb_fragment_fade_exit" />
+    </fragment>
+    <fragment android:name="payback.feature.trusteddevices.implementation.ui.authenticate.recovery.postal.requestcode.PostalRecoveryCodeFragment" android:id="@id/trusted_devices_recovery_postal_recovery_dest">
+        <argument android:name="multifactorAuthentication" app:argType="de.payback.core.api.data.MultifactorAuthentication" />
+        <argument android:name="obfuscatedMemberPostalAddress" app:argType="de.payback.core.api.data.ObfuscatedMemberPostalAddress" />
+        <argument android:name="membershipIdentifier" app:argType="string" />
+        <action android:id="@id/to_postal_recovery_code_entry" app:destination="@id/trusted_devices_recovery_postal_code_entry_dest" app:enterAnim="@animator/pb_fragment_fade_enter" app:exitAnim="@animator/pb_fragment_fade_exit" app:popEnterAnim="@animator/pb_fragment_fade_enter" app:popExitAnim="@animator/pb_fragment_fade_exit" />
+        <action android:id="@id/to_new_recovery_code_letter_requested" app:destination="@id/trusted_devices_postal_new_recovery_code_requested_dest" app:enterAnim="@animator/pb_fragment_fade_enter" app:exitAnim="@animator/pb_fragment_fade_exit" app:popEnterAnim="@animator/pb_fragment_fade_enter" app:popExitAnim="@animator/pb_fragment_fade_exit" />
+    </fragment>
+    <fragment android:name="payback.feature.trusteddevices.implementation.ui.authenticate.recovery.postal.entry.PostalCodeEntryFragment" android:id="@id/trusted_devices_recovery_postal_code_entry_dest">
+        <argument android:name="multifactorAuthentication" app:argType="de.payback.core.api.data.MultifactorAuthentication" />
+        <argument android:name="membershipIdentifier" app:argType="string" />
+        <action android:id="@id/to_postal_recovery_code_success" app:destination="@id/trusted_devices_recovery_success_dest" app:enterAnim="@animator/pb_fragment_fade_enter" app:exitAnim="@animator/pb_fragment_fade_exit" app:popEnterAnim="@animator/pb_fragment_fade_enter" app:popExitAnim="@animator/pb_fragment_fade_exit" app:popUpTo="@id/trusted_devices_authentication_recovery_choice_dest" app:popUpToInclusive="true" />
+    </fragment>
+    <fragment android:name="payback.feature.trusteddevices.implementation.ui.authenticate.recovery.postal.coderequested.PostalCodeRequestedFragment" android:id="@id/trusted_devices_postal_new_recovery_code_requested_dest" />
+    <fragment android:name="payback.feature.trusteddevices.implementation.ui.authenticate.recovery.sms.RecoverySmsCodeEntryFragment" android:id="@id/trusted_devices_recovery_sms_code_entry_dest">
+        <argument android:name="multifactorAuthentication" app:argType="de.payback.core.api.data.MultifactorAuthentication" />
+        <argument android:name="membershipIdentifier" app:argType="string" />
+        <argument android:name="recoveryPhoneNumber" app:argType="string" />
+        <action android:id="@id/to_recovery_success_dest" app:destination="@id/trusted_devices_recovery_success_dest" app:enterAnim="@animator/pb_fragment_fade_enter" app:exitAnim="@animator/pb_fragment_fade_exit" app:popEnterAnim="@animator/pb_fragment_fade_enter" app:popExitAnim="@animator/pb_fragment_fade_exit" app:popUpTo="@id/trusted_devices_authentication_recovery_choice_dest" app:popUpToInclusive="true" />
+    </fragment>
+    <fragment android:name="payback.feature.trusteddevices.implementation.ui.authenticate.recovery.success.RecoverySuccessFragment" android:id="@id/trusted_devices_recovery_success_dest">
+        <argument android:name="standardAuthentication" app:argType="de.payback.core.api.data.StandardAuthentication" />
+        <action android:id="@id/to_confirm_deactivation" app:destination="@id/trusted_devices_confirm_deactivation_dest" app:enterAnim="@animator/pb_fragment_fade_enter" app:exitAnim="@animator/pb_fragment_fade_exit" app:popEnterAnim="@animator/pb_fragment_fade_enter" app:popExitAnim="@animator/pb_fragment_fade_exit" />
+        <action android:id="@id/to_add_device_from_recovery" app:destination="@id/trusted_devices_nav_graph" app:enterAnim="@animator/pb_fragment_fade_enter" app:exitAnim="@animator/pb_fragment_fade_exit" app:popEnterAnim="@animator/pb_fragment_fade_enter" app:popExitAnim="@animator/pb_fragment_fade_exit">
+            <argument android:name="standardAuthentication" app:argType="de.payback.core.api.data.StandardAuthentication" />
+        </action>
+    </fragment>
+    <dialog android:name="payback.feature.trusteddevices.implementation.ui.management.deactivate.ConfirmDeactivationDialogFragment" android:id="@id/trusted_devices_confirm_deactivation_dest">
+        <argument android:name="standardAuthentication" app:argType="de.payback.core.api.data.StandardAuthentication" app:nullable="true" />
+    </dialog>
+</navigation>

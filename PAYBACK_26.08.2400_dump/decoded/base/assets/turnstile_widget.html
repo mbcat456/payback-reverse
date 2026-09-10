@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+    <title>Testing Turnstile</title>
+</head>
+<body style="margin: 0;">
+<div class="cf-turnstile"
+     data-sitekey="{{SITE_KEY}}"
+     data-callback="onTokenReceived"
+     data-language="{{LANGUAGE_CODE}}"
+     data-expired-callback="onTokenExpired"
+     data-error-callback="onWidgetError"
+     data-size="flexible"
+     data-theme="auto">
+</div>
+<script>
+    function onTokenReceived(token) {
+      AndroidInterface.onTokenReceived(token);
+    }
+    function onTokenExpired() {
+      AndroidInterface.onTokenExpired();
+    }
+    function onWidgetError(error) {
+      AndroidInterface.onWidgetError(error);
+    }
+</script>
+</body>
+</html>

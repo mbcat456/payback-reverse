@@ -1,0 +1,1007 @@
+{
+  "count": 167,
+  "urls": [
+    {
+      "file": "de\\payback\\app\\environments\\austria\\a.java",
+      "line": 18,
+      "token": ".",
+      "url": "https://images.payback.at/images/channel-resources/1/partnerlogos/"
+    },
+    {
+      "file": "de\\payback\\app\\environments\\austria\\a.java",
+      "line": 22,
+      "token": "2",
+      "url": "https://www.payback.de/praemien/punkteverfall?inappheader=true&incid=07_24685_001"
+    },
+    {
+      "file": "de\\payback\\app\\environments\\austria\\a.java",
+      "line": 25,
+      "token": "5",
+      "url": "https://praemien.payback.at?inappheader=true"
+    },
+    {
+      "file": "de\\payback\\app\\environments\\austria\\a.java",
+      "line": 26,
+      "token": "6",
+      "url": "https://www.payback.at/ba/faq/faq-kategory-7"
+    },
+    {
+      "file": "de\\payback\\app\\environments\\austria\\a.java",
+      "line": 27,
+      "token": "7",
+      "url": "https://images.payback.at/media/global/channel-resources/config/mobile/"
+    },
+    {
+      "file": "de\\payback\\app\\environments\\austria\\a.java",
+      "line": 38,
+      "token": "H",
+      "url": "https://e1et-images.payback.at/images/channel-resources/1/partnerlogos/"
+    },
+    {
+      "file": "de\\payback\\app\\environments\\austria\\a.java",
+      "line": 43,
+      "token": "G",
+      "url": "https://e1et-images.payback.at/images/channel-resources/1/mobile/"
+    },
+    {
+      "file": "de\\payback\\app\\environments\\austria\\a.java",
+      "line": 80,
+      "token": "F",
+      "url": "https://e1et-www.payback.at/"
+    },
+    {
+      "file": "de\\payback\\app\\environments\\austria\\a.java",
+      "line": 90,
+      "token": "E",
+      "url": "https://e1et-images.payback.at/media/global/channel-resources/config/mobile/"
+    },
+    {
+      "file": "de\\payback\\app\\environments\\austria\\a.java",
+      "line": 103,
+      "token": "C",
+      "url": "https://images.payback.at/media/global/channel-resources/image/go-checkin/%s_android.png"
+    },
+    {
+      "file": "de\\payback\\app\\environments\\austria\\a.java",
+      "line": 108,
+      "token": "B",
+      "url": "https://images.payback.at/images/channel-resources/1/mobile/"
+    },
+    {
+      "file": "de\\payback\\app\\environments\\austria\\a.java",
+      "line": 145,
+      "token": "A",
+      "url": "https://www.payback.at/"
+    },
+    {
+      "file": "de\\payback\\app\\environments\\austria\\a.java",
+      "line": 169,
+      "token": ">",
+      "url": "https://www.payback.de/praemien/produkt/"
+    },
+    {
+      "file": "de\\payback\\app\\environments\\austria\\a.java",
+      "line": 175,
+      "token": "=",
+      "url": "https://www.tst1.pb-nonprod.de/resources/content/site-mobile/force-update/v2/android/json"
+    },
+    {
+      "file": "de\\payback\\app\\environments\\austria\\a.java",
+      "line": 178,
+      "token": "<",
+      "url": "https://www.payback.de/pb/res/mam"
+    },
+    {
+      "file": "de\\payback\\app\\environments\\austria\\a.java",
+      "line": 181,
+      "token": ";",
+      "url": "https://www.payback.de/pb/res/mam/1/%s/123/1/1/%s.png"
+    },
+    {
+      "file": "de\\payback\\app\\environments\\austria\\a.java",
+      "line": 184,
+      "token": ":",
+      "url": "https://www.payback.de/pb/res/mam/partner/1/%s/59/0/1/%s.png"
+    },
+    {
+      "file": "de\\payback\\app\\environments\\austria\\a.java",
+      "line": 187,
+      "token": "9",
+      "url": "https://www.payback.de/pb/res/mam/1/%s/43/1/1/"
+    },
+    {
+      "file": "de\\payback\\app\\environments\\austria\\a.java",
+      "line": 190,
+      "token": "8",
+      "url": "https://www.payback.de/resources/content/site-mobile/force-update/v2/android/json"
+    },
+    {
+      "file": "de\\payback\\app\\environments\\austria\\c.java",
+      "line": 25,
+      "token": "I",
+      "url": "https://www.payback.at/site-mobile/campaigns/service-section/payback-coupons?access-code=[math.access-code]&MemberID=[user.referenceId]"
+    },
+    {
+      "file": "de\\payback\\app\\environments\\austria\\c.java",
+      "line": 27,
+      "token": "J",
+      "url": "https://www.payback.at/kontakt?access-code=[math.access-code]"
+    },
+    {
+      "file": "de\\payback\\app\\environments\\austria\\c.java",
+      "line": 29,
+      "token": "K",
+      "url": "https://praemien.payback.at/?searchTerm=unicef"
+    },
+    {
+      "file": "de\\payback\\app\\environments\\austria\\c.java",
+      "line": 31,
+      "token": "L",
+      "url": "https://www.payback.at/site-mobile/campaigns/service-section/payback-guide?access-code=[math.access-code]&MemberID=[user.referenceId]"
+    },
+    {
+      "file": "de\\payback\\app\\environments\\austria\\c.java",
+      "line": 36,
+      "token": "P",
+      "url": "https://mobile.payback.at/"
+    },
+    {
+      "file": "de\\payback\\app\\environments\\austria\\c.java",
+      "line": 36,
+      "token": "S",
+      "url": "https://www.payback.at/site-mobile/pin/onboardingtrack"
+    },
+    {
+      "file": "de\\payback\\app\\environments\\austria\\c.java",
+      "line": 44,
+      "token": "^",
+      "url": "https://e1et-www.payback.at/site-mobile/campaigns/service-section/payback-coupons?access-code=[math.access-code]&MemberID=[user.referenceId]"
+    },
+    {
+      "file": "de\\payback\\app\\environments\\austria\\c.java",
+      "line": 44,
+      "token": "_",
+      "url": "https://e1et-www.payback.at/kontakt?access-code=[math.access-code]"
+    },
+    {
+      "file": "de\\payback\\app\\environments\\austria\\c.java",
+      "line": 44,
+      "token": "`",
+      "url": "https://e1et-praemien.payback.at/?searchTerm=unicef"
+    },
+    {
+      "file": "de\\payback\\app\\environments\\austria\\c.java",
+      "line": 44,
+      "token": "a",
+      "url": "https://e1et-www.payback.at/site-mobile/campaigns/service-section/payback-guide?access-code=[math.access-code]&MemberID=[user.referenceId]"
+    },
+    {
+      "file": "de\\payback\\app\\environments\\austria\\c.java",
+      "line": 46,
+      "token": "c",
+      "url": "https://e1et-mobile.payback.at/"
+    },
+    {
+      "file": "de\\payback\\app\\environments\\austria\\c.java",
+      "line": 46,
+      "token": "d",
+      "url": "https://e1et-praemien.payback.at?inappheader=true"
+    },
+    {
+      "file": "de\\payback\\app\\environments\\austria\\e.java",
+      "line": 20,
+      "token": "o",
+      "url": "https://api.ext.payback.cloud"
+    },
+    {
+      "file": "de\\payback\\app\\environments\\austria\\e.java",
+      "line": 20,
+      "token": "p",
+      "url": "https://mobile.pww-rtc-prod.pbext.io"
+    },
+    {
+      "file": "de\\payback\\app\\environments\\austria\\e.java",
+      "line": 20,
+      "token": "q",
+      "url": "https://mobile.pww-ccv-prod.pbext.io"
+    },
+    {
+      "file": "de\\payback\\app\\environments\\austria\\e.java",
+      "line": 20,
+      "token": "r",
+      "url": "https://cdn.payback.cloud"
+    },
+    {
+      "file": "de\\payback\\app\\environments\\austria\\e.java",
+      "line": 32,
+      "token": "u",
+      "url": "https://images.payback.at/media/global/channel-resources/config/mobile/at/drawer-config/android.json"
+    },
+    {
+      "file": "de\\payback\\app\\environments\\austria\\e.java",
+      "line": 49,
+      "token": "v",
+      "url": "https://stable.api-nonprod.ext.payback.cloud"
+    },
+    {
+      "file": "de\\payback\\app\\environments\\austria\\e.java",
+      "line": 49,
+      "token": "w",
+      "url": "https://mobile.pww-rtc-nonprod.pbext.io"
+    },
+    {
+      "file": "de\\payback\\app\\environments\\austria\\e.java",
+      "line": 49,
+      "token": "x",
+      "url": "https://mobile.pww-ccv-nonprod.pbext.io"
+    },
+    {
+      "file": "de\\payback\\app\\environments\\austria\\e.java",
+      "line": 49,
+      "token": "y",
+      "url": "https://cdn-nonprod.payback.cloud"
+    },
+    {
+      "file": "de\\payback\\app\\environments\\germany\\b.java",
+      "line": 17,
+      "token": "}",
+      "url": "https://e1et-images.payback.it/images/channel-resources/1/partnerlogos/"
+    },
+    {
+      "file": "de\\payback\\app\\environments\\germany\\b.java",
+      "line": 18,
+      "token": "~",
+      "url": "https://e1et-images.payback.it/images/channel-resources/1/coupons/"
+    },
+    {
+      "file": "de\\payback\\app\\environments\\germany\\b.java",
+      "line": 20,
+      "token": "",
+      "url": "https://www.tst1.pb-nonprod.de/pb/res/mam/1/"
+    },
+    {
+      "file": "de\\payback\\app\\environments\\germany\\b.java",
+      "line": 21,
+      "token": "",
+      "url": "https://www.tst4.pb-nonprod.de/res/mam/1/"
+    },
+    {
+      "file": "de\\payback\\app\\environments\\germany\\b.java",
+      "line": 26,
+      "token": "",
+      "url": "https://www.payback.de/res/mam/1/"
+    },
+    {
+      "file": "de\\payback\\app\\environments\\germany\\b.java",
+      "line": 50,
+      "token": "",
+      "url": "https://assets-nonprod.payback.de/json-configs/rewards-drawer-android"
+    },
+    {
+      "file": "de\\payback\\app\\environments\\germany\\b.java",
+      "line": 50,
+      "token": "",
+      "url": "https://www.tst1.pb-nonprod.de/resources/content/site-demo/drawer-config/v1/android/json"
+    },
+    {
+      "file": "de\\payback\\app\\environments\\germany\\b.java",
+      "line": 102,
+      "token": "",
+      "url": "https://images.payback.it/media/global/channel-resources/config/mobile/drawer-config/android.json"
+    },
+    {
+      "file": "de\\payback\\app\\environments\\germany\\b.java",
+      "line": 106,
+      "token": "",
+      "url": "https://e1et-images.payback.it/media/global/channel-resources/config/mobile/drawer-config/android.json"
+    },
+    {
+      "file": "de\\payback\\app\\environments\\germany\\b.java",
+      "line": 109,
+      "token": "",
+      "url": "https://e1et-images.payback.it/media/global/channel-resources/config/mobile/3/digitalshopsdetails/"
+    },
+    {
+      "file": "de\\payback\\app\\environments\\germany\\b.java",
+      "line": 118,
+      "token": "",
+      "url": "https://images.payback.it/images/channel-resources/1/coupons/"
+    },
+    {
+      "file": "de\\payback\\app\\environments\\germany\\b.java",
+      "line": 127,
+      "token": "",
+      "url": "https://e1et-images.payback.it/media/global/channel-resources/image/mobilecategory/"
+    },
+    {
+      "file": "de\\payback\\app\\environments\\germany\\b.java",
+      "line": 130,
+      "token": "",
+      "url": "https://e1et-images.payback.it/media/global/channel-resources/image/category-icons/"
+    },
+    {
+      "file": "de\\payback\\app\\environments\\germany\\b.java",
+      "line": 133,
+      "token": "",
+      "url": "https://images.payback.it/media/global/channel-resources/config/mobile/3/digitalshopsdetails/"
+    },
+    {
+      "file": "de\\payback\\app\\environments\\germany\\b.java",
+      "line": 136,
+      "token": "",
+      "url": "https://images.payback.it/images/channel-resources/1/partnerlogos/"
+    },
+    {
+      "file": "de\\payback\\app\\environments\\germany\\c.java",
+      "line": 16,
+      "token": "",
+      "url": "https://payback-gutscheine-test.demu1wgw.epayworldwide.com/gutschein/produkt/"
+    },
+    {
+      "file": "de\\payback\\app\\environments\\germany\\c.java",
+      "line": 17,
+      "token": "",
+      "url": "https://www.tst1.pb-nonprod.de/praemien/produkt/"
+    },
+    {
+      "file": "de\\payback\\app\\environments\\germany\\c.java",
+      "line": 18,
+      "token": "",
+      "url": "https://checkout.payback.de/pub/media/brands/"
+    },
+    {
+      "file": "de\\payback\\app\\environments\\germany\\c.java",
+      "line": 19,
+      "token": "",
+      "url": "https://checkout.payback.de/pub/media/catalog/product"
+    },
+    {
+      "file": "de\\payback\\app\\environments\\germany\\c.java",
+      "line": 24,
+      "token": "¤",
+      "url": "https://www.tst1.pb-nonprod.de/site-demo/test-enrollment/test-enrollment-android"
+    },
+    {
+      "file": "de\\payback\\app\\environments\\germany\\c.java",
+      "line": 58,
+      "token": "£",
+      "url": "https://www.tst4.pb-nonprod.de/site-demo/test-enrollment/test-enrollment-android"
+    },
+    {
+      "file": "de\\payback\\app\\environments\\germany\\c.java",
+      "line": 77,
+      "token": "¢",
+      "url": "https://www.payback.de/anmelden/android"
+    },
+    {
+      "file": "de\\payback\\app\\environments\\germany\\c.java",
+      "line": 89,
+      "token": "¡",
+      "url": "https://gutscheine.payback.de/gutschein/produkt/"
+    },
+    {
+      "file": "de\\payback\\app\\environments\\germany\\c.java",
+      "line": 92,
+      "token": " ",
+      "url": "https://assets.payback.de/json-configs/time-triggered-theming"
+    },
+    {
+      "file": "de\\payback\\app\\environments\\germany\\c.java",
+      "line": 95,
+      "token": "",
+      "url": "https://assets.payback.de/json-configs/1/product-tiles-android"
+    },
+    {
+      "file": "de\\payback\\app\\environments\\germany\\c.java",
+      "line": 98,
+      "token": "",
+      "url": "https://assets-nonprod.payback.de/json-configs/time-triggered-theming"
+    },
+    {
+      "file": "de\\payback\\app\\environments\\germany\\c.java",
+      "line": 101,
+      "token": "",
+      "url": "https://assets-nonprod.payback.de/json-configs/1/product-tiles-android"
+    },
+    {
+      "file": "de\\payback\\app\\environments\\germany\\c.java",
+      "line": 115,
+      "token": "",
+      "url": "https://e1et-images.payback.it/media/global/channel-resources/config/mobile/3/digitalshops.json"
+    },
+    {
+      "file": "de\\payback\\app\\environments\\germany\\c.java",
+      "line": 118,
+      "token": "",
+      "url": "https://pb2go.payback.net/forceupdate/force_app_update_it.json"
+    },
+    {
+      "file": "de\\payback\\app\\environments\\germany\\c.java",
+      "line": 121,
+      "token": "",
+      "url": "https://e1et-images.payback.it/images/channel-resources"
+    },
+    {
+      "file": "de\\payback\\app\\environments\\germany\\c.java",
+      "line": 124,
+      "token": "",
+      "url": "https://e1et-images.payback.it/media/global/channel-resources/image/go-checkin/%s.png"
+    },
+    {
+      "file": "de\\payback\\app\\environments\\germany\\d.java",
+      "line": 23,
+      "token": "¥",
+      "url": "https://www.payback.de/spendenwelt?inappheader=true"
+    },
+    {
+      "file": "de\\payback\\app\\environments\\germany\\d.java",
+      "line": 26,
+      "token": "¦",
+      "url": "https://produkte.payback.de/oauth?incid=08_25362_001"
+    },
+    {
+      "file": "de\\payback\\app\\environments\\germany\\d.java",
+      "line": 31,
+      "token": "«",
+      "url": "https://services-ext.payback.de/"
+    },
+    {
+      "file": "de\\payback\\app\\environments\\germany\\d.java",
+      "line": 31,
+      "token": "¬",
+      "url": "https://www.payback.de/praemien?inappheader=true&cxcid=dsa:android:rewards:more&login=pwd&ucs=[user.cardnumber-short]&incid=[pb_camp_int]&excid=[pb_camp_ext]"
+    },
+    {
+      "file": "de\\payback\\app\\environments\\germany\\d.java",
+      "line": 31,
+      "token": "­",
+      "url": "https://www.payback.de/login"
+    },
+    {
+      "file": "de\\payback\\app\\environments\\germany\\d.java",
+      "line": 31,
+      "token": "®",
+      "url": "https://www.payback.de/site-mobile/change-email"
+    },
+    {
+      "file": "de\\payback\\app\\environments\\germany\\d.java",
+      "line": 31,
+      "token": "¯",
+      "url": "https://www.payback.de/info/american-express/doppeltpunkten"
+    },
+    {
+      "file": "de\\payback\\app\\environments\\germany\\d.java",
+      "line": 31,
+      "token": "°",
+      "url": "https://m.payback.de/re/?id=invitation_info"
+    },
+    {
+      "file": "de\\payback\\app\\environments\\germany\\d.java",
+      "line": 31,
+      "token": "±",
+      "url": "https://m.payback.de/re/?id=invitation_faq"
+    },
+    {
+      "file": "de\\payback\\app\\environments\\germany\\d.java",
+      "line": 31,
+      "token": "²",
+      "url": "https://www.payback.de/app/login-hilfe?cxcid=dsa:android:loginhilfe"
+    },
+    {
+      "file": "de\\payback\\app\\environments\\germany\\d.java",
+      "line": 31,
+      "token": "ª",
+      "url": "https://www.payback.de/praemien/meine-bestellungen"
+    },
+    {
+      "file": "de\\payback\\app\\environments\\germany\\d.java",
+      "line": 40,
+      "token": "½",
+      "url": "https://paybackproducts-payback.frontend.site/de/oauth"
+    },
+    {
+      "file": "de\\payback\\app\\environments\\germany\\d.java",
+      "line": 43,
+      "token": "¿",
+      "url": "https://services-ext.tst1.pb-nonprod.de/"
+    },
+    {
+      "file": "de\\payback\\app\\environments\\germany\\d.java",
+      "line": 43,
+      "token": "À",
+      "url": "https://www.tst1.pb-nonprod.de/rewards-shop?inappheader=true&cxcid=dsa:android:rewards:more&login=pwd&incid=[pb_camp_int]&excid=[pb_camp_ext]"
+    },
+    {
+      "file": "de\\payback\\app\\environments\\germany\\d.java",
+      "line": 43,
+      "token": "Á",
+      "url": "https://www.tst1.pb-nonprod.de/login"
+    },
+    {
+      "file": "de\\payback\\app\\environments\\germany\\d.java",
+      "line": 43,
+      "token": "Â",
+      "url": "https://www.tst1.pb-nonprod.de/site-demo/mobile/change-email"
+    },
+    {
+      "file": "de\\payback\\app\\environments\\germany\\d.java",
+      "line": 43,
+      "token": "Ã",
+      "url": "https://www.tst1.pb-nonprod.de/site-demo-mobile/secondenrollmentinvitation"
+    },
+    {
+      "file": "de\\payback\\app\\environments\\germany\\d.java",
+      "line": 55,
+      "token": "Ë",
+      "url": "https://services-ext.tst4.pb-nonprod.de/"
+    },
+    {
+      "file": "de\\payback\\app\\environments\\germany\\d.java",
+      "line": 55,
+      "token": "Ì",
+      "url": "https://www.tst1.pb-nonprod.de/onsflows/404"
+    },
+    {
+      "file": "de\\payback\\app\\environments\\germany\\d.java",
+      "line": 55,
+      "token": "Í",
+      "url": "https://www.tst4.pb-nonprod.de/login"
+    },
+    {
+      "file": "de\\payback\\app\\environments\\germany\\d.java",
+      "line": 55,
+      "token": "Î",
+      "url": "https://www.tst1.pb-nonprod.de/site-demo/usermanagement-demo/secondenrollmentinvitation"
+    },
+    {
+      "file": "de\\payback\\app\\environments\\germany\\f.java",
+      "line": 30,
+      "token": "Ý",
+      "url": "https://assets.payback.de/json-configs/rewards-drawer-android"
+    },
+    {
+      "file": "de\\payback\\app\\environments\\germany\\f.java",
+      "line": 30,
+      "token": "Þ",
+      "url": "https://gutscheine.payback.de"
+    },
+    {
+      "file": "de\\payback\\app\\environments\\germany\\f.java",
+      "line": 62,
+      "token": "å",
+      "url": "https://coupon-center-dev-xokjrnz4ja-ey.a.run.app"
+    },
+    {
+      "file": "de\\payback\\app\\environments\\germany\\f.java",
+      "line": 62,
+      "token": "æ",
+      "url": "https://dev.api-nonprod.ext.payback.cloud"
+    },
+    {
+      "file": "de\\payback\\app\\environments\\italy\\a.java",
+      "line": 17,
+      "token": "ç",
+      "url": "https://shop.payback.it/"
+    },
+    {
+      "file": "de\\payback\\app\\environments\\italy\\a.java",
+      "line": 18,
+      "token": "è",
+      "url": "https://images.payback.it/media/global/channel-resources/config/mobile/3/digitalshops.json"
+    },
+    {
+      "file": "de\\payback\\app\\environments\\italy\\a.java",
+      "line": 19,
+      "token": "é",
+      "url": "https://images.payback.it/media/global/channel-resources/config/mobile/3/categories.json"
+    },
+    {
+      "file": "de\\payback\\app\\environments\\italy\\a.java",
+      "line": 20,
+      "token": "ê",
+      "url": "https://tst2-sklep.payback.pl/odbieraj-nagrody?inapp=true"
+    },
+    {
+      "file": "de\\payback\\app\\environments\\italy\\a.java",
+      "line": 27,
+      "token": "Ā",
+      "url": "https://e1et-images.payback.it/images/channel-resources/1/%s/25/1/1"
+    },
+    {
+      "file": "de\\payback\\app\\environments\\italy\\a.java",
+      "line": 30,
+      "token": "ÿ",
+      "url": "https://e1et-images.payback.it/images/channel-resources/1/%s/60/1/1"
+    },
+    {
+      "file": "de\\payback\\app\\environments\\italy\\a.java",
+      "line": 39,
+      "token": "þ",
+      "url": "https://e1et-www.payback.it/register-app"
+    },
+    {
+      "file": "de\\payback\\app\\environments\\italy\\a.java",
+      "line": 42,
+      "token": "ý",
+      "url": "https://images.payback.it/images/channel-resources/1/%s/25/1/1"
+    },
+    {
+      "file": "de\\payback\\app\\environments\\italy\\a.java",
+      "line": 45,
+      "token": "ü",
+      "url": "https://e1et-images.payback.it/media/global/channel-resources/config/mobile/3/categories.json"
+    },
+    {
+      "file": "de\\payback\\app\\environments\\italy\\a.java",
+      "line": 48,
+      "token": "û",
+      "url": "https://images.payback.it/media/global/channel-resources/config/mobile/forceupdate.json"
+    },
+    {
+      "file": "de\\payback\\app\\environments\\italy\\a.java",
+      "line": 51,
+      "token": "ú",
+      "url": "https://images.payback.it/images/channel-resources"
+    },
+    {
+      "file": "de\\payback\\app\\environments\\italy\\a.java",
+      "line": 54,
+      "token": "ù",
+      "url": "https://images.payback.it/media/global/channel-resources/image/go-checkin/%s.png"
+    },
+    {
+      "file": "de\\payback\\app\\environments\\italy\\a.java",
+      "line": 57,
+      "token": "ø",
+      "url": "https://images.payback.it/images/channel-resources/1/%s/60/1/1"
+    },
+    {
+      "file": "de\\payback\\app\\environments\\italy\\a.java",
+      "line": 60,
+      "token": "÷",
+      "url": "https://store.payback.it/home?status=102&inapp=true&incid=69_17120_3485"
+    },
+    {
+      "file": "de\\payback\\app\\environments\\italy\\a.java",
+      "line": 63,
+      "token": "ö",
+      "url": "https://store.payback.it/home?status=102&inapp=true&incid=69_17120_3488"
+    },
+    {
+      "file": "de\\payback\\app\\environments\\italy\\a.java",
+      "line": 66,
+      "token": "õ",
+      "url": "https://www.payback.it/register-app"
+    },
+    {
+      "file": "de\\payback\\app\\environments\\italy\\a.java",
+      "line": 72,
+      "token": "ô",
+      "url": "https://images.payback.it/media/global/channel-resources/config/mobile/time_triggered_theming.json"
+    },
+    {
+      "file": "de\\payback\\app\\environments\\italy\\a.java",
+      "line": 84,
+      "token": "ó",
+      "url": "https://www.payback.pl/site-mobile/contact-form?access-code=[math.access-code]"
+    },
+    {
+      "file": "de\\payback\\app\\environments\\italy\\a.java",
+      "line": 97,
+      "token": "ò",
+      "url": "https://e1et-www.payback.pl/site-mobile/contact-form?access-code=[math.access-code]"
+    },
+    {
+      "file": "de\\payback\\app\\environments\\italy\\a.java",
+      "line": 107,
+      "token": "ñ",
+      "url": "https://e1et-images.payback.pl/media/global/channel-resources/config/mobile/3/digitalshops.json"
+    },
+    {
+      "file": "de\\payback\\app\\environments\\italy\\a.java",
+      "line": 110,
+      "token": "ð",
+      "url": "https://pb2go.payback.net/forceupdate/force_app_update_pl.json"
+    },
+    {
+      "file": "de\\payback\\app\\environments\\italy\\a.java",
+      "line": 113,
+      "token": "ï",
+      "url": "https://e1et-images.payback.pl/images/channel-resources/1/partnerlogos/%s/25/1/1"
+    },
+    {
+      "file": "de\\payback\\app\\environments\\italy\\a.java",
+      "line": 116,
+      "token": "î",
+      "url": "https://e1et-images.payback.pl/media/global/channel-resources/image/go-checkin/%s.png"
+    },
+    {
+      "file": "de\\payback\\app\\environments\\italy\\a.java",
+      "line": 119,
+      "token": "í",
+      "url": "https://images.payback.pl/media/global/channel-resources/config/mobile/3/digitalshops.json"
+    },
+    {
+      "file": "de\\payback\\app\\environments\\italy\\a.java",
+      "line": 122,
+      "token": "ì",
+      "url": "https://e1et-images.payback.pl/images/channel-resources/1/mobile/%s/60/1/1"
+    },
+    {
+      "file": "de\\payback\\app\\environments\\italy\\a.java",
+      "line": 131,
+      "token": "ë",
+      "url": "https://e1et-www.payback.pl/site-mobile/register"
+    },
+    {
+      "file": "de\\payback\\app\\environments\\italy\\b.java",
+      "line": 36,
+      "token": "ā",
+      "url": "https://e1et-images.payback.pl/images/channel-resources/1/partnerlogos/"
+    },
+    {
+      "file": "de\\payback\\app\\environments\\italy\\b.java",
+      "line": 38,
+      "token": "ă",
+      "url": "https://e1et-images.payback.pl/images/channel-resources/1/coupons/"
+    },
+    {
+      "file": "de\\payback\\app\\environments\\italy\\b.java",
+      "line": 39,
+      "token": "Ą",
+      "url": "https://images.payback.pl/images/channel-resources/1/partnerlogos/"
+    },
+    {
+      "file": "de\\payback\\app\\environments\\italy\\b.java",
+      "line": 40,
+      "token": "ą",
+      "url": "https://images.payback.pl/images/channel-resources/1/coupons/"
+    },
+    {
+      "file": "de\\payback\\app\\environments\\italy\\b.java",
+      "line": 41,
+      "token": "Ć",
+      "url": "https://images.payback.pl/media/global/channel-resources/config/mobile/3/digitalshopsdetails/"
+    },
+    {
+      "file": "de\\payback\\app\\environments\\italy\\b.java",
+      "line": 56,
+      "token": "ĕ",
+      "url": "https://images.payback.it/media/global/channel-resources/image/mobilecategory/"
+    },
+    {
+      "file": "de\\payback\\app\\environments\\italy\\b.java",
+      "line": 59,
+      "token": "Ĕ",
+      "url": "https://images.payback.it/media/global/channel-resources/image/category-icons/"
+    },
+    {
+      "file": "de\\payback\\app\\environments\\italy\\b.java",
+      "line": 66,
+      "token": "Ē",
+      "url": "https://images.payback.pl/media/global/channel-resources/config/mobile/drawer-config/android.json"
+    },
+    {
+      "file": "de\\payback\\app\\environments\\italy\\b.java",
+      "line": 70,
+      "token": "đ",
+      "url": "https://e1et-images.payback.pl/media/global/channel-resources/config/mobile/drawer-config/android.json"
+    },
+    {
+      "file": "de\\payback\\app\\environments\\italy\\b.java",
+      "line": 73,
+      "token": "Đ",
+      "url": "https://e1et-images.payback.pl/media/global/channel-resources/config/mobile/3/digitalshopsdetails/"
+    },
+    {
+      "file": "de\\payback\\app\\environments\\italy\\b.java",
+      "line": 91,
+      "token": "ď",
+      "url": "https://e1et-images.payback.pl/media/global/channel-resources/image/mobilecategory/"
+    },
+    {
+      "file": "de\\payback\\app\\environments\\italy\\b.java",
+      "line": 94,
+      "token": "Ď",
+      "url": "https://e1et-images.payback.pl/media/global/channel-resources/image/category-icons/"
+    },
+    {
+      "file": "de\\payback\\app\\environments\\italy\\b.java",
+      "line": 109,
+      "token": "Č",
+      "url": "https://images.payback.pl/media/global/channel-resources/image/mobilecategory/"
+    },
+    {
+      "file": "de\\payback\\app\\environments\\italy\\b.java",
+      "line": 112,
+      "token": "ċ",
+      "url": "https://images.payback.pl/media/global/channel-resources/image/category-icons/"
+    },
+    {
+      "file": "de\\payback\\app\\environments\\italy\\c.java",
+      "line": 23,
+      "token": "Ę",
+      "url": "https://www.payback.it/app-pages/scopri-i-partner?[user.referenceId]&access-code=[math.access-code]&incid=69_16518_2146"
+    },
+    {
+      "file": "de\\payback\\app\\environments\\italy\\c.java",
+      "line": 26,
+      "token": "ę",
+      "url": "https://www.payback.it/app/giochi?[user.referenceId]&access-code=[math.access-code]&incid=69_16645_2542"
+    },
+    {
+      "file": "de\\payback\\app\\environments\\italy\\c.java",
+      "line": 34,
+      "token": "ğ",
+      "url": "https://mobile.payback.it/"
+    },
+    {
+      "file": "de\\payback\\app\\environments\\italy\\c.java",
+      "line": 34,
+      "token": "Ġ",
+      "url": "https://store.payback.it/home?inapp=true"
+    },
+    {
+      "file": "de\\payback\\app\\environments\\italy\\c.java",
+      "line": 34,
+      "token": "ġ",
+      "url": "https://www.payback.it/inizia"
+    },
+    {
+      "file": "de\\payback\\app\\environments\\italy\\c.java",
+      "line": 34,
+      "token": "Ğ",
+      "url": "https://www.payback.it/accumula-punti/american-express?incid=69_16911_2870&cpid=100271206"
+    },
+    {
+      "file": "de\\payback\\app\\environments\\italy\\c.java",
+      "line": 44,
+      "token": "į",
+      "url": "https://e1et-mobile.payback.it/"
+    },
+    {
+      "file": "de\\payback\\app\\environments\\italy\\c.java",
+      "line": 44,
+      "token": "İ",
+      "url": "https://e1et-store.payback.it"
+    },
+    {
+      "file": "de\\payback\\app\\environments\\poland\\a.java",
+      "line": 52,
+      "token": "ņ",
+      "url": "https://sklep.payback.pl/?inapp=true"
+    },
+    {
+      "file": "de\\payback\\app\\environments\\poland\\a.java",
+      "line": 53,
+      "token": "Ň",
+      "url": "https://images.payback.pl/media/global/channel-resources/config/mobile/3/categories.json"
+    },
+    {
+      "file": "de\\payback\\app\\environments\\poland\\a.java",
+      "line": 57,
+      "token": "ţ",
+      "url": "https://e1et-images.payback.pl/media/global/channel-resources/config/mobile/3/categories.json"
+    },
+    {
+      "file": "de\\payback\\app\\environments\\poland\\a.java",
+      "line": 60,
+      "token": "Ţ",
+      "url": "https://images.payback.pl/images/channel-resources/1/partnerlogos/%s/25/1/1"
+    },
+    {
+      "file": "de\\payback\\app\\environments\\poland\\a.java",
+      "line": 63,
+      "token": "š",
+      "url": "https://images.payback.pl/media/global/channel-resources/config/mobile/forceupdate.json"
+    },
+    {
+      "file": "de\\payback\\app\\environments\\poland\\a.java",
+      "line": 66,
+      "token": "Š",
+      "url": "https://images.payback.pl/media/global/channel-resources/image/go-checkin/%s.png"
+    },
+    {
+      "file": "de\\payback\\app\\environments\\poland\\a.java",
+      "line": 69,
+      "token": "ş",
+      "url": "https://images.payback.pl/images/channel-resources/1/mobile/%s/60/1/1"
+    },
+    {
+      "file": "de\\payback\\app\\environments\\poland\\a.java",
+      "line": 78,
+      "token": "Ş",
+      "url": "https://www.payback.pl/site-mobile/register"
+    },
+    {
+      "file": "de\\payback\\app\\environments\\poland\\a.java",
+      "line": 84,
+      "token": "ŝ",
+      "url": "https://images.payback.pl/media/global/channel-resources/config/mobile/time_triggered_theming.json"
+    },
+    {
+      "file": "de\\payback\\app\\environments\\poland\\c.java",
+      "line": 23,
+      "token": "Ť",
+      "url": "https://www.payback.pl/site-mobile/forgot-secret"
+    },
+    {
+      "file": "de\\payback\\app\\environments\\poland\\c.java",
+      "line": 25,
+      "token": "ť",
+      "url": "https://www.payback.pl/site-mobile/data-protection-android"
+    },
+    {
+      "file": "de\\payback\\app\\environments\\poland\\c.java",
+      "line": 27,
+      "token": "Ŧ",
+      "url": "https://vouchery.payback.pl/?utm_source=payback_app_android&utm_medium=app&utm_content=wiecej"
+    },
+    {
+      "file": "de\\payback\\app\\environments\\poland\\c.java",
+      "line": 30,
+      "token": "ŧ",
+      "url": "https://www.payback.pl/site-mobile/gry?[user.referenceId]&access-code=[math.access-code]&incid=69_16645_2542"
+    },
+    {
+      "file": "de\\payback\\app\\environments\\poland\\c.java",
+      "line": 33,
+      "token": "Ũ",
+      "url": "https://www.payback.pl/gazetki?access-code=[math.access-code]&MemberID=[user.referenceId]"
+    },
+    {
+      "file": "de\\payback\\app\\environments\\poland\\c.java",
+      "line": 35,
+      "token": "ũ",
+      "url": "https://sklep.payback.pl/kodosfera?access-code=[math.access-code]&MemberID=[user.referenceId]"
+    },
+    {
+      "file": "de\\payback\\app\\environments\\poland\\c.java",
+      "line": 40,
+      "token": "ŭ",
+      "url": "https://mobile.payback.pl/"
+    },
+    {
+      "file": "de\\payback\\app\\environments\\poland\\c.java",
+      "line": 40,
+      "token": "ű",
+      "url": "https://www.payback.pl/site-mobile/onboarding-track"
+    },
+    {
+      "file": "de\\payback\\app\\environments\\poland\\c.java",
+      "line": 48,
+      "token": "ż",
+      "url": "https://e1et-www.payback.pl/site-mobile/forgot-secret"
+    },
+    {
+      "file": "de\\payback\\app\\environments\\poland\\c.java",
+      "line": 48,
+      "token": "Ž",
+      "url": "https://e1et-www.payback.pl/site-mobile/data-protection-android"
+    },
+    {
+      "file": "de\\payback\\app\\environments\\poland\\c.java",
+      "line": 48,
+      "token": "ž",
+      "url": "https://e1et-www.payback.pl/gazetki?access-code=[math.access-code]&MemberID=[user.referenceId]"
+    },
+    {
+      "file": "de\\payback\\app\\environments\\poland\\c.java",
+      "line": 48,
+      "token": "ſ",
+      "url": "https://tst2-sklep.payback.pl/kodosfera?access-code=[math.access-code]&MemberID=[user.referenceId]"
+    },
+    {
+      "file": "de\\payback\\app\\environments\\poland\\c.java",
+      "line": 50,
+      "token": "Ɓ",
+      "url": "https://e1et-mobile.payback.pl/"
+    },
+    {
+      "file": "de\\payback\\app\\environments\\poland\\c.java",
+      "line": 50,
+      "token": "ƃ",
+      "url": "https://e1et-www.payback.pl/site-mobile/onboarding-track"
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="@style/TextAppearance.DesignSystem.Android.Headline6" android:textColor="?titleTextColor" android:ellipsize="end" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:maxLines="1" android:elevation="0.0dip" />
+    <TextView android:textAppearance="@style/TextAppearance.DesignSystem.Android.Subtitle1" android:textColor="?subtitleTextColor" android:id="@id/address" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:maxLines="1" android:elevation="0.0dip" />
+</merge>

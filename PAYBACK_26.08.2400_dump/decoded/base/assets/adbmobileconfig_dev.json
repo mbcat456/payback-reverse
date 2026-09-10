@@ -1,0 +1,17 @@
+{
+  "global.privacy": "optedin",
+  "analytics.launchHitDelay": 0,
+  "analytics.backdatePreviousSessionInfo": true,
+  "analytics.offlineEnabled": true,
+  "__dev__analytics.rsids": "loyaltyppbitappsdev",
+  "build.environment": "dev",
+  "rules.url": "https://assets.adobedtm.com/ec73232191d2/432a15bdb0a5/launch-df8a3961be79-development-rules.zip",
+  "experienceCloud.org": "124538B3527845100A490D4C@AdobeOrg",
+  "lifecycle.sessionTimeout": 300,
+  "analytics.server": "smetrics.payback.it",
+  "__stage__analytics.rsids": "loyaltyppbitappsdev",
+  "analytics.rsids": "loyaltyppbitappsprod",
+  "analytics.batchLimit": 0,
+  "property.id": "PR55c800481a55438db79d0f19aa13372c",
+  "analytics.aamForwardingEnabled": false
+}

@@ -1,0 +1,98 @@
+.class public final Landroidx/core/view/r;
+.super Ljava/lang/Object;
+.source "r8-map-id-c6e95f02a960cec3b4177d8b5b818c3f23768df7db706782552fe3d06a1d57cb"
+
+
+# instance fields
+.field public final a:Ljava/lang/Runnable;
+
+.field public final b:Ljava/util/concurrent/CopyOnWriteArrayList;
+
+.field public final c:Ljava/util/HashMap;
+
+
+# direct methods
+.method public constructor <init>(Ljava/lang/Runnable;)V
+    .locals 1
+
+    .prologue
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 4
+    new-instance v0, Ljava/util/concurrent/CopyOnWriteArrayList;
+
+    .line 6
+    invoke-direct {v0}, Ljava/util/concurrent/CopyOnWriteArrayList;-><init>()V
+
+    .line 9
+    iput-object v0, p0, Landroidx/core/view/r;->b:Ljava/util/concurrent/CopyOnWriteArrayList;
+
+    .line 11
+    new-instance v0, Ljava/util/HashMap;
+
+    .line 13
+    invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
+
+    .line 16
+    iput-object v0, p0, Landroidx/core/view/r;->c:Ljava/util/HashMap;
+
+    .line 18
+    iput-object p1, p0, Landroidx/core/view/r;->a:Ljava/lang/Runnable;
+
+    .line 20
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a(Landroidx/core/view/MenuProvider;)V
+    .locals 2
+
+    .prologue
+    .line 1
+    iget-object v0, p0, Landroidx/core/view/r;->b:Ljava/util/concurrent/CopyOnWriteArrayList;
+
+    .line 3
+    invoke-virtual {v0, p1}, Ljava/util/concurrent/CopyOnWriteArrayList;->remove(Ljava/lang/Object;)Z
+
+    .line 6
+    iget-object v0, p0, Landroidx/core/view/r;->c:Ljava/util/HashMap;
+
+    .line 8
+    invoke-virtual {v0, p1}, Ljava/util/HashMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 11
+    move-result-object p1
+
+    .line 12
+    check-cast p1, Landroidx/core/view/q;
+
+    .line 14
+    if-eqz p1, :cond_0
+
+    .line 16
+    iget-object v0, p1, Landroidx/core/view/q;->a:Landroidx/lifecycle/Lifecycle;
+
+    .line 18
+    iget-object v1, p1, Landroidx/core/view/q;->b:Landroidx/lifecycle/f0;
+
+    .line 20
+    invoke-virtual {v0, v1}, Landroidx/lifecycle/Lifecycle;->d(Landroidx/lifecycle/h0;)V
+
+    .line 23
+    const/4 v0, 0x0
+
+    .line 24
+    iput-object v0, p1, Landroidx/core/view/q;->b:Landroidx/lifecycle/f0;
+
+    .line 26
+    :cond_0
+    iget-object p0, p0, Landroidx/core/view/r;->a:Ljava/lang/Runnable;
+
+    .line 28
+    invoke-interface {p0}, Ljava/lang/Runnable;->run()V
+
+    .line 31
+    return-void
+.end method

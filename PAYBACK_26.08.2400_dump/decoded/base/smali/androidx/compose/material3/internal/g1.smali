@@ -1,0 +1,585 @@
+.class public final Landroidx/compose/material3/internal/g1;
+.super Ljava/lang/Object;
+.source "r8-map-id-c6e95f02a960cec3b4177d8b5b818c3f23768df7db706782552fe3d06a1d57cb"
+
+
+# instance fields
+.field public final a:Ljava/util/Map;
+
+
+# direct methods
+.method public constructor <init>(Ljava/util/Map;)V
+    .locals 0
+
+    .prologue
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 4
+    iput-object p1, p0, Landroidx/compose/material3/internal/g1;->a:Ljava/util/Map;
+
+    .line 6
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a(F)Ljava/lang/Object;
+    .locals 6
+
+    .prologue
+    .line 1
+    iget-object p0, p0, Landroidx/compose/material3/internal/g1;->a:Ljava/util/Map;
+
+    .line 3
+    invoke-interface {p0}, Ljava/util/Map;->entrySet()Ljava/util/Set;
+
+    .line 6
+    move-result-object p0
+
+    .line 7
+    check-cast p0, Ljava/lang/Iterable;
+
+    .line 9
+    invoke-interface {p0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+
+    .line 12
+    move-result-object p0
+
+    .line 13
+    invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
+
+    .line 16
+    move-result v0
+
+    .line 17
+    const/4 v1, 0x0
+
+    .line 18
+    if-nez v0, :cond_0
+
+    .line 20
+    move-object v0, v1
+
+    .line 21
+    goto :goto_0
+
+    .line 22
+    :cond_0
+    invoke-interface {p0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    .line 25
+    move-result-object v0
+
+    .line 26
+    invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
+
+    .line 29
+    move-result v2
+
+    .line 30
+    if-nez v2, :cond_1
+
+    .line 32
+    goto :goto_0
+
+    .line 33
+    :cond_1
+    move-object v2, v0
+
+    .line 34
+    check-cast v2, Ljava/util/Map$Entry;
+
+    .line 36
+    invoke-interface {v2}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
+
+    .line 39
+    move-result-object v2
+
+    .line 40
+    check-cast v2, Ljava/lang/Number;
+
+    .line 42
+    invoke-virtual {v2}, Ljava/lang/Number;->floatValue()F
+
+    .line 45
+    move-result v2
+
+    .line 46
+    sub-float v2, p1, v2
+
+    .line 48
+    invoke-static {v2}, Ljava/lang/Math;->abs(F)F
+
+    .line 51
+    move-result v2
+
+    .line 52
+    :cond_2
+    invoke-interface {p0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    .line 55
+    move-result-object v3
+
+    .line 56
+    move-object v4, v3
+
+    .line 57
+    check-cast v4, Ljava/util/Map$Entry;
+
+    .line 59
+    invoke-interface {v4}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
+
+    .line 62
+    move-result-object v4
+
+    .line 63
+    check-cast v4, Ljava/lang/Number;
+
+    .line 65
+    invoke-virtual {v4}, Ljava/lang/Number;->floatValue()F
+
+    .line 68
+    move-result v4
+
+    .line 69
+    sub-float v4, p1, v4
+
+    .line 71
+    invoke-static {v4}, Ljava/lang/Math;->abs(F)F
+
+    .line 74
+    move-result v4
+
+    .line 75
+    invoke-static {v2, v4}, Ljava/lang/Float;->compare(FF)I
+
+    .line 78
+    move-result v5
+
+    .line 79
+    if-lez v5, :cond_3
+
+    .line 81
+    move-object v0, v3
+
+    .line 82
+    move v2, v4
+
+    .line 83
+    :cond_3
+    invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
+
+    .line 86
+    move-result v3
+
+    .line 87
+    if-nez v3, :cond_2
+
+    .line 89
+    :goto_0
+    check-cast v0, Ljava/util/Map$Entry;
+
+    .line 91
+    if-eqz v0, :cond_4
+
+    .line 93
+    invoke-interface {v0}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
+
+    .line 96
+    move-result-object p0
+
+    .line 97
+    return-object p0
+
+    .line 98
+    :cond_4
+    return-object v1
+.end method
+
+.method public final b(FZ)Ljava/lang/Object;
+    .locals 8
+
+    .prologue
+    .line 1
+    iget-object p0, p0, Landroidx/compose/material3/internal/g1;->a:Ljava/util/Map;
+
+    .line 3
+    invoke-interface {p0}, Ljava/util/Map;->entrySet()Ljava/util/Set;
+
+    .line 6
+    move-result-object p0
+
+    .line 7
+    check-cast p0, Ljava/lang/Iterable;
+
+    .line 9
+    invoke-interface {p0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+
+    .line 12
+    move-result-object p0
+
+    .line 13
+    invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
+
+    .line 16
+    move-result v0
+
+    .line 17
+    const/4 v1, 0x0
+
+    .line 18
+    if-nez v0, :cond_0
+
+    .line 20
+    move-object v0, v1
+
+    .line 21
+    goto :goto_2
+
+    .line 22
+    :cond_0
+    invoke-interface {p0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    .line 25
+    move-result-object v0
+
+    .line 26
+    invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
+
+    .line 29
+    move-result v2
+
+    .line 30
+    if-nez v2, :cond_1
+
+    .line 32
+    goto :goto_2
+
+    .line 33
+    :cond_1
+    move-object v2, v0
+
+    .line 34
+    check-cast v2, Ljava/util/Map$Entry;
+
+    .line 36
+    invoke-interface {v2}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
+
+    .line 39
+    move-result-object v2
+
+    .line 40
+    check-cast v2, Ljava/lang/Number;
+
+    .line 42
+    invoke-virtual {v2}, Ljava/lang/Number;->floatValue()F
+
+    .line 45
+    move-result v2
+
+    .line 46
+    if-eqz p2, :cond_2
+
+    .line 48
+    sub-float/2addr v2, p1
+
+    .line 49
+    goto :goto_0
+
+    .line 50
+    :cond_2
+    sub-float v2, p1, v2
+
+    .line 52
+    :goto_0
+    const/4 v3, 0x0
+
+    .line 53
+    cmpg-float v4, v2, v3
+
+    .line 55
+    const/high16 v5, 0x7f800000    # Float.POSITIVE_INFINITY
+
+    .line 57
+    if-gez v4, :cond_3
+
+    .line 59
+    move v2, v5
+
+    .line 60
+    :cond_3
+    invoke-interface {p0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    .line 63
+    move-result-object v4
+
+    .line 64
+    move-object v6, v4
+
+    .line 65
+    check-cast v6, Ljava/util/Map$Entry;
+
+    .line 67
+    invoke-interface {v6}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
+
+    .line 70
+    move-result-object v6
+
+    .line 71
+    check-cast v6, Ljava/lang/Number;
+
+    .line 73
+    invoke-virtual {v6}, Ljava/lang/Number;->floatValue()F
+
+    .line 76
+    move-result v6
+
+    .line 77
+    if-eqz p2, :cond_4
+
+    .line 79
+    sub-float/2addr v6, p1
+
+    .line 80
+    goto :goto_1
+
+    .line 81
+    :cond_4
+    sub-float v6, p1, v6
+
+    .line 83
+    :goto_1
+    cmpg-float v7, v6, v3
+
+    .line 85
+    if-gez v7, :cond_5
+
+    .line 87
+    move v6, v5
+
+    .line 88
+    :cond_5
+    invoke-static {v2, v6}, Ljava/lang/Float;->compare(FF)I
+
+    .line 91
+    move-result v7
+
+    .line 92
+    if-lez v7, :cond_6
+
+    .line 94
+    move-object v0, v4
+
+    .line 95
+    move v2, v6
+
+    .line 96
+    :cond_6
+    invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
+
+    .line 99
+    move-result v4
+
+    .line 100
+    if-nez v4, :cond_3
+
+    .line 102
+    :goto_2
+    check-cast v0, Ljava/util/Map$Entry;
+
+    .line 104
+    if-eqz v0, :cond_7
+
+    .line 106
+    invoke-interface {v0}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
+
+    .line 109
+    move-result-object p0
+
+    .line 110
+    return-object p0
+
+    .line 111
+    :cond_7
+    return-object v1
+.end method
+
+.method public final c()F
+    .locals 0
+
+    .prologue
+    .line 1
+    iget-object p0, p0, Landroidx/compose/material3/internal/g1;->a:Ljava/util/Map;
+
+    .line 3
+    invoke-interface {p0}, Ljava/util/Map;->values()Ljava/util/Collection;
+
+    .line 6
+    move-result-object p0
+
+    .line 7
+    check-cast p0, Ljava/lang/Iterable;
+
+    .line 9
+    invoke-static {p0}, Lkotlin/collections/s;->a0(Ljava/lang/Iterable;)Ljava/lang/Float;
+
+    .line 12
+    move-result-object p0
+
+    .line 13
+    if-eqz p0, :cond_0
+
+    .line 15
+    invoke-virtual {p0}, Ljava/lang/Float;->floatValue()F
+
+    .line 18
+    move-result p0
+
+    .line 19
+    return p0
+
+    .line 20
+    :cond_0
+    const/high16 p0, 0x7fc00000    # Float.NaN
+
+    .line 22
+    return p0
+.end method
+
+.method public final d(Ljava/lang/Object;)F
+    .locals 0
+
+    .prologue
+    .line 1
+    iget-object p0, p0, Landroidx/compose/material3/internal/g1;->a:Ljava/util/Map;
+
+    .line 3
+    invoke-interface {p0, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 6
+    move-result-object p0
+
+    .line 7
+    check-cast p0, Ljava/lang/Float;
+
+    .line 9
+    if-eqz p0, :cond_0
+
+    .line 11
+    invoke-virtual {p0}, Ljava/lang/Float;->floatValue()F
+
+    .line 14
+    move-result p0
+
+    .line 15
+    return p0
+
+    .line 16
+    :cond_0
+    const/high16 p0, 0x7fc00000    # Float.NaN
+
+    .line 18
+    return p0
+.end method
+
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 1
+
+    .prologue
+    .line 1
+    if-ne p0, p1, :cond_0
+
+    .line 3
+    const/4 p0, 0x1
+
+    .line 4
+    return p0
+
+    .line 5
+    :cond_0
+    instance-of v0, p1, Landroidx/compose/material3/internal/g1;
+
+    .line 7
+    if-nez v0, :cond_1
+
+    .line 9
+    const/4 p0, 0x0
+
+    .line 10
+    return p0
+
+    .line 11
+    :cond_1
+    check-cast p1, Landroidx/compose/material3/internal/g1;
+
+    .line 13
+    iget-object p1, p1, Landroidx/compose/material3/internal/g1;->a:Ljava/util/Map;
+
+    .line 15
+    iget-object p0, p0, Landroidx/compose/material3/internal/g1;->a:Ljava/util/Map;
+
+    .line 17
+    invoke-static {p0, p1}, Lkotlin/jvm/internal/r;->d(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 20
+    move-result p0
+
+    .line 21
+    return p0
+.end method
+
+.method public final hashCode()I
+    .locals 0
+
+    .prologue
+    .line 1
+    iget-object p0, p0, Landroidx/compose/material3/internal/g1;->a:Ljava/util/Map;
+
+    .line 3
+    invoke-virtual {p0}, Ljava/lang/Object;->hashCode()I
+
+    .line 6
+    move-result p0
+
+    .line 7
+    mul-int/lit8 p0, p0, 0x1f
+
+    .line 9
+    return p0
+.end method
+
+.method public final toString()Ljava/lang/String;
+    .locals 2
+
+    .prologue
+    .line 1
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    .line 3
+    const-string v1, "MapDraggableAnchors("
+
+    .line 5
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    .line 8
+    iget-object p0, p0, Landroidx/compose/material3/internal/g1;->a:Ljava/util/Map;
+
+    .line 10
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    .line 13
+    const/16 p0, 0x29
+
+    .line 15
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    .line 18
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 21
+    move-result-object p0
+
+    .line 22
+    return-object p0
+.end method

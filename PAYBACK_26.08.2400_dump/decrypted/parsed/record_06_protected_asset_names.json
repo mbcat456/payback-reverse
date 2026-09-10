@@ -1,0 +1,779 @@
+{
+  "source": "records/06_protected_asset_names.bin",
+  "size": 6489,
+  "header_hashes": {
+    "first": "e7b7289e837d0d90",
+    "second": "64d40bc3bf1a5522",
+    "third": "0000000000000000",
+    "fourth": "a15d0bcf855ae88f"
+  },
+  "count": 153,
+  "entries": [
+    {
+      "index": 0,
+      "offset": 36,
+      "asset": "assets/PublicSuffixDatabase.list"
+    },
+    {
+      "index": 1,
+      "offset": 69,
+      "asset": "assets/adbmobileconfig_dev.json"
+    },
+    {
+      "index": 2,
+      "offset": 101,
+      "asset": "assets/adbmobileconfig_prod.json"
+    },
+    {
+      "index": 3,
+      "offset": 134,
+      "asset": "assets/at/de-AT/FAQ.html"
+    },
+    {
+      "index": 4,
+      "offset": 159,
+      "asset": "assets/at/de-AT/app_accessibility_declaration.html"
+    },
+    {
+      "index": 5,
+      "offset": 210,
+      "asset": "assets/at/de-AT/app_data_protection.html"
+    },
+    {
+      "index": 6,
+      "offset": 251,
+      "asset": "assets/at/de-AT/app_help_digital_card.html"
+    },
+    {
+      "index": 7,
+      "offset": 294,
+      "asset": "assets/at/de-AT/app_help_notifications_permission_retry.html"
+    },
+    {
+      "index": 8,
+      "offset": 355,
+      "asset": "assets/at/de-AT/app_newsletter_permission_condition.html"
+    },
+    {
+      "index": 9,
+      "offset": 412,
+      "asset": "assets/at/de-AT/app_terms_and_conditions.html"
+    },
+    {
+      "index": 10,
+      "offset": 458,
+      "asset": "assets/at/de-AT/app_terms_and_conditions_and_data_protection.html"
+    },
+    {
+      "index": 11,
+      "offset": 524,
+      "asset": "assets/at/de-AT/data_protection.html"
+    },
+    {
+      "index": 12,
+      "offset": 561,
+      "asset": "assets/at/de-AT/ewe_newsletter.html"
+    },
+    {
+      "index": 13,
+      "offset": 597,
+      "asset": "assets/at/de-AT/ewe_service_marktforschung.html"
+    },
+    {
+      "index": 14,
+      "offset": 645,
+      "asset": "assets/at/de-AT/help_digital_card.png"
+    },
+    {
+      "index": 15,
+      "offset": 683,
+      "asset": "assets/at/de-AT/imprint.html"
+    },
+    {
+      "index": 16,
+      "offset": 712,
+      "asset": "assets/at/de-AT/jquery-3.6.0.min.js"
+    },
+    {
+      "index": 17,
+      "offset": 748,
+      "asset": "assets/at/de-AT/perm_bluetooth_help.png"
+    },
+    {
+      "index": 18,
+      "offset": 788,
+      "asset": "assets/at/de-AT/permissiontile_profilingconsent.png"
+    },
+    {
+      "index": 19,
+      "offset": 840,
+      "asset": "assets/at/de-AT/push_help_main.png"
+    },
+    {
+      "index": 20,
+      "offset": 875,
+      "asset": "assets/at/de-AT/push_help_setting_android.png"
+    },
+    {
+      "index": 21,
+      "offset": 921,
+      "asset": "assets/at/de-AT/push_help_slider_android.png"
+    },
+    {
+      "index": 22,
+      "offset": 966,
+      "asset": "assets/at/de-AT/style.css"
+    },
+    {
+      "index": 23,
+      "offset": 992,
+      "asset": "assets/at/de-AT/style_help.css"
+    },
+    {
+      "index": 24,
+      "offset": 1023,
+      "asset": "assets/at/de-AT/style_newsletter.css"
+    },
+    {
+      "index": 25,
+      "offset": 1060,
+      "asset": "assets/at/de-AT/terms_and_conditions.html"
+    },
+    {
+      "index": 26,
+      "offset": 1102,
+      "asset": "assets/at/de-AT/up-arrow.png"
+    },
+    {
+      "index": 27,
+      "offset": 1131,
+      "asset": "assets/ba/bs-BA/FAQ.html"
+    },
+    {
+      "index": 28,
+      "offset": 1156,
+      "asset": "assets/ba/bs-BA/app_accessibility_declaration.html"
+    },
+    {
+      "index": 29,
+      "offset": 1207,
+      "asset": "assets/ba/bs-BA/app_data_protection.html"
+    },
+    {
+      "index": 30,
+      "offset": 1248,
+      "asset": "assets/ba/bs-BA/app_help_digital_card.html"
+    },
+    {
+      "index": 31,
+      "offset": 1291,
+      "asset": "assets/ba/bs-BA/app_newsletter_permission_condition.html"
+    },
+    {
+      "index": 32,
+      "offset": 1348,
+      "asset": "assets/ba/bs-BA/app_terms_and_conditions.html"
+    },
+    {
+      "index": 33,
+      "offset": 1394,
+      "asset": "assets/ba/bs-BA/app_terms_and_conditions_and_data_protection.html"
+    },
+    {
+      "index": 34,
+      "offset": 1460,
+      "asset": "assets/ba/bs-BA/data_protection.html"
+    },
+    {
+      "index": 35,
+      "offset": 1497,
+      "asset": "assets/ba/bs-BA/ewe_newsletter.html"
+    },
+    {
+      "index": 36,
+      "offset": 1533,
+      "asset": "assets/ba/bs-BA/ewe_service_marktforschung.html"
+    },
+    {
+      "index": 37,
+      "offset": 1581,
+      "asset": "assets/ba/bs-BA/help_digital_card.png"
+    },
+    {
+      "index": 38,
+      "offset": 1619,
+      "asset": "assets/ba/bs-BA/imprint.html"
+    },
+    {
+      "index": 39,
+      "offset": 1648,
+      "asset": "assets/ba/bs-BA/jquery-3.6.0.min.js"
+    },
+    {
+      "index": 40,
+      "offset": 1684,
+      "asset": "assets/ba/bs-BA/style.css"
+    },
+    {
+      "index": 41,
+      "offset": 1710,
+      "asset": "assets/ba/bs-BA/style_help.css"
+    },
+    {
+      "index": 42,
+      "offset": 1741,
+      "asset": "assets/ba/bs-BA/style_newsletter.css"
+    },
+    {
+      "index": 43,
+      "offset": 1778,
+      "asset": "assets/ba/bs-BA/terms_and_conditions.html"
+    },
+    {
+      "index": 44,
+      "offset": 1820,
+      "asset": "assets/ba/bs-BA/up-arrow.png"
+    },
+    {
+      "index": 45,
+      "offset": 1849,
+      "asset": "assets/composeResources/payback.platform.miniappssdk.implementation.resources/files/payback-sdk.js"
+    },
+    {
+      "index": 46,
+      "offset": 1948,
+      "asset": "assets/composeResources/payback.ui.foundation.icons.resources/drawable/ui_ic_backspace.xml"
+    },
+    {
+      "index": 47,
+      "offset": 2039,
+      "asset": "assets/composeResources/payback.ui.foundation.icons.resources/drawable/ui_ic_face_id.xml"
+    },
+    {
+      "index": 48,
+      "offset": 2128,
+      "asset": "assets/composeResources/payback.ui.foundation.icons.resources/drawable/ui_ic_fingerprint.xml"
+    },
+    {
+      "index": 49,
+      "offset": 2221,
+      "asset": "assets/composeResources/payback.ui.foundation.icons.resources/drawable/ui_ic_question.xml"
+    },
+    {
+      "index": 50,
+      "offset": 2311,
+      "asset": "assets/composeResources/payback.ui.foundation.theme.resources/font/ui_payback.xml"
+    },
+    {
+      "index": 51,
+      "offset": 2393,
+      "asset": "assets/composeResources/payback.ui.foundation.theme.resources/font/ui_payback_bold.ttf"
+    },
+    {
+      "index": 52,
+      "offset": 2480,
+      "asset": "assets/composeResources/payback.ui.foundation.theme.resources/font/ui_payback_light.ttf"
+    },
+    {
+      "index": 53,
+      "offset": 2568,
+      "asset": "assets/composeResources/payback.ui.foundation.theme.resources/font/ui_payback_regular.ttf"
+    },
+    {
+      "index": 54,
+      "offset": 2658,
+      "asset": "assets/de/de-DE/2SV_FAQ.html"
+    },
+    {
+      "index": 55,
+      "offset": 2687,
+      "asset": "assets/de/de-DE/FAQ.html"
+    },
+    {
+      "index": 56,
+      "offset": 2712,
+      "asset": "assets/de/de-DE/app_accessibility_declaration.html"
+    },
+    {
+      "index": 57,
+      "offset": 2763,
+      "asset": "assets/de/de-DE/app_data_protection.html"
+    },
+    {
+      "index": 58,
+      "offset": 2804,
+      "asset": "assets/de/de-DE/app_help_bluetooth_activation.html"
+    },
+    {
+      "index": 59,
+      "offset": 2855,
+      "asset": "assets/de/de-DE/app_help_digital_card.html"
+    },
+    {
+      "index": 60,
+      "offset": 2898,
+      "asset": "assets/de/de-DE/app_help_geolocation_permission_initial.html"
+    },
+    {
+      "index": 61,
+      "offset": 2959,
+      "asset": "assets/de/de-DE/app_help_notifications_permission_retry.html"
+    },
+    {
+      "index": 62,
+      "offset": 3020,
+      "asset": "assets/de/de-DE/app_newsletter_permission_condition.html"
+    },
+    {
+      "index": 63,
+      "offset": 3077,
+      "asset": "assets/de/de-DE/app_terms_and_conditions.html"
+    },
+    {
+      "index": 64,
+      "offset": 3123,
+      "asset": "assets/de/de-DE/app_terms_and_conditions_and_tracking_technologies.html"
+    },
+    {
+      "index": 65,
+      "offset": 3195,
+      "asset": "assets/de/de-DE/app_tracking_technologies.html"
+    },
+    {
+      "index": 66,
+      "offset": 3242,
+      "asset": "assets/de/de-DE/card_manager_faq.html"
+    },
+    {
+      "index": 67,
+      "offset": 3280,
+      "asset": "assets/de/de-DE/daily_incentive_info.html"
+    },
+    {
+      "index": 68,
+      "offset": 3322,
+      "asset": "assets/de/de-DE/data_protection.html"
+    },
+    {
+      "index": 69,
+      "offset": 3359,
+      "asset": "assets/de/de-DE/geolocation_help_go.png"
+    },
+    {
+      "index": 70,
+      "offset": 3399,
+      "asset": "assets/de/de-DE/help_digital_card.png"
+    },
+    {
+      "index": 71,
+      "offset": 3437,
+      "asset": "assets/de/de-DE/imprint.html"
+    },
+    {
+      "index": 72,
+      "offset": 3466,
+      "asset": "assets/de/de-DE/jquery-3.6.0.min.js"
+    },
+    {
+      "index": 73,
+      "offset": 3502,
+      "asset": "assets/de/de-DE/pay_1ct_faq.html"
+    },
+    {
+      "index": 74,
+      "offset": 3535,
+      "asset": "assets/de/de-DE/pay_agb.html"
+    },
+    {
+      "index": 75,
+      "offset": 3564,
+      "asset": "assets/de/de-DE/pay_datenschutzhinweise.html"
+    },
+    {
+      "index": 76,
+      "offset": 3609,
+      "asset": "assets/de/de-DE/pay_sepa_mandat.html"
+    },
+    {
+      "index": 77,
+      "offset": 3646,
+      "asset": "assets/de/de-DE/perm_bluetooth_help.png"
+    },
+    {
+      "index": 78,
+      "offset": 3686,
+      "asset": "assets/de/de-DE/push_help_main.png"
+    },
+    {
+      "index": 79,
+      "offset": 3721,
+      "asset": "assets/de/de-DE/push_help_setting_android.png"
+    },
+    {
+      "index": 80,
+      "offset": 3767,
+      "asset": "assets/de/de-DE/push_help_slider_android.png"
+    },
+    {
+      "index": 81,
+      "offset": 3812,
+      "asset": "assets/de/de-DE/style.css"
+    },
+    {
+      "index": 82,
+      "offset": 3838,
+      "asset": "assets/de/de-DE/style_help.css"
+    },
+    {
+      "index": 83,
+      "offset": 3869,
+      "asset": "assets/de/de-DE/terms_and_conditions.html"
+    },
+    {
+      "index": 84,
+      "offset": 3911,
+      "asset": "assets/de/de-DE/totp_help.html"
+    },
+    {
+      "index": 85,
+      "offset": 3942,
+      "asset": "assets/de/de-DE/up-arrow.png"
+    },
+    {
+      "index": 86,
+      "offset": 3971,
+      "asset": "assets/entitlement_placeholder.html"
+    },
+    {
+      "index": 87,
+      "offset": 4007,
+      "asset": "assets/entitlement_placeholder_without_css.html"
+    },
+    {
+      "index": 88,
+      "offset": 4055,
+      "asset": "assets/generic.html"
+    },
+    {
+      "index": 89,
+      "offset": 4075,
+      "asset": "assets/htmlMSChallengeCRes.txt"
+    },
+    {
+      "index": 90,
+      "offset": 4106,
+      "asset": "assets/ict.dat"
+    },
+    {
+      "index": 91,
+      "offset": 4121,
+      "asset": "assets/it/it-IT/FAQ.html"
+    },
+    {
+      "index": 92,
+      "offset": 4146,
+      "asset": "assets/it/it-IT/app_accessibility_declaration.html"
+    },
+    {
+      "index": 93,
+      "offset": 4197,
+      "asset": "assets/it/it-IT/app_data_protection.html"
+    },
+    {
+      "index": 94,
+      "offset": 4238,
+      "asset": "assets/it/it-IT/app_help_digital_card.html"
+    },
+    {
+      "index": 95,
+      "offset": 4281,
+      "asset": "assets/it/it-IT/app_help_notifications_permission_retry.html"
+    },
+    {
+      "index": 96,
+      "offset": 4342,
+      "asset": "assets/it/it-IT/app_help_profiling_consent.html"
+    },
+    {
+      "index": 97,
+      "offset": 4390,
+      "asset": "assets/it/it-IT/app_info.html"
+    },
+    {
+      "index": 98,
+      "offset": 4420,
+      "asset": "assets/it/it-IT/app_newsletter_permission_condition.html"
+    },
+    {
+      "index": 99,
+      "offset": 4477,
+      "asset": "assets/it/it-IT/app_terms_and_conditions.html"
+    },
+    {
+      "index": 100,
+      "offset": 4523,
+      "asset": "assets/it/it-IT/card_manager_faq.html"
+    },
+    {
+      "index": 101,
+      "offset": 4561,
+      "asset": "assets/it/it-IT/contact_payback.html"
+    },
+    {
+      "index": 102,
+      "offset": 4598,
+      "asset": "assets/it/it-IT/help_digital_card.png"
+    },
+    {
+      "index": 103,
+      "offset": 4636,
+      "asset": "assets/it/it-IT/imprint.html"
+    },
+    {
+      "index": 104,
+      "offset": 4665,
+      "asset": "assets/it/it-IT/jquery-3.6.0.min.js"
+    },
+    {
+      "index": 105,
+      "offset": 4701,
+      "asset": "assets/it/it-IT/permissiontile_profilingconsent.png"
+    },
+    {
+      "index": 106,
+      "offset": 4753,
+      "asset": "assets/it/it-IT/push_help_main.png"
+    },
+    {
+      "index": 107,
+      "offset": 4788,
+      "asset": "assets/it/it-IT/push_help_setting_android.png"
+    },
+    {
+      "index": 108,
+      "offset": 4834,
+      "asset": "assets/it/it-IT/push_help_slider_android.png"
+    },
+    {
+      "index": 109,
+      "offset": 4879,
+      "asset": "assets/it/it-IT/style.css"
+    },
+    {
+      "index": 110,
+      "offset": 4905,
+      "asset": "assets/it/it-IT/style_help.css"
+    },
+    {
+      "index": 111,
+      "offset": 4936,
+      "asset": "assets/it/it-IT/style_newsletter.css"
+    },
+    {
+      "index": 112,
+      "offset": 4973,
+      "asset": "assets/it/it-IT/up-arrow.png"
+    },
+    {
+      "index": 113,
+      "offset": 5002,
+      "asset": "assets/lottie/fuel_and_go_ampel_android.json"
+    },
+    {
+      "index": 114,
+      "offset": 5047,
+      "asset": "assets/lottie/go_how_it_works.json"
+    },
+    {
+      "index": 115,
+      "offset": 5082,
+      "asset": "assets/lottie/go_intro_1.json"
+    },
+    {
+      "index": 116,
+      "offset": 5112,
+      "asset": "assets/lottie/go_intro_2.json"
+    },
+    {
+      "index": 117,
+      "offset": 5142,
+      "asset": "assets/lottie/go_intro_3.json"
+    },
+    {
+      "index": 118,
+      "offset": 5172,
+      "asset": "assets/lottie/go_intro_4.json"
+    },
+    {
+      "index": 119,
+      "offset": 5202,
+      "asset": "assets/lottie/go_party.json"
+    },
+    {
+      "index": 120,
+      "offset": 5230,
+      "asset": "assets/lottie/shoppinglist_emptystate.json"
+    },
+    {
+      "index": 121,
+      "offset": 5273,
+      "asset": "assets/mraid.js"
+    },
+    {
+      "index": 122,
+      "offset": 5289,
+      "asset": "assets/mraid_env.js"
+    },
+    {
+      "index": 123,
+      "offset": 5309,
+      "asset": "assets/no_internet.html"
+    },
+    {
+      "index": 124,
+      "offset": 5333,
+      "asset": "assets/pl/pl-PL/app_accessibility_declaration.html"
+    },
+    {
+      "index": 125,
+      "offset": 5384,
+      "asset": "assets/pl/pl-PL/app_data_protection.html"
+    },
+    {
+      "index": 126,
+      "offset": 5425,
+      "asset": "assets/pl/pl-PL/app_help_digital_card.html"
+    },
+    {
+      "index": 127,
+      "offset": 5468,
+      "asset": "assets/pl/pl-PL/app_help_geolocation_permission_initial.html"
+    },
+    {
+      "index": 128,
+      "offset": 5529,
+      "asset": "assets/pl/pl-PL/app_help_notifications_permission_retry.html"
+    },
+    {
+      "index": 129,
+      "offset": 5590,
+      "asset": "assets/pl/pl-PL/app_help_profiling_consent.html"
+    },
+    {
+      "index": 130,
+      "offset": 5638,
+      "asset": "assets/pl/pl-PL/app_newsletter_permission_condition.html"
+    },
+    {
+      "index": 131,
+      "offset": 5695,
+      "asset": "assets/pl/pl-PL/app_terms_and_conditions.html"
+    },
+    {
+      "index": 132,
+      "offset": 5741,
+      "asset": "assets/pl/pl-PL/app_terms_and_conditions_and_data_protection.html"
+    },
+    {
+      "index": 133,
+      "offset": 5807,
+      "asset": "assets/pl/pl-PL/card_manager_faq.html"
+    },
+    {
+      "index": 134,
+      "offset": 5845,
+      "asset": "assets/pl/pl-PL/ewe_service_marktforschung.html"
+    },
+    {
+      "index": 135,
+      "offset": 5893,
+      "asset": "assets/pl/pl-PL/geolocation_help_go.png"
+    },
+    {
+      "index": 136,
+      "offset": 5933,
+      "asset": "assets/pl/pl-PL/help_digital_card.png"
+    },
+    {
+      "index": 137,
+      "offset": 5971,
+      "asset": "assets/pl/pl-PL/imprint.html"
+    },
+    {
+      "index": 138,
+      "offset": 6000,
+      "asset": "assets/pl/pl-PL/jquery-3.6.0.min.js"
+    },
+    {
+      "index": 139,
+      "offset": 6036,
+      "asset": "assets/pl/pl-PL/permissiontile_profilingconsent.png"
+    },
+    {
+      "index": 140,
+      "offset": 6088,
+      "asset": "assets/pl/pl-PL/push_help_main.png"
+    },
+    {
+      "index": 141,
+      "offset": 6123,
+      "asset": "assets/pl/pl-PL/push_help_setting_android.png"
+    },
+    {
+      "index": 142,
+      "offset": 6169,
+      "asset": "assets/pl/pl-PL/push_help_slider_android.png"
+    },
+    {
+      "index": 143,
+      "offset": 6214,
+      "asset": "assets/pl/pl-PL/style.css"
+    },
+    {
+      "index": 144,
+      "offset": 6240,
+      "asset": "assets/pl/pl-PL/style_help.css"
+    },
+    {
+      "index": 145,
+      "offset": 6271,
+      "asset": "assets/pl/pl-PL/style_newsletter.css"
+    },
+    {
+      "index": 146,
+      "offset": 6308,
+      "asset": "assets/pl/pl-PL/terms_and_conditions.html"
+    },
+    {
+      "index": 147,
+      "offset": 6350,
+      "asset": "assets/pl/pl-PL/up-arrow.png"
+    },
+    {
+      "index": 148,
+      "offset": 6379,
+      "asset": "assets/popup/logoutpopup/img_logout_ma.png"
+    },
+    {
+      "index": 149,
+      "offset": 6422,
+      "asset": "assets/turnstile_widget.html"
+    },
+    {
+      "index": 150,
+      "offset": 6451,
+      "asset": "classes.dex"
+    },
+    {
+      "index": 151,
+      "offset": 6463,
+      "asset": "classes2.dex"
+    },
+    {
+      "index": 152,
+      "offset": 6476,
+      "asset": "classes3.dex"
+    }
+  ],
+  "trailing_bytes": ""
+}

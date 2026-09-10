@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="true" android:color="?colorNegative" />
+    <item android:color="?colorOnSurface" android:alpha="@integer/ds_alpha_12" />
+</selector>

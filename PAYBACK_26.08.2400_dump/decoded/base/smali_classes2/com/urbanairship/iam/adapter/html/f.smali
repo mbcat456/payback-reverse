@@ -1,0 +1,183 @@
+.class public final Lcom/urbanairship/iam/adapter/html/f;
+.super Ljava/lang/Object;
+.source "r8-map-id-c6e95f02a960cec3b4177d8b5b818c3f23768df7db706782552fe3d06a1d57cb"
+
+# interfaces
+.implements Lcom/urbanairship/iam/adapter/c;
+
+
+# instance fields
+.field public final a:Lcom/urbanairship/iam/content/InAppMessageDisplayContent$HTMLContent;
+
+.field public final b:Lcom/urbanairship/android/layout/assets/AirshipCachedAssets;
+
+.field public final c:Lcom/urbanairship/json/e;
+
+.field public final d:Lcom/urbanairship/app/f;
+
+.field public final e:Lcom/urbanairship/iam/actions/h;
+
+.field public f:Lkotlinx/coroutines/k;
+
+
+# direct methods
+.method public constructor <init>(Lcom/urbanairship/iam/content/InAppMessageDisplayContent$HTMLContent;Lcom/urbanairship/android/layout/assets/AirshipCachedAssets;Lcom/urbanairship/json/e;Lcom/urbanairship/app/f;Lcom/urbanairship/iam/actions/h;)V
+    .locals 0
+
+    .prologue
+    .line 1
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 4
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 7
+    iput-object p1, p0, Lcom/urbanairship/iam/adapter/html/f;->a:Lcom/urbanairship/iam/content/InAppMessageDisplayContent$HTMLContent;
+
+    .line 9
+    iput-object p2, p0, Lcom/urbanairship/iam/adapter/html/f;->b:Lcom/urbanairship/android/layout/assets/AirshipCachedAssets;
+
+    .line 11
+    iput-object p3, p0, Lcom/urbanairship/iam/adapter/html/f;->c:Lcom/urbanairship/json/e;
+
+    .line 13
+    iput-object p4, p0, Lcom/urbanairship/iam/adapter/html/f;->d:Lcom/urbanairship/app/f;
+
+    .line 15
+    iput-object p5, p0, Lcom/urbanairship/iam/adapter/html/f;->e:Lcom/urbanairship/iam/actions/h;
+
+    .line 17
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a()Lcom/urbanairship/l0;
+    .locals 0
+
+    .prologue
+    .line 1
+    const/4 p0, 0x0
+
+    .line 2
+    return-object p0
+.end method
+
+.method public final b(Landroid/content/Context;Lcom/urbanairship/iam/analytics/h;Lcom/urbanairship/iam/k;)Ljava/lang/Object;
+    .locals 6
+
+    .prologue
+    .line 1
+    new-instance v3, Lcom/google/common/base/s;
+
+    .line 3
+    new-instance v0, Lcom/google/android/gms/measurement/internal/c4;
+
+    .line 5
+    iget-object v1, p0, Lcom/urbanairship/iam/adapter/html/f;->d:Lcom/urbanairship/app/f;
+
+    .line 7
+    invoke-direct {v0, v1}, Lcom/google/android/gms/measurement/internal/c4;-><init>(Lcom/urbanairship/app/f;)V
+
+    .line 10
+    new-instance v1, Lcom/urbanairship/actions/q1;
+
+    .line 12
+    const/16 v2, 0x18
+
+    .line 14
+    invoke-direct {v1, v2, p0}, Lcom/urbanairship/actions/q1;-><init>(ILjava/lang/Object;)V
+
+    .line 17
+    invoke-direct {v3, p2, v0, v1}, Lcom/google/common/base/s;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
+
+    .line 20
+    new-instance v0, Lcom/urbanairship/iam/adapter/g;
+
+    .line 22
+    iget-object v4, p0, Lcom/urbanairship/iam/adapter/html/f;->c:Lcom/urbanairship/json/e;
+
+    .line 24
+    iget-object v5, p0, Lcom/urbanairship/iam/adapter/html/f;->e:Lcom/urbanairship/iam/actions/h;
+
+    .line 26
+    iget-object v1, p0, Lcom/urbanairship/iam/adapter/html/f;->a:Lcom/urbanairship/iam/content/InAppMessageDisplayContent$HTMLContent;
+
+    .line 28
+    iget-object v2, p0, Lcom/urbanairship/iam/adapter/html/f;->b:Lcom/urbanairship/android/layout/assets/AirshipCachedAssets;
+
+    .line 30
+    invoke-direct/range {v0 .. v5}, Lcom/urbanairship/iam/adapter/g;-><init>(Lcom/urbanairship/iam/content/InAppMessageDisplayContent;Lcom/urbanairship/android/layout/assets/AirshipCachedAssets;Lcom/google/common/base/s;Lcom/urbanairship/json/e;Lcom/urbanairship/iam/actions/h;)V
+
+    .line 33
+    sget-object p2, Lcom/urbanairship/iam/adapter/InAppDisplayArgsLoader;->Companion:Lcom/urbanairship/iam/adapter/h;
+
+    .line 35
+    invoke-virtual {p2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 38
+    invoke-static {v0}, Lcom/urbanairship/iam/adapter/h;->a(Lcom/urbanairship/iam/adapter/g;)Lcom/urbanairship/iam/adapter/InAppDisplayArgsLoader;
+
+    .line 41
+    move-result-object p2
+
+    .line 42
+    new-instance v0, Landroid/content/Intent;
+
+    .line 44
+    const-class v1, Lcom/urbanairship/iam/adapter/html/HtmlActivity;
+
+    .line 46
+    invoke-direct {v0, p1, v1}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
+
+    .line 49
+    const/high16 v1, 0x10000000
+
+    .line 51
+    invoke-virtual {v0, v1}, Landroid/content/Intent;->setFlags(I)Landroid/content/Intent;
+
+    .line 54
+    move-result-object v0
+
+    .line 55
+    const-string v1, "com.urbanairship.automation.EXTRA_DISPLAY_ARGS_LOADER"
+
+    .line 57
+    invoke-virtual {v0, v1, p2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Landroid/os/Parcelable;)Landroid/content/Intent;
+
+    .line 60
+    move-result-object p2
+
+    .line 61
+    invoke-virtual {p2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 64
+    sget-object v0, Lkotlinx/coroutines/m0;->INSTANCE:Lkotlinx/coroutines/m0;
+
+    .line 66
+    sget-object v0, Lkotlinx/coroutines/internal/o;->dispatcher:Lkotlinx/coroutines/t1;
+
+    .line 68
+    check-cast v0, Lkotlinx/coroutines/android/a;
+
+    .line 70
+    iget-object v0, v0, Lkotlinx/coroutines/android/a;->e:Lkotlinx/coroutines/android/a;
+
+    .line 72
+    new-instance v1, Lcom/urbanairship/iam/adapter/html/e;
+
+    .line 74
+    const/4 v2, 0x0
+
+    .line 75
+    invoke-direct {v1, p0, p1, p2, v2}, Lcom/urbanairship/iam/adapter/html/e;-><init>(Lcom/urbanairship/iam/adapter/html/f;Landroid/content/Context;Landroid/content/Intent;Lkotlin/coroutines/Continuation;)V
+
+    .line 78
+    invoke-static {v0, v1, p3}, Lkotlinx/coroutines/b0;->O(Lkotlin/coroutines/CoroutineContext;Lkotlin/jvm/functions/n;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+
+    .line 81
+    move-result-object p0
+
+    .line 82
+    return-object p0
+.end method

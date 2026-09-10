@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/trusted_devices_nav_graph" app:startDestination="@id/trusted_devices_entry_dest"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:label="@string/mfa_screen_title" android:name="payback.feature.trusteddevices.implementation.ui.TrustedDevicesEntryFragment" android:id="@id/trusted_devices_entry_dest">
+        <argument android:name="standardAuthentication" android:defaultValue="@null" app:argType="de.payback.core.api.data.StandardAuthentication" app:nullable="true" />
+        <action android:id="@id/to_enrollment_start" app:destination="@id/trusted_devices_enrollment_start_info_dest" app:enterAnim="@animator/pb_fragment_fade_enter" app:exitAnim="@animator/pb_fragment_fade_exit" app:popEnterAnim="@animator/pb_fragment_fade_enter" app:popExitAnim="@animator/pb_fragment_fade_exit" app:popUpTo="@id/trusted_devices_entry_dest" app:popUpToInclusive="true" />
+        <action android:id="@id/to_overview" app:destination="@id/trusted_devices_overview_dest" app:enterAnim="@animator/pb_fragment_fade_enter" app:exitAnim="@animator/pb_fragment_fade_exit" app:popEnterAnim="@animator/pb_fragment_fade_enter" app:popExitAnim="@animator/pb_fragment_fade_exit" app:popUpTo="@id/trusted_devices_entry_dest" app:popUpToInclusive="true" />
+        <action android:id="@id/to_add_device" app:destination="@id/trusted_devices_add_device_dest" app:enterAnim="@animator/pb_fragment_fade_enter" app:exitAnim="@animator/pb_fragment_fade_exit" app:popEnterAnim="@animator/pb_fragment_fade_enter" app:popExitAnim="@animator/pb_fragment_fade_exit" app:popUpTo="@id/trusted_devices_entry_dest" app:popUpToInclusive="true" />
+    </fragment>
+    <fragment android:label="@string/mfa_screen_title" android:name="payback.feature.trusteddevices.implementation.ui.enrollment.info.EnrollmentInfoFragment" android:id="@id/trusted_devices_enrollment_start_info_dest">
+        <action android:id="@id/to_phone" app:destination="@id/trusted_devices_phone_dest" app:enterAnim="@animator/pb_fragment_fade_enter" app:exitAnim="@animator/pb_fragment_fade_exit" app:popEnterAnim="@animator/pb_fragment_fade_enter" app:popExitAnim="@animator/pb_fragment_fade_exit" app:popUpTo="@id/trusted_devices_enrollment_start_info_dest" app:popUpToInclusive="true" />
+    </fragment>
+    <fragment android:label="@string/mfa_screen_title" android:name="payback.feature.trusteddevices.implementation.ui.enrollment.phone.entry.PhoneEntryFragment" android:id="@id/trusted_devices_phone_dest">
+        <action android:id="@id/to_confirm_phone" app:destination="@id/trusted_devices_phone_confirm_dest" app:enterAnim="@animator/pb_fragment_fade_enter" app:exitAnim="@animator/pb_fragment_fade_exit" app:popEnterAnim="@animator/pb_fragment_fade_enter" app:popExitAnim="@animator/pb_fragment_fade_exit" />
+        <action android:id="@id/to_entry" app:destination="@id/trusted_devices_entry_dest" app:enterAnim="@animator/pb_fragment_fade_enter" app:exitAnim="@animator/pb_fragment_fade_exit" app:popEnterAnim="@animator/pb_fragment_fade_enter" app:popExitAnim="@animator/pb_fragment_fade_exit" app:popUpTo="@id/trusted_devices_phone_dest" app:popUpToInclusive="true" />
+    </fragment>
+    <fragment android:label="@string/mfa_screen_title" android:name="payback.feature.trusteddevices.implementation.ui.confirmation.PhoneConfirmationFragment" android:id="@id/trusted_devices_phone_confirm_dest">
+        <argument android:name="phoneNumber" app:argType="string" />
+        <argument android:name="state" app:argType="payback.feature.trusteddevices.implementation.ui.confirmation.ConfirmPhoneState" />
+        <action android:id="@id/to_enrollment_success" app:destination="@id/trusted_devices_success_dest" app:enterAnim="@animator/pb_fragment_fade_enter" app:exitAnim="@animator/pb_fragment_fade_exit" app:popEnterAnim="@animator/pb_fragment_fade_enter" app:popExitAnim="@animator/pb_fragment_fade_exit" app:popUpTo="@id/trusted_devices_phone_dest" app:popUpToInclusive="true" />
+        <action android:id="@id/to_backup_overview" app:enterAnim="@animator/pb_fragment_fade_enter" app:exitAnim="@animator/pb_fragment_fade_exit" app:popEnterAnim="@animator/pb_fragment_fade_enter" app:popExitAnim="@animator/pb_fragment_fade_exit" app:popUpTo="@id/trusted_devices_backup_overview" />
+        <action android:id="@id/to_error_overlay" app:destination="@id/login_failed_register_trusted_device_dialog_fragment" app:enterAnim="@animator/pb_fragment_fade_enter" app:exitAnim="@animator/pb_fragment_fade_exit" app:popEnterAnim="@animator/pb_fragment_fade_enter" app:popExitAnim="@animator/pb_fragment_fade_exit" />
+    </fragment>
+    <fragment android:label="@string/mfa_screen_title" android:name="payback.feature.trusteddevices.implementation.ui.enrollment.success.EnrollmentSuccessFragment" android:id="@id/trusted_devices_success_dest">
+        <argument android:name="standardAuthentication" app:argType="de.payback.core.api.data.StandardAuthentication" app:nullable="true" />
+        <action android:id="@id/to_tutorial" app:destination="@id/trusted_devices_tutorial_dest" app:enterAnim="@animator/pb_fragment_fade_enter" app:exitAnim="@animator/pb_fragment_fade_exit" app:popEnterAnim="@animator/pb_fragment_fade_enter" app:popExitAnim="@animator/pb_fragment_fade_exit" />
+        <action android:id="@id/to_entry" app:destination="@id/trusted_devices_entry_dest" app:enterAnim="@animator/pb_fragment_fade_enter" app:exitAnim="@animator/pb_fragment_fade_exit" app:popEnterAnim="@animator/pb_fragment_fade_enter" app:popExitAnim="@animator/pb_fragment_fade_exit" app:popUpTo="@id/trusted_devices_success_dest" app:popUpToInclusive="true" />
+    </fragment>
+    <fragment android:name="payback.feature.trusteddevices.implementation.ui.tutorial.TutorialFragment" android:id="@id/trusted_devices_tutorial_dest">
+        <argument android:name="tutorial" app:argType="payback.feature.trusteddevices.implementation.ui.tutorial.TutorialViewModel$Tutorial" />
+        <argument android:name="standardAuthentication" app:argType="de.payback.core.api.data.StandardAuthentication" app:nullable="true" />
+        <action android:id="@id/to_tutorial" app:destination="@id/trusted_devices_tutorial_dest" app:enterAnim="@animator/pb_fragment_fade_enter" app:exitAnim="@animator/pb_fragment_fade_exit" app:popEnterAnim="@animator/pb_fragment_fade_enter" app:popExitAnim="@animator/pb_fragment_fade_exit" />
+        <action android:id="@id/to_push_dialog" app:destination="@id/trusted_devices_push_dialog_dest" app:enterAnim="@animator/pb_fragment_fade_enter" app:exitAnim="@animator/pb_fragment_fade_exit" app:popEnterAnim="@animator/pb_fragment_fade_enter" app:popExitAnim="@animator/pb_fragment_fade_exit" />
+        <action android:id="@id/to_tutorial_finalize" app:destination="@id/trusted_devices_tutorial_finalize_dest" app:enterAnim="@animator/pb_fragment_fade_enter" app:exitAnim="@animator/pb_fragment_fade_exit" app:popEnterAnim="@animator/pb_fragment_fade_enter" app:popExitAnim="@animator/pb_fragment_fade_exit" />
+    </fragment>
+    <dialog android:name="payback.feature.trusteddevices.implementation.ui.tutorial.pushpermission.TrustedDevicesPushPermissionDialogFragment" android:id="@id/trusted_devices_push_dialog_dest">
+        <argument android:name="standardAuthentication" app:argType="de.payback.core.api.data.StandardAuthentication" app:nullable="true" />
+        <argument android:name="isMarketingPushPermissionGranted" app:argType="boolean" />
+        <action android:id="@id/to_tutorial" app:destination="@id/trusted_devices_tutorial_dest" app:enterAnim="@animator/pb_fragment_fade_enter" app:exitAnim="@animator/pb_fragment_fade_exit" app:popEnterAnim="@animator/pb_fragment_fade_enter" app:popExitAnim="@animator/pb_fragment_fade_exit" />
+    </dialog>
+    <fragment android:name="payback.feature.trusteddevices.implementation.ui.tutorial.finalize.TutorialFinalizeFragment" android:id="@id/trusted_devices_tutorial_finalize_dest">
+        <argument android:name="standardAuthentication" app:argType="de.payback.core.api.data.StandardAuthentication" app:nullable="true" />
+        <action android:id="@id/to_entry" app:destination="@id/trusted_devices_entry_dest" app:enterAnim="@animator/pb_fragment_fade_enter" app:exitAnim="@animator/pb_fragment_fade_exit" app:popEnterAnim="@animator/pb_fragment_fade_enter" app:popExitAnim="@animator/pb_fragment_fade_exit" app:popUpTo="@id/trusted_devices_success_dest" app:popUpToInclusive="true" />
+    </fragment>
+    <fragment android:label="@string/mfa_screen_title" android:name="payback.feature.trusteddevices.implementation.ui.management.overview.TrustedDevicesOverviewFragment" android:id="@id/trusted_devices_overview_dest">
+        <argument android:name="trustedDevice" app:argType="payback.feature.trusteddevices.api.model.TrustedDeviceItem" app:nullable="true" />
+        <action android:id="@id/to_deactivate" app:destination="@id/trusted_devices_deactivate_dest" app:enterAnim="@animator/pb_fragment_fade_enter" app:exitAnim="@animator/pb_fragment_fade_exit" app:popEnterAnim="@animator/pb_fragment_fade_enter" app:popExitAnim="@animator/pb_fragment_fade_exit" />
+        <action android:id="@id/to_list" app:destination="@id/trusted_devices_list_dest" app:enterAnim="@animator/pb_fragment_fade_enter" app:exitAnim="@animator/pb_fragment_fade_exit" app:popEnterAnim="@animator/pb_fragment_fade_enter" app:popExitAnim="@animator/pb_fragment_fade_exit" />
+        <action android:id="@id/to_backup_overview" app:destination="@id/trusted_devices_backup_overview" app:enterAnim="@animator/pb_fragment_fade_enter" app:exitAnim="@animator/pb_fragment_fade_exit" app:popEnterAnim="@animator/pb_fragment_fade_enter" app:popExitAnim="@animator/pb_fragment_fade_exit" />
+        <action android:id="@id/to_pending_requests" app:destination="@id/pending_requests_dest" app:enterAnim="@animator/pb_fragment_fade_enter" app:exitAnim="@animator/pb_fragment_fade_exit" app:popEnterAnim="@animator/pb_fragment_fade_enter" app:popExitAnim="@animator/pb_fragment_fade_exit" />
+    </fragment>
+    <fragment android:label="@string/mfa_mgmt_deactivation_screen_title_and" android:name="payback.feature.trusteddevices.implementation.ui.management.deactivate.DeactivateFragment" android:id="@id/trusted_devices_deactivate_dest">
+        <action android:id="@id/to_confirm_deactivation" app:destination="@id/trusted_devices_confirm_deactivation_dest" app:enterAnim="@animator/pb_fragment_fade_enter" app:exitAnim="@animator/pb_fragment_fade_exit" app:popEnterAnim="@animator/pb_fragment_fade_enter" app:popExitAnim="@animator/pb_fragment_fade_exit" />
+    </fragment>
+    <dialog android:name="payback.feature.trusteddevices.implementation.ui.management.deactivate.ConfirmDeactivationDialogFragment" android:id="@id/trusted_devices_confirm_deactivation_dest">
+        <argument android:name="standardAuthentication" android:defaultValue="@null" app:argType="de.payback.core.api.data.StandardAuthentication" app:nullable="true" />
+    </dialog>
+    <fragment android:label="@string/mfa_mgmt_listdevices_screen_title" android:name="payback.feature.trusteddevices.implementation.ui.management.list.TrustedDevicesListFragment" android:id="@id/trusted_devices_list_dest">
+        <action android:id="@id/to_confirm_deregister" app:destination="@id/trusted_devices_confirm_deregister_dest" app:enterAnim="@animator/pb_fragment_fade_enter" app:exitAnim="@animator/pb_fragment_fade_exit" app:popEnterAnim="@animator/pb_fragment_fade_enter" app:popExitAnim="@animator/pb_fragment_fade_exit" />
+        <action android:id="@id/to_add_device" app:destination="@id/trusted_devices_add_device_dest" app:enterAnim="@animator/pb_fragment_fade_enter" app:exitAnim="@animator/pb_fragment_fade_exit" app:popEnterAnim="@animator/pb_fragment_fade_enter" app:popExitAnim="@animator/pb_fragment_fade_exit" />
+        <action android:id="@id/to_overview" app:destination="@id/trusted_devices_overview_dest" app:enterAnim="@animator/pb_fragment_fade_enter" app:exitAnim="@animator/pb_fragment_fade_exit" app:popEnterAnim="@animator/pb_fragment_fade_enter" app:popExitAnim="@animator/pb_fragment_fade_exit" app:popUpTo="@id/trusted_devices_entry_dest" app:popUpToInclusive="true" />
+    </fragment>
+    <fragment android:label="@string/mfa_mgmt_adddevice_screen_title" android:name="payback.feature.trusteddevices.implementation.ui.management.list.add.AddDeviceFragment" android:id="@id/trusted_devices_add_device_dest">
+        <argument android:name="standardAuthentication" app:argType="de.payback.core.api.data.StandardAuthentication" app:nullable="true" />
+        <action android:id="@id/to_success" app:destination="@id/trusted_devices_success_dest" app:enterAnim="@animator/pb_fragment_fade_enter" app:exitAnim="@animator/pb_fragment_fade_exit" app:popEnterAnim="@animator/pb_fragment_fade_enter" app:popExitAnim="@animator/pb_fragment_fade_exit" app:popUpTo="@id/trusted_devices_overview_dest" app:popUpToInclusive="true" />
+    </fragment>
+    <dialog android:name="payback.feature.trusteddevices.implementation.ui.management.list.remove.ConfirmDeregisterDialogFragment" android:id="@id/trusted_devices_confirm_deregister_dest">
+        <argument android:name="deviceIdentifier" app:argType="string" />
+    </dialog>
+    <fragment android:label="@string/mfa_mgmt_editphone_title" android:name="payback.feature.trusteddevices.implementation.ui.backup.phone.EditPhoneFragment" android:id="@id/trusted_devices_edit_phone_dest">
+        <action android:id="@id/to_confirm_phone" app:destination="@id/trusted_devices_phone_confirm_dest" app:enterAnim="@animator/pb_fragment_fade_enter" app:exitAnim="@animator/pb_fragment_fade_exit" app:popEnterAnim="@animator/pb_fragment_fade_enter" app:popExitAnim="@animator/pb_fragment_fade_exit" />
+    </fragment>
+    <fragment android:label="@string/mfa_mgmt_backup_title" android:name="payback.feature.trusteddevices.implementation.ui.backup.overview.BackupOverviewFragment" android:id="@id/trusted_devices_backup_overview">
+        <action android:id="@id/to_edit_phone" app:destination="@id/trusted_devices_edit_phone_dest" app:enterAnim="@animator/pb_fragment_fade_enter" app:exitAnim="@animator/pb_fragment_fade_exit" app:popEnterAnim="@animator/pb_fragment_fade_enter" app:popExitAnim="@animator/pb_fragment_fade_exit" />
+    </fragment>
+    <fragment android:label="@string/mfa_requestlist_title" android:name="payback.feature.trusteddevices.implementation.ui.management.pendingrequests.PendingRequestsFragment" android:id="@id/pending_requests_dest">
+        <argument android:name="pendingRequests" app:argType="de.payback.core.api.data.PendingAuthorizationRequest[]" />
+    </fragment>
+    <dialog android:label="FailedRegisterTrustedDeviceDialogFragment" android:name="payback.feature.trusteddevices.implementation.ui.confirmation.FailedRegisterTrustedDeviceDialogFragment" android:id="@id/login_failed_register_trusted_device_dialog_fragment">
+        <action android:id="@id/to_sign_up_start" app:destination="@id/trusted_devices_enrollment_start_info_dest" app:enterAnim="@animator/pb_fragment_fade_enter" app:exitAnim="@animator/pb_fragment_fade_exit" app:popEnterAnim="@animator/pb_fragment_fade_enter" app:popExitAnim="@animator/pb_fragment_fade_exit" />
+    </dialog>
+</navigation>

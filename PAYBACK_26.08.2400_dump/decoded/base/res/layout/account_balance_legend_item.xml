@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/account_balance_legend_item_0" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textAppearance="@style/TextAppearance.DesignSystem.Payback.Headline6" android:textColor="?colorPrimary" android:id="@id/account_balance_legend_headline" android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ds_spacing_02" android:layout_marginStart="@dimen/ds_spacing_02" android:layout_marginEnd="@dimen/ds_spacing_02" />
+    <TextView android:textAppearance="@style/TextAppearance.DesignSystem.Android.Body2" android:textColor="?android:textColorSecondary" android:id="@id/account_balance_legend_body" android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:layout_marginStart="@dimen/ds_spacing_02" android:layout_marginEnd="@dimen/ds_spacing_02" />
+</LinearLayout>

@@ -1,0 +1,71 @@
+.class public final Lio/adjoe/johttp/l;
+.super Lkotlin/jvm/internal/t;
+.source "r8-map-id-c6e95f02a960cec3b4177d8b5b818c3f23768df7db706782552fe3d06a1d57cb"
+
+# interfaces
+.implements Lkotlin/jvm/functions/Function0;
+
+
+# instance fields
+.field public final synthetic a:Lkotlin/jvm/functions/Function1;
+
+.field public final synthetic b:Lio/adjoe/johttp/Response;
+
+.field public final synthetic c:Lio/adjoe/johttp/Call;
+
+
+# direct methods
+.method public constructor <init>(Lkotlin/jvm/functions/Function1;Lio/adjoe/johttp/Response;Lio/adjoe/johttp/Call;)V
+    .locals 0
+
+    .prologue
+    .line 1
+    iput-object p1, p0, Lio/adjoe/johttp/l;->a:Lkotlin/jvm/functions/Function1;
+
+    .line 3
+    iput-object p2, p0, Lio/adjoe/johttp/l;->b:Lio/adjoe/johttp/Response;
+
+    .line 5
+    iput-object p3, p0, Lio/adjoe/johttp/l;->c:Lio/adjoe/johttp/Call;
+
+    .line 7
+    const/4 p1, 0x0
+
+    .line 8
+    invoke-direct {p0, p1}, Lkotlin/jvm/internal/t;-><init>(I)V
+
+    .line 11
+    return-void
+.end method
+
+
+# virtual methods
+.method public final invoke()Ljava/lang/Object;
+    .locals 2
+
+    .prologue
+    .line 1
+    iget-object v0, p0, Lio/adjoe/johttp/l;->a:Lkotlin/jvm/functions/Function1;
+
+    .line 3
+    if-eqz v0, :cond_0
+
+    .line 5
+    iget-object v1, p0, Lio/adjoe/johttp/l;->b:Lio/adjoe/johttp/Response;
+
+    .line 7
+    invoke-interface {v0, v1}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 10
+    :cond_0
+    iget-object p0, p0, Lio/adjoe/johttp/l;->c:Lio/adjoe/johttp/Call;
+
+    .line 12
+    invoke-static {p0}, Lio/adjoe/johttp/Call;->access$clear(Lio/adjoe/johttp/Call;)V
+
+    .line 15
+    sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
+
+    .line 17
+    return-object p0
+.end method

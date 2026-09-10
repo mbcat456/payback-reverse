@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<host-apdu-service android:description="@string/app_name_country" android:requireDeviceUnlock="true" android:apduServiceBanner="@drawable/paymentproviderteaser"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <aid-group android:description="@string/app_name_country" android:category="payment">
+        <aid-filter android:name="325041592E5359532E4444463031" />
+        <aid-filter android:name="D2760001670001" />
+        <aid-filter android:name="D2760001670002" />
+        <aid-filter android:name="D2760001670003" />
+        <aid-filter android:name="D2760001670004" />
+    </aid-group>
+</host-apdu-service>

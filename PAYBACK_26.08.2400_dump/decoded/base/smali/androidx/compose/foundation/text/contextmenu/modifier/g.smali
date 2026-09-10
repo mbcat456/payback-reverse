@@ -1,0 +1,230 @@
+.class public final Landroidx/compose/foundation/text/contextmenu/modifier/g;
+.super Lkotlin/coroutines/jvm/internal/h;
+.source "r8-map-id-c6e95f02a960cec3b4177d8b5b818c3f23768df7db706782552fe3d06a1d57cb"
+
+# interfaces
+.implements Lkotlin/jvm/functions/n;
+
+
+# instance fields
+.field final synthetic $dataProvider:Landroidx/compose/foundation/text/contextmenu/modifier/f;
+
+.field final synthetic $localClickOffset:J
+
+.field final synthetic $provider:Landroidx/compose/foundation/text/contextmenu/provider/g;
+
+.field label:I
+
+.field final synthetic this$0:Landroidx/compose/foundation/text/contextmenu/modifier/h;
+
+
+# direct methods
+.method public constructor <init>(Landroidx/compose/foundation/text/contextmenu/modifier/h;JLandroidx/compose/foundation/text/contextmenu/provider/g;Landroidx/compose/foundation/text/contextmenu/modifier/f;Lkotlin/coroutines/Continuation;)V
+    .locals 0
+
+    .prologue
+    .line 1
+    iput-object p1, p0, Landroidx/compose/foundation/text/contextmenu/modifier/g;->this$0:Landroidx/compose/foundation/text/contextmenu/modifier/h;
+
+    .line 3
+    iput-wide p2, p0, Landroidx/compose/foundation/text/contextmenu/modifier/g;->$localClickOffset:J
+
+    .line 5
+    iput-object p4, p0, Landroidx/compose/foundation/text/contextmenu/modifier/g;->$provider:Landroidx/compose/foundation/text/contextmenu/provider/g;
+
+    .line 7
+    iput-object p5, p0, Landroidx/compose/foundation/text/contextmenu/modifier/g;->$dataProvider:Landroidx/compose/foundation/text/contextmenu/modifier/f;
+
+    .line 9
+    const/4 p1, 0x2
+
+    .line 10
+    invoke-direct {p0, p1, p6}, Lkotlin/coroutines/jvm/internal/h;-><init>(ILkotlin/coroutines/Continuation;)V
+
+    .line 13
+    return-void
+.end method
+
+
+# virtual methods
+.method public final create(Ljava/lang/Object;Lkotlin/coroutines/Continuation;)Lkotlin/coroutines/Continuation;
+    .locals 7
+
+    .prologue
+    .line 1
+    new-instance v0, Landroidx/compose/foundation/text/contextmenu/modifier/g;
+
+    .line 3
+    iget-object v1, p0, Landroidx/compose/foundation/text/contextmenu/modifier/g;->this$0:Landroidx/compose/foundation/text/contextmenu/modifier/h;
+
+    .line 5
+    iget-wide v2, p0, Landroidx/compose/foundation/text/contextmenu/modifier/g;->$localClickOffset:J
+
+    .line 7
+    iget-object v4, p0, Landroidx/compose/foundation/text/contextmenu/modifier/g;->$provider:Landroidx/compose/foundation/text/contextmenu/provider/g;
+
+    .line 9
+    iget-object v5, p0, Landroidx/compose/foundation/text/contextmenu/modifier/g;->$dataProvider:Landroidx/compose/foundation/text/contextmenu/modifier/f;
+
+    .line 11
+    move-object v6, p2
+
+    .line 12
+    invoke-direct/range {v0 .. v6}, Landroidx/compose/foundation/text/contextmenu/modifier/g;-><init>(Landroidx/compose/foundation/text/contextmenu/modifier/h;JLandroidx/compose/foundation/text/contextmenu/provider/g;Landroidx/compose/foundation/text/contextmenu/modifier/f;Lkotlin/coroutines/Continuation;)V
+
+    .line 15
+    return-object v0
+.end method
+
+.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
+
+    .prologue
+    .line 1
+    check-cast p1, Lkotlinx/coroutines/CoroutineScope;
+
+    .line 3
+    check-cast p2, Lkotlin/coroutines/Continuation;
+
+    .line 5
+    invoke-virtual {p0, p1, p2}, Landroidx/compose/foundation/text/contextmenu/modifier/g;->create(Ljava/lang/Object;Lkotlin/coroutines/Continuation;)Lkotlin/coroutines/Continuation;
+
+    .line 8
+    move-result-object p0
+
+    .line 9
+    check-cast p0, Landroidx/compose/foundation/text/contextmenu/modifier/g;
+
+    .line 11
+    sget-object p1, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
+
+    .line 13
+    invoke-virtual {p0, p1}, Landroidx/compose/foundation/text/contextmenu/modifier/g;->invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 16
+    move-result-object p0
+
+    .line 17
+    return-object p0
+.end method
+
+.method public final invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 6
+
+    .prologue
+    .line 1
+    sget-object v0, Lkotlin/coroutines/intrinsics/CoroutineSingletons;->COROUTINE_SUSPENDED:Lkotlin/coroutines/intrinsics/CoroutineSingletons;
+
+    .line 3
+    iget v1, p0, Landroidx/compose/foundation/text/contextmenu/modifier/g;->label:I
+
+    .line 5
+    const/4 v2, 0x2
+
+    .line 6
+    const/4 v3, 0x1
+
+    .line 7
+    if-eqz v1, :cond_2
+
+    .line 9
+    if-eq v1, v3, :cond_1
+
+    .line 11
+    if-ne v1, v2, :cond_0
+
+    .line 13
+    invoke-static {p1}, Lcom/google/android/gms/internal/mlkit_vision_common/x8;->c(Ljava/lang/Object;)V
+
+    .line 16
+    goto :goto_2
+
+    .line 17
+    :cond_0
+    const-string p0, "call to \'resume\' before \'invoke\' with coroutine"
+
+    .line 19
+    invoke-static {p0}, Lkotlinx/serialization/json/q;->i(Ljava/lang/String;)V
+
+    .line 22
+    const/4 p0, 0x0
+
+    .line 23
+    return-object p0
+
+    .line 24
+    :cond_1
+    invoke-static {p1}, Lcom/google/android/gms/internal/mlkit_vision_common/x8;->c(Ljava/lang/Object;)V
+
+    .line 27
+    goto :goto_0
+
+    .line 28
+    :cond_2
+    invoke-static {p1}, Lcom/google/android/gms/internal/mlkit_vision_common/x8;->c(Ljava/lang/Object;)V
+
+    .line 31
+    iget-object p1, p0, Landroidx/compose/foundation/text/contextmenu/modifier/g;->this$0:Landroidx/compose/foundation/text/contextmenu/modifier/h;
+
+    .line 33
+    iget-object p1, p1, Landroidx/compose/foundation/text/contextmenu/modifier/h;->q:Lkotlin/jvm/functions/n;
+
+    .line 35
+    if-eqz p1, :cond_3
+
+    .line 37
+    iget-wide v4, p0, Landroidx/compose/foundation/text/contextmenu/modifier/g;->$localClickOffset:J
+
+    .line 39
+    new-instance v1, Landroidx/compose/ui/geometry/e;
+
+    .line 41
+    invoke-direct {v1, v4, v5}, Landroidx/compose/ui/geometry/e;-><init>(J)V
+
+    .line 44
+    iput v3, p0, Landroidx/compose/foundation/text/contextmenu/modifier/g;->label:I
+
+    .line 46
+    invoke-interface {p1, v1, p0}, Lkotlin/jvm/functions/n;->invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 49
+    move-result-object p1
+
+    .line 50
+    if-ne p1, v0, :cond_3
+
+    .line 52
+    goto :goto_1
+
+    .line 53
+    :cond_3
+    :goto_0
+    iget-object p1, p0, Landroidx/compose/foundation/text/contextmenu/modifier/g;->$provider:Landroidx/compose/foundation/text/contextmenu/provider/g;
+
+    .line 55
+    iget-object v1, p0, Landroidx/compose/foundation/text/contextmenu/modifier/g;->$dataProvider:Landroidx/compose/foundation/text/contextmenu/modifier/f;
+
+    .line 57
+    iput v2, p0, Landroidx/compose/foundation/text/contextmenu/modifier/g;->label:I
+
+    .line 59
+    invoke-interface {p1, v1, p0}, Landroidx/compose/foundation/text/contextmenu/provider/g;->a(Landroidx/compose/foundation/text/contextmenu/provider/f;Lkotlin/coroutines/jvm/internal/h;)Ljava/lang/Object;
+
+    .line 62
+    move-result-object p0
+
+    .line 63
+    if-ne p0, v0, :cond_4
+
+    .line 65
+    :goto_1
+    return-object v0
+
+    .line 66
+    :cond_4
+    :goto_2
+    sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
+
+    .line 68
+    return-object p0
+.end method

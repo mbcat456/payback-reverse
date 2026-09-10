@@ -1,0 +1,98 @@
+.class public final Lpayback/feature/wallet/implementation/ui/loyaltycard/a;
+.super Ljava/lang/Object;
+.source "r8-map-id-c6e95f02a960cec3b4177d8b5b818c3f23768df7db706782552fe3d06a1d57cb"
+
+
+# static fields
+.field public static final INSTANCE:Lpayback/feature/wallet/implementation/ui/loyaltycard/a;
+
+.field public static final a:Landroidx/compose/runtime/internal/e;
+
+.field public static final b:Landroidx/compose/runtime/internal/e;
+
+.field public static final c:Landroidx/compose/runtime/internal/e;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 4
+
+    .prologue
+    .line 1
+    new-instance v0, Lpayback/feature/wallet/implementation/ui/loyaltycard/a;
+
+    .line 3
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+
+    .line 6
+    sput-object v0, Lpayback/feature/wallet/implementation/ui/loyaltycard/a;->INSTANCE:Lpayback/feature/wallet/implementation/ui/loyaltycard/a;
+
+    .line 8
+    new-instance v0, Lpayback/feature/trusteddevices/implementation/ui/authenticate/recovery/sms/a;
+
+    .line 10
+    const/4 v1, 0x7
+
+    .line 11
+    invoke-direct {v0, v1}, Lpayback/feature/trusteddevices/implementation/ui/authenticate/recovery/sms/a;-><init>(I)V
+
+    .line 14
+    new-instance v1, Landroidx/compose/runtime/internal/e;
+
+    .line 16
+    const v2, -0x764fb8ef
+
+    .line 19
+    const/4 v3, 0x0
+
+    .line 20
+    invoke-direct {v1, v2, v3, v0}, Landroidx/compose/runtime/internal/e;-><init>(IZLkotlin/d;)V
+
+    .line 23
+    sput-object v1, Lpayback/feature/wallet/implementation/ui/loyaltycard/a;->a:Landroidx/compose/runtime/internal/e;
+
+    .line 25
+    new-instance v0, Lpayback/feature/trusteddevices/implementation/ui/authenticate/recovery/postal/requestcode/a;
+
+    .line 27
+    const/16 v1, 0xb
+
+    .line 29
+    invoke-direct {v0, v1}, Lpayback/feature/trusteddevices/implementation/ui/authenticate/recovery/postal/requestcode/a;-><init>(I)V
+
+    .line 32
+    new-instance v1, Landroidx/compose/runtime/internal/e;
+
+    .line 34
+    const v2, 0x56bcb957
+
+    .line 37
+    invoke-direct {v1, v2, v3, v0}, Landroidx/compose/runtime/internal/e;-><init>(IZLkotlin/d;)V
+
+    .line 40
+    sput-object v1, Lpayback/feature/wallet/implementation/ui/loyaltycard/a;->b:Landroidx/compose/runtime/internal/e;
+
+    .line 42
+    new-instance v0, Lpayback/feature/trusteddevices/implementation/ui/authenticate/recovery/sms/a;
+
+    .line 44
+    const/16 v1, 0x8
+
+    .line 46
+    invoke-direct {v0, v1}, Lpayback/feature/trusteddevices/implementation/ui/authenticate/recovery/sms/a;-><init>(I)V
+
+    .line 49
+    new-instance v1, Landroidx/compose/runtime/internal/e;
+
+    .line 51
+    const v2, -0x4230fa06
+
+    .line 54
+    invoke-direct {v1, v2, v3, v0}, Landroidx/compose/runtime/internal/e;-><init>(IZLkotlin/d;)V
+
+    .line 57
+    sput-object v1, Lpayback/feature/wallet/implementation/ui/loyaltycard/a;->c:Landroidx/compose/runtime/internal/e;
+
+    .line 59
+    return-void
+.end method

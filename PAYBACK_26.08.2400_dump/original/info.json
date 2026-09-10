@@ -1,0 +1,27 @@
+{
+    "apkm_version": 5,
+    "apk_title": "PAYBACK - La tua Carta Fedelt\u00e0 26.08.2400 (arm64-v8a + arm-v7a) (480-640dpi) (Android 9.0+)",
+    "app_name": "PAYBACK - La tua Carta Fedelt\u00e0",
+    "release_version": "26.08.2400",
+    "variant": "(arm64-v8a + arm-v7a) (480-640dpi) (Android 9.0+)",
+    "release_title": "PAYBACK - La tua Carta Fedelt\u00e0 26.08.2400 (arm64-v8a + arm-v7a) (480-640dpi) (Android 9.0+)",
+    "versioncode": "1000090637",
+    "pname": "it.payback.client.android",
+    "post_date": "2026-09-02 10:08:17",
+    "capabilities": [],
+    "languages": [
+        "it"
+    ],
+    "arches": [
+        "arm64-v8a",
+        "armeabi-v7a"
+    ],
+    "dpis": [
+        "480",
+        "640"
+    ],
+    "min_api": "28",
+    "accent_color": "003cb0",
+    "apk_id": 15767122,
+    "release_id": 15767104
+}

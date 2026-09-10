@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="coupons_available_coupons_per_partner">
+        <item quantity="other">%1$s Coupons</item>
+        <item quantity="zero">%1$s Coupon</item>
+        <item quantity="one">%1$s Coupon</item>
+        <item quantity="two">%1$s Coupons</item>
+        <item quantity="few">%1$s Coupons</item>
+        <item quantity="many">%1$s Coupons</item>
+    </plurals>
+    <plurals name="coupons_button_filter_page_coupons">
+        <item quantity="other">Mostra %1$s coupon</item>
+        <item quantity="zero">Finito</item>
+        <item quantity="one">Mostra %1$s coupon</item>
+        <item quantity="two">Mostra %1$s coupon</item>
+        <item quantity="few">Mostra %1$s coupon</item>
+        <item quantity="many">Mostra %1$s coupon</item>
+    </plurals>
+    <plurals name="coupons_filter_btn_applied_amount">
+        <item quantity="other">%1$s partner selezionati</item>
+        <item quantity="zero">%1$s partner selezionati</item>
+        <item quantity="one">%1$s partner selezionato</item>
+        <item quantity="two">%1$s partner selezionati</item>
+        <item quantity="few">%1$s partner selezionati</item>
+        <item quantity="many">%1$s partner selezionati</item>
+    </plurals>
+    <plurals name="exo_controls_fastforward_by_amount_description">
+        <item quantity="other">Fast forward %d seconds</item>
+        <item quantity="one">Fast forward %d second</item>
+    </plurals>
+    <plurals name="exo_controls_rewind_by_amount_description">
+        <item quantity="other">Rewind %d seconds</item>
+        <item quantity="one">Rewind %d second</item>
+    </plurals>
+    <plurals name="fg_notification_2_text_with_time">
+        <item quantity="other">More %1$s in %2$d minutes!</item>
+        <item quantity="one">More %1$s in %2$d minute!</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">%d new notifications</item>
+        <item quantity="one">%d new notification</item>
+    </plurals>
+    <plurals name="onlineshopping_deal_indicator">
+        <item quantity="other">%1$s offerte</item>
+        <item quantity="zero">%1$s offerta</item>
+        <item quantity="one">%1$s offerta</item>
+        <item quantity="two">%1$s offerta</item>
+        <item quantity="few">%1$s offerte</item>
+        <item quantity="many">%1$s offerte</item>
+    </plurals>
+    <plurals name="time_unit_days_indicator">
+        <item quantity="other">%1$s giorni</item>
+        <item quantity="zero">%1$s ore</item>
+        <item quantity="one">%1$s giorno</item>
+        <item quantity="two">%1$s ore</item>
+        <item quantity="few">%1$s giorni</item>
+        <item quantity="many">%1$s giorni</item>
+    </plurals>
+    <plurals name="time_unit_hours_indicator">
+        <item quantity="other">%1$s ore</item>
+        <item quantity="zero">%1$s ore</item>
+        <item quantity="one">%1$s or</item>
+        <item quantity="two">%1$s ore</item>
+        <item quantity="few">%1$s ore</item>
+        <item quantity="many">%1$s ore</item>
+    </plurals>
+    <plurals name="ua_mc_description_deleted">
+        <item quantity="other">Deleted %1$d messages</item>
+        <item quantity="one">Deleted %1$d message</item>
+    </plurals>
+    <plurals name="ua_mc_description_marked_read">
+        <item quantity="other">Marked %1$d messages as read</item>
+        <item quantity="one">Marked %1$d message as read</item>
+    </plurals>
+    <plurals name="ua_selected_count">
+        <item quantity="other">%1$d selected</item>
+        <item quantity="one">%1$d selected</item>
+    </plurals>
+</resources>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:tag="layout/entitlement_permission_center_activity_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:id="@id/app_bar" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <de.payback.core.ui.ds.topappbar.TopAppBarView android:theme="@style/ThemeOverlay.DesignSystem.TopAppBar.Surface" android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="?actionBarSize" />
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.fragment.app.FragmentContainerView android:name="androidx.navigation.fragment.NavHostFragment" android:id="@id/nav_host" android:layout_width="fill_parent" android:layout_height="fill_parent" app:defaultNavHost="true" app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior" app:navGraph="@navigation/entitlements_permission_center_nav_graph" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

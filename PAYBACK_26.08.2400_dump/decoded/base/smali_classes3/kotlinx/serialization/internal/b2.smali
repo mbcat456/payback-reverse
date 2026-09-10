@@ -1,0 +1,120 @@
+.class public final Lkotlinx/serialization/internal/b2;
+.super Ljava/lang/Object;
+.source "r8-map-id-c6e95f02a960cec3b4177d8b5b818c3f23768df7db706782552fe3d06a1d57cb"
+
+# interfaces
+.implements Lkotlinx/serialization/KSerializer;
+
+
+# static fields
+.field public static final INSTANCE:Lkotlinx/serialization/internal/b2;
+
+.field public static final a:Lkotlinx/serialization/internal/g0;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 2
+
+    .prologue
+    .line 1
+    new-instance v0, Lkotlinx/serialization/internal/b2;
+
+    .line 3
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+
+    .line 6
+    sput-object v0, Lkotlinx/serialization/internal/b2;->INSTANCE:Lkotlinx/serialization/internal/b2;
+
+    .line 8
+    sget-object v0, Lkotlin/jvm/internal/u;->INSTANCE:Lkotlin/jvm/internal/u;
+
+    .line 10
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 13
+    sget-object v0, Lkotlinx/serialization/internal/q0;->INSTANCE:Lkotlinx/serialization/internal/q0;
+
+    .line 15
+    const-string v1, "kotlin.ULong"
+
+    .line 17
+    invoke-static {v1, v0}, Lkotlinx/serialization/internal/b1;->a(Ljava/lang/String;Lkotlinx/serialization/KSerializer;)Lkotlinx/serialization/internal/g0;
+
+    .line 20
+    move-result-object v0
+
+    .line 21
+    sput-object v0, Lkotlinx/serialization/internal/b2;->a:Lkotlinx/serialization/internal/g0;
+
+    .line 23
+    return-void
+.end method
+
+
+# virtual methods
+.method public final deserialize(Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+    .locals 1
+
+    .prologue
+    .line 1
+    sget-object p0, Lkotlinx/serialization/internal/b2;->a:Lkotlinx/serialization/internal/g0;
+
+    .line 3
+    invoke-interface {p1, p0}, Lkotlinx/serialization/encoding/Decoder;->w(Lkotlinx/serialization/descriptors/SerialDescriptor;)Lkotlinx/serialization/encoding/Decoder;
+
+    .line 6
+    move-result-object p0
+
+    .line 7
+    invoke-interface {p0}, Lkotlinx/serialization/encoding/Decoder;->o()J
+
+    .line 10
+    move-result-wide p0
+
+    .line 11
+    new-instance v0, Lkotlin/x;
+
+    .line 13
+    invoke-direct {v0, p0, p1}, Lkotlin/x;-><init>(J)V
+
+    .line 16
+    return-object v0
+.end method
+
+.method public final getDescriptor()Lkotlinx/serialization/descriptors/SerialDescriptor;
+    .locals 0
+
+    .prologue
+    .line 1
+    sget-object p0, Lkotlinx/serialization/internal/b2;->a:Lkotlinx/serialization/internal/g0;
+
+    .line 3
+    return-object p0
+.end method
+
+.method public final serialize(Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+    .locals 2
+
+    .prologue
+    .line 1
+    check-cast p2, Lkotlin/x;
+
+    .line 3
+    iget-wide v0, p2, Lkotlin/x;->a:J
+
+    .line 5
+    sget-object p0, Lkotlinx/serialization/internal/b2;->a:Lkotlinx/serialization/internal/g0;
+
+    .line 7
+    invoke-interface {p1, p0}, Lkotlinx/serialization/encoding/Encoder;->n(Lkotlinx/serialization/descriptors/SerialDescriptor;)Lkotlinx/serialization/encoding/Encoder;
+
+    .line 10
+    move-result-object p0
+
+    .line 11
+    invoke-interface {p0, v0, v1}, Lkotlinx/serialization/encoding/Encoder;->q(J)V
+
+    .line 14
+    return-void
+.end method

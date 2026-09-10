@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/pay_contact_nav_graph" app:startDestination="@id/pay_contact_confirmation_dest"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:name="de.payback.pay.ui.contact.legacy.overview.PayContactOverviewFragment" android:id="@id/pay_contact_confirmation_dest">
+        <action android:id="@id/to_detail_form" app:destination="@id/pay_contact_detail_form_dest" app:enterAnim="@anim/slide_and_fade_in_right" app:exitAnim="@anim/slide_and_fade_out_left" app:popEnterAnim="@anim/slide_and_fade_in_left" app:popExitAnim="@anim/slide_and_fade_out_right" />
+    </fragment>
+    <fragment android:name="de.payback.pay.ui.contact.legacy.detailform.PayContactDetailFormFragment" android:id="@id/pay_contact_detail_form_dest">
+        <argument android:name="acceptPsp" app:argType="boolean" />
+        <action android:id="@id/to_confirmation" app:destination="@id/pay_contact_confirmation_dest" app:enterAnim="@anim/slide_and_fade_in_left" app:exitAnim="@anim/slide_and_fade_out_right" app:popEnterAnim="@anim/slide_and_fade_in_right" app:popExitAnim="@anim/slide_and_fade_out_left" app:popUpTo="@id/pay_contact_nav_graph" app:popUpToInclusive="true" />
+    </fragment>
+</navigation>

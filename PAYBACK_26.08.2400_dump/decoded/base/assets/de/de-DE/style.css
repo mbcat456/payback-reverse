@@ -1,0 +1,333 @@
+*{
+	margin: 0; 
+	padding: 0; 
+	outline: 0;
+}
+
+body {
+    font-family: 'Roboto',sans-serif;
+    background: #e5ecf6;
+    color: #4b4b4d;
+	padding: 5px;
+	line-height: 24px;
+	margin: 5px;
+}
+
+section.white-background {
+    background-color: #FFFFFF;
+    border: none !important;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px #D3D3D3, -2px -2px 5px #D3D3D3;
+}
+
+
+.unformatiert {
+  text-decoration: none;
+  color: #313133;
+}
+
+.formatiert {
+  text-decoration: underline;
+}
+
+h1 {
+    
+    font-size: 19px;
+    padding-top: 6px;
+	padding-bottom: 6px;
+}
+
+h2 {
+  
+    font-size: 16px;
+    line-height: 21px;
+	padding-top: 6px;
+	padding-bottom: 4px;
+}
+
+h3,h4,h5,h6 {
+    font-size: 15px;
+    line-height: 21px;
+	margin: 8px 0 0 0;
+}
+
+a {
+    color: #0046aa;
+    text-decoration: underline;
+    word-break: break-all;
+}
+
+section {
+    padding-top: 5px;
+	padding-right: 10px;
+	padding-bottom: 5px;
+	padding-left: 10px;
+	display: block;
+}
+
+ul {
+	padding-left: 13px;
+	padding-right: 10px;	
+}
+p {
+    
+	padding-top: 5px;
+	padding-right: 2px;	
+	padding-bottom: 5px;
+	padding-left: 1px;
+	font-size: 15px;
+}
+
+#mainNavigation {
+    list-style-type: none;
+    display: block;
+    background: #fff;
+    border-top: 1px solid #7fa2d4;
+    border-bottom: 1px solid #7fa2d4;
+    margin-top: 25px;
+	padding-left: 8px;
+	padding-right: 8px;
+}
+
+#mainNavigation li {
+	font-family: 'Roboto',sans-serif;
+    background: none;
+    margin: 0 0 -1px 5px;
+    border-bottom: 1px solid #7fa2d4;	
+}
+
+#mainNavigation li last-child {
+    border-bottom: 0 solid #7fa2d4;
+}
+
+#mainNavigation li a {  
+    line-height: 40px;
+    display: block;
+	font-size: 15px; 
+}
+
+ol {
+    padding: 0 0 0 20px;
+    margin: 0 0 0 0;
+}
+
+dd {
+    padding: 0 2px 0 15px;
+}
+
+
+
+li {
+	font-size: 15px;		
+	padding-left: 2px;
+}
+.sub_navigation {
+    padding: 0 0 0 15px;
+	font-size: 13px;
+}
+
+
+.scrollToTop hover{
+	text-decoration: none;
+	cursor: default;
+}
+
+.legal-text-container {
+	margin-bottom: 80px;
+}
+
+.back-to-top {
+	display: none;
+	width: 60px;
+	height: 60px;
+	text-indent: -9999px;
+	position: fixed;
+	right: 20px;
+	bottom: 20px;
+	background: url("up-arrow.png") no-repeat center 50%;
+	border-radius: 30px;
+	opacity: .4;
+}
+/* Content for accordion */
+
+*, ::after, ::before {
+	 box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  max-width: 100%;
+}
+
+img {
+	max-width: 100%;
+}
+
+.details-wrapper {
+	width: 100%;
+	margin: 0 auto;
+	background-color: #e5ecf6;
+	box-shadow:0 -1px 1px 5px #e5ecf6;
+}
+details {
+	padding: .5rem;
+	font: 1rem/1.2 sans-serif;
+}
+
+summary {
+	padding: .25rem 1rem;
+	background-color: #FFFFFF;
+	font: bold 1.25rem/2 sans-serif;
+	color:#2A62C5;
+	border: none;
+	border-radius: 5px;
+	box-shadow: 1px 1px 1px 1px #A5A5A6;
+  	cursor: pointer;
+	list-style: none;
+}
+/* Triangle not shown */
+summary::-webkit-details-marker {
+	display: none;
+}
+summary::before {
+	padding-right: .25rem;
+	content: '+ ';  /* Instead of Triangle closed */
+}
+details[open] summary::before {
+	padding-right: .25rem;
+    box-shadow: 0 -1px 1px 1px #2A62C5;
+	content: '- '; /* Instead of Triangle open */
+}
+
+/* Styling the summary in case of open 'details' */
+details[open] summary {
+	border-radius: 5px 5px 0 0;
+    background-color: #2A62C5;
+    color: #ffffff;
+    box-shadow: 0 -1px 1px 1px #2A62C5;
+}
+
+.details-content {
+	margin: 0;
+	padding: .25rem 1rem;
+	background-color: #ffffff;
+	border-radius: 0px 0px 5px 5px;
+    box-shadow: 0 1px 1px 1px #2A62C5;
+  	color: #313133;
+}
+.details-content p {
+	font: 1.1rem/1.5 sans-serif;
+}
+.pb-ewe-text-container {
+    font-family: "Roboto", sans-serif;
+    padding: 19px;
+}
+
+.pb-ewe-text-intro__subtopic {
+    padding-left: 20px;
+}
+
+.pb-ewe-text-heading {
+    color: #003EB0;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* End for accordion content */
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #e5ecf6;
+}
+
+/* Style the buttons that are used to open the tab content */
+
+.tab button {
+    float: left; 
+	background-color: inherit;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+	width: 100%;
+    transition: 0.3s;
+	display: inline-block;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #7fa2d4;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border-top: none;
+}
+
+.numbered-list-small-alphabet {
+  list-style-type: lower-alpha;
+  padding-left: 20px;
+}
+
+.table-container {
+  width: 100%;
+  overflow-y: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  border: none;
+}
+
+.table td {
+  vertical-align: top;
+  font-family: 'Roboto',sans-serif;
+  font-size: 15px;
+  padding: 2pt 3.5pt;
+}
+
+.table td:empty {
+    height: 2rem;
+}
+
+.table td.column-name {
+  min-width: 6rem;
+  font-weight: bold;
+  /* color: black; */ /* Up to taste some rows/cells were black, some were grey */
+}
+
+.table td.column-content {
+  color: #4b4b4d; /* Up to taste some rows/cells were black, some were grey */
+}
+
+.table .description-row td {
+  height: 4rem;
+}
+
+
+.visually-hidden {
+	position: absolute !important;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	border: 0;
+	white-space: nowrap;
+}

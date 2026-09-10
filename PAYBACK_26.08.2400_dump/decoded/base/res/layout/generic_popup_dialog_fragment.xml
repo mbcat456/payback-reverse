@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <de.payback.core.ui.widget.WrapContentViewPager android:id="@id/generic_popup_viewpager" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </ScrollView>
+    <com.tbuonomo.viewpagerdotsindicator.WormDotsIndicator android:id="@id/generic_popup_pageindicator" android:layout_width="wrap_content" android:layout_height="wrap_content" app:dotsColor="?colorPrimary" app:dotsCornerRadius="8.0dip" app:dotsSize="10.0dip" app:dotsSpacing="4.0dip" app:dotsStrokeColor="@color/ds_primary_25" app:dotsStrokeWidth="5.0dip" />
+</LinearLayout>

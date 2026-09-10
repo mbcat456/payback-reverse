@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/entitlements_permission_center_nav_graph" app:startDestination="@id/entitlements_permissions_list_dest"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:label="@string/mypayback_hl_change_permissions" android:name="payback.feature.entitlement.implementation.ui.permissioncenter.permissionslist.EntitlementPermissionsListFragment" android:id="@id/entitlements_permissions_list_dest">
+        <action android:id="@id/to_entitlements_marketing_consent" app:destination="@id/entitlements_marketing_consent_dest" app:enterAnim="@animator/pb_fragment_fade_enter" app:exitAnim="@animator/pb_fragment_fade_exit" app:popEnterAnim="@animator/pb_fragment_fade_enter" app:popExitAnim="@animator/pb_fragment_fade_exit" />
+        <action android:id="@id/to_entitlements_permission_detail" app:destination="@id/entitlements_permission_detail_dest" app:enterAnim="@animator/pb_fragment_fade_enter" app:exitAnim="@animator/pb_fragment_fade_exit" app:popEnterAnim="@animator/pb_fragment_fade_enter" app:popExitAnim="@animator/pb_fragment_fade_exit" />
+    </fragment>
+    <fragment android:name="payback.feature.entitlement.implementation.ui.permissioncenter.permissiondetail.EntitlementPermissionDetailFragment" android:id="@id/entitlements_permission_detail_dest">
+        <argument android:name="entitlementGroup" app:argType="string" app:nullable="true" />
+        <argument android:name="legalText" app:argType="string" app:nullable="true" />
+    </fragment>
+    <dialog android:name="payback.feature.entitlement.implementation.ui.permissioncenter.permissionslist.EntitlementMarketingConsentDialogFragment" android:id="@id/entitlements_marketing_consent_dest">
+        <argument android:name="entitlementIndex" app:argType="integer" />
+    </dialog>
+</navigation>

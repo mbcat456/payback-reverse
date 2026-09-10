@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@id/inappbrowser_copy_card_number" android:title="@string/inapp_browser_copy_number_hint_a" app:showAsAction="never" />
+    <item android:id="@id/inappbrowser_back" android:title="@string/inapp_browser_btn_back" app:showAsAction="never" />
+    <item android:id="@id/inappbrowser_forward" android:title="@string/inapp_browser_btn_forward" app:showAsAction="never" />
+    <item android:id="@id/inappbrowser_refresh" android:title="@string/inapp_browser_btn_refresh" app:showAsAction="never" />
+</menu>

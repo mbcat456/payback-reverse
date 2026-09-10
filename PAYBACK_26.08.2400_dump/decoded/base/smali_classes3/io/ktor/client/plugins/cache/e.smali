@@ -1,0 +1,9 @@
+.class public final Lio/ktor/client/plugins/cache/e;
+.super Ljava/lang/Object;
+.source "r8-map-id-c6e95f02a960cec3b4177d8b5b818c3f23768df7db706782552fe3d06a1d57cb"
+
+
+# instance fields
+.field public a:Lio/ktor/client/plugins/cache/storage/c;
+
+.field public b:Lio/ktor/client/plugins/cache/storage/c;

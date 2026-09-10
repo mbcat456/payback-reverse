@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:tag="layout/trusted_devices_bottom_sheet_activity_0" android:focusable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:importantForAccessibility="no"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.card.MaterialCardView android:id="@id/bottom_sheet_view_container" android:layout_width="fill_parent" android:layout_height="443.0dip" app:behavior_hideable="true" app:gestureInsetBottomIgnored="true" app:layout_behavior="@string/bottom_sheet_behavior" style="@style/Widget.DesignSystem.CardView.Large.Backdrop">
+        <androidx.constraintlayout.widget.ConstraintLayout android:layout_gravity="top" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:id="@id/brackdrop_drag_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/bg_backdrop_drag" android:alpha="@integer/ds_alpha_20" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+            <androidx.fragment.app.FragmentContainerView android:name="androidx.navigation.fragment.NavHostFragment" android:id="@id/nav_host" android:layout_width="0.0dip" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/brackdrop_drag_image" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

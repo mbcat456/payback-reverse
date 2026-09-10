@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:orientation="vertical" android:tag="layout/pay_transaction_old_transactions_info_0" android:background="?android:selectableItemBackground" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textAppearance="@style/TextAppearance.DesignSystem.Android.Body2" android:tag="binding_1" android:paddingTop="@dimen/ds_spacing_04" android:paddingBottom="@dimen/ds_spacing_04" android:layout_width="0.0dip" android:layout_height="wrap_content" android:paddingStart="@dimen/ds_spacing_02" android:paddingEnd="@dimen/ds_spacing_02" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

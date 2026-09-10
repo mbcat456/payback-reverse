@@ -1,0 +1,52 @@
+*{
+	margin: 0; 
+	padding: 0; 
+	outline: 0;
+}
+
+body {
+    font-family: 'Roboto',sans-serif;
+    background: #0046aa;
+    color: #FFFFFF;
+	padding: 10px;
+	line-height: 24px;
+	min-height: 100%;
+	
+}
+
+.main_img {
+	padding-top: 20px; 
+	max-width: 100%; 
+	max-height: 100%;
+}
+
+.content {
+    padding: 10px;
+    overflow: hidden;
+}
+
+.content img {
+    margin-right: 15px;
+    float: left;
+	max-width: 25%;
+}
+
+/* unvisited link */
+a:link {
+    color: #FFFFFF;
+}
+
+/* visited link */
+a:visited {
+    color: #FFFFFF;
+}
+
+/* mouse over link */
+a:hover {
+    color: #FFFFFF;
+}
+
+/* selected link */
+a:active {
+    color: #FFFFFF;
+}

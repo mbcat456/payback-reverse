@@ -1,0 +1,209 @@
+.class public abstract Landroidx/media3/container/u;
+.super Ljava/lang/Object;
+.source "r8-map-id-c6e95f02a960cec3b4177d8b5b818c3f23768df7db706782552fe3d06a1d57cb"
+
+
+# static fields
+.field public static final OBU_FRAME:I = 0x6
+
+.field public static final OBU_FRAME_HEADER:I = 0x3
+
+.field public static final OBU_METADATA:I = 0x5
+
+.field public static final OBU_PADDING:I = 0xf
+
+.field public static final OBU_SEQUENCE_HEADER:I = 0x1
+
+.field public static final OBU_TEMPORAL_DELIMITER:I = 0x2
+
+
+# direct methods
+.method public static a(Ljava/nio/ByteBuffer;)Ljava/util/ArrayList;
+    .locals 7
+
+    .prologue
+    .line 1
+    invoke-virtual {p0}, Ljava/nio/ByteBuffer;->asReadOnlyBuffer()Ljava/nio/ByteBuffer;
+
+    .line 4
+    move-result-object p0
+
+    .line 5
+    new-instance v0, Ljava/util/ArrayList;
+
+    .line 7
+    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
+
+    .line 10
+    :goto_0
+    invoke-virtual {p0}, Ljava/nio/Buffer;->hasRemaining()Z
+
+    .line 13
+    move-result v1
+
+    .line 14
+    if-eqz v1, :cond_5
+
+    .line 16
+    :try_start_0
+    invoke-virtual {p0}, Ljava/nio/ByteBuffer;->get()B
+
+    .line 19
+    move-result v1
+
+    .line 20
+    shr-int/lit8 v2, v1, 0x3
+
+    .line 22
+    and-int/lit8 v2, v2, 0xf
+
+    .line 24
+    shr-int/lit8 v3, v1, 0x2
+
+    .line 26
+    and-int/lit8 v3, v3, 0x1
+
+    .line 28
+    if-eqz v3, :cond_0
+
+    .line 30
+    invoke-virtual {p0}, Ljava/nio/ByteBuffer;->get()B
+
+    .line 33
+    :cond_0
+    shr-int/lit8 v1, v1, 0x1
+
+    .line 35
+    and-int/lit8 v1, v1, 0x1
+
+    .line 37
+    if-eqz v1, :cond_2
+
+    .line 39
+    const/4 v1, 0x0
+
+    .line 40
+    move v3, v1
+
+    .line 41
+    :goto_1
+    const/16 v4, 0x8
+
+    .line 43
+    if-ge v1, v4, :cond_3
+
+    .line 45
+    invoke-virtual {p0}, Ljava/nio/ByteBuffer;->get()B
+
+    .line 48
+    move-result v4
+
+    .line 49
+    and-int/lit8 v5, v4, 0x7f
+
+    .line 51
+    mul-int/lit8 v6, v1, 0x7
+
+    .line 53
+    shl-int/2addr v5, v6
+
+    .line 54
+    or-int/2addr v3, v5
+
+    .line 55
+    and-int/lit16 v4, v4, 0x80
+
+    .line 57
+    if-nez v4, :cond_1
+
+    .line 59
+    goto :goto_2
+
+    .line 60
+    :cond_1
+    add-int/lit8 v1, v1, 0x1
+
+    .line 62
+    goto :goto_1
+
+    .line 63
+    :cond_2
+    invoke-virtual {p0}, Ljava/nio/Buffer;->remaining()I
+
+    .line 66
+    move-result v3
+    :try_end_0
+    .catch Ljava/nio/BufferUnderflowException; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 67
+    :cond_3
+    :goto_2
+    invoke-virtual {p0}, Ljava/nio/Buffer;->position()I
+
+    .line 70
+    move-result v1
+
+    .line 71
+    add-int/2addr v1, v3
+
+    .line 72
+    invoke-virtual {p0}, Ljava/nio/Buffer;->limit()I
+
+    .line 75
+    move-result v4
+
+    .line 76
+    if-le v1, v4, :cond_4
+
+    .line 78
+    goto :goto_3
+
+    .line 79
+    :cond_4
+    invoke-virtual {p0}, Ljava/nio/ByteBuffer;->duplicate()Ljava/nio/ByteBuffer;
+
+    .line 82
+    move-result-object v1
+
+    .line 83
+    invoke-virtual {p0}, Ljava/nio/Buffer;->position()I
+
+    .line 86
+    move-result v4
+
+    .line 87
+    add-int/2addr v4, v3
+
+    .line 88
+    invoke-virtual {v1, v4}, Ljava/nio/ByteBuffer;->limit(I)Ljava/nio/Buffer;
+
+    .line 91
+    new-instance v4, Landroidx/media3/container/t;
+
+    .line 93
+    invoke-direct {v4, v2, v1}, Landroidx/media3/container/t;-><init>(ILjava/nio/ByteBuffer;)V
+
+    .line 96
+    invoke-virtual {v0, v4}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    .line 99
+    invoke-virtual {p0}, Ljava/nio/Buffer;->position()I
+
+    .line 102
+    move-result v1
+
+    .line 103
+    add-int/2addr v1, v3
+
+    .line 104
+    invoke-virtual {p0, v1}, Ljava/nio/ByteBuffer;->position(I)Ljava/nio/Buffer;
+
+    .line 107
+    goto :goto_0
+
+    .line 108
+    :catch_0
+    :cond_5
+    :goto_3
+    return-object v0
+.end method

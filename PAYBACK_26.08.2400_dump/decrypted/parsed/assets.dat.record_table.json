@@ -1,0 +1,53 @@
+{
+  "count": 8,
+  "records": [
+    {
+      "index": 0,
+      "kind": 9,
+      "offset": 10747904,
+      "size": 1688
+    },
+    {
+      "index": 1,
+      "kind": 5,
+      "offset": 10749592,
+      "size": 127584
+    },
+    {
+      "index": 2,
+      "kind": 4,
+      "offset": 10877176,
+      "size": 30954
+    },
+    {
+      "index": 3,
+      "kind": 1,
+      "offset": 10908130,
+      "size": 42483
+    },
+    {
+      "index": 4,
+      "kind": 10,
+      "offset": 10950613,
+      "size": 108
+    },
+    {
+      "index": 5,
+      "kind": 8,
+      "offset": 10950721,
+      "size": 23666
+    },
+    {
+      "index": 6,
+      "kind": 7,
+      "offset": 10974387,
+      "size": 8676
+    },
+    {
+      "index": 7,
+      "kind": 6,
+      "offset": 10983063,
+      "size": 1271
+    }
+  ]
+}

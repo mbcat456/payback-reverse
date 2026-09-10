@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/fuel_and_go_nav_graph" app:startDestination="@id/fuel_and_go_selection_dest"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:name="payback.feature.fuelandgo.implementation.ui.selection.FuelAndGoSelectionFragment" android:id="@id/fuel_and_go_selection_dest">
+        <argument android:name="location" app:argType="android.location.Location" />
+        <action android:id="@id/to_refuel" app:destination="@id/fuel_and_go_refuel_dest" app:enterAnim="@animator/pb_fragment_fade_enter" app:exitAnim="@animator/pb_fragment_fade_exit" app:popEnterAnim="@animator/pb_fragment_fade_enter" app:popExitAnim="@animator/pb_fragment_fade_exit" />
+        <action android:id="@id/to_error" app:destination="@id/fuel_and_go_error_dest" app:enterAnim="@animator/pb_fragment_fade_enter" app:exitAnim="@animator/pb_fragment_fade_exit" app:popEnterAnim="@animator/pb_fragment_fade_enter" app:popExitAnim="@animator/pb_fragment_fade_exit" />
+    </fragment>
+    <fragment android:name="payback.feature.fuelandgo.implementation.ui.refuel.FuelAndGoRefuelFragment" android:id="@id/fuel_and_go_refuel_dest">
+        <action android:id="@id/to_success" app:destination="@id/fuel_and_go_success_dest" app:enterAnim="@animator/pb_fragment_fade_enter" app:exitAnim="@animator/pb_fragment_fade_exit" app:popEnterAnim="@animator/pb_fragment_fade_enter" app:popExitAnim="@animator/pb_fragment_fade_exit" />
+        <action android:id="@id/to_error" app:destination="@id/fuel_and_go_error_dest" app:enterAnim="@animator/pb_fragment_fade_enter" app:exitAnim="@animator/pb_fragment_fade_exit" app:popEnterAnim="@animator/pb_fragment_fade_enter" app:popExitAnim="@animator/pb_fragment_fade_exit" />
+        <action android:id="@id/to_selection" app:destination="@id/fuel_and_go_selection_dest" app:popUpTo="@id/fuel_and_go_selection_dest" app:popUpToInclusive="true" />
+        <argument android:name="onReturn" android:defaultValue="false" app:argType="boolean" />
+    </fragment>
+    <fragment android:name="payback.feature.fuelandgo.implementation.ui.success.FuelAndGoSuccessFragment" android:id="@id/fuel_and_go_success_dest">
+        <argument android:name="data" app:argType="payback.feature.fuelandgo.implementation.interactor.GetTransactionEventsInteractor$ReceiptData" />
+    </fragment>
+    <fragment android:name="payback.feature.fuelandgo.implementation.ui.error.FuelAndGoErrorFragment" android:id="@id/fuel_and_go_error_dest">
+        <argument android:name="reason" app:argType="payback.feature.fuelandgo.implementation.ui.error.FuelAndGoErrorViewModel$ErrorReason" />
+        <action android:id="@id/to_selection" app:destination="@id/fuel_and_go_selection_dest" app:enterAnim="@animator/pb_fragment_fade_enter" app:exitAnim="@animator/pb_fragment_fade_exit" app:popEnterAnim="@animator/pb_fragment_fade_enter" app:popExitAnim="@animator/pb_fragment_fade_exit" app:popUpTo="@id/fuel_and_go_selection_dest" app:popUpToInclusive="true" />
+        <action android:id="@id/to_refuel" app:destination="@id/fuel_and_go_refuel_dest" app:enterAnim="@animator/pb_fragment_fade_enter" app:exitAnim="@animator/pb_fragment_fade_exit" app:popEnterAnim="@animator/pb_fragment_fade_enter" app:popExitAnim="@animator/pb_fragment_fade_exit" />
+    </fragment>
+</navigation>

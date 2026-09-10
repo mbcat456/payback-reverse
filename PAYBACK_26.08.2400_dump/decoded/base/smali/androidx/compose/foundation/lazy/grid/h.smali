@@ -1,0 +1,69 @@
+.class public final Landroidx/compose/foundation/lazy/grid/h;
+.super Ljava/lang/Object;
+.source "r8-map-id-c6e95f02a960cec3b4177d8b5b818c3f23768df7db706782552fe3d06a1d57cb"
+
+# interfaces
+.implements Landroidx/compose/foundation/lazy/layout/c0;
+
+
+# static fields
+.field public static final $stable:I
+
+
+# instance fields
+.field public final a:Lkotlin/jvm/functions/Function1;
+
+.field public final b:Lkotlin/jvm/functions/n;
+
+.field public final c:Lkotlin/jvm/functions/Function1;
+
+.field public final d:Landroidx/compose/runtime/internal/e;
+
+
+# direct methods
+.method public constructor <init>(Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/n;Lkotlin/jvm/functions/Function1;Landroidx/compose/runtime/internal/e;)V
+    .locals 0
+
+    .prologue
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 4
+    iput-object p1, p0, Landroidx/compose/foundation/lazy/grid/h;->a:Lkotlin/jvm/functions/Function1;
+
+    .line 6
+    iput-object p2, p0, Landroidx/compose/foundation/lazy/grid/h;->b:Lkotlin/jvm/functions/n;
+
+    .line 8
+    iput-object p3, p0, Landroidx/compose/foundation/lazy/grid/h;->c:Lkotlin/jvm/functions/Function1;
+
+    .line 10
+    iput-object p4, p0, Landroidx/compose/foundation/lazy/grid/h;->d:Landroidx/compose/runtime/internal/e;
+
+    .line 12
+    return-void
+.end method
+
+
+# virtual methods
+.method public final getKey()Lkotlin/jvm/functions/Function1;
+    .locals 0
+
+    .prologue
+    .line 1
+    iget-object p0, p0, Landroidx/compose/foundation/lazy/grid/h;->a:Lkotlin/jvm/functions/Function1;
+
+    .line 3
+    return-object p0
+.end method
+
+.method public final getType()Lkotlin/jvm/functions/Function1;
+    .locals 0
+
+    .prologue
+    .line 1
+    iget-object p0, p0, Landroidx/compose/foundation/lazy/grid/h;->c:Lkotlin/jvm/functions/Function1;
+
+    .line 3
+    return-object p0
+.end method

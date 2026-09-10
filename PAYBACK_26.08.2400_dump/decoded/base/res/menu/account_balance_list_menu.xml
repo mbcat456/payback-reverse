@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@id/alert_notification_item" android:title="@string/trx_bell_icon" app:actionLayout="@layout/account_balance_notification_alert_view" app:showAsAction="ifRoom" />
+</menu>

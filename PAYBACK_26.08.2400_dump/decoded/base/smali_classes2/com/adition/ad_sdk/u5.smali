@@ -1,0 +1,93 @@
+.class public final Lcom/adition/ad_sdk/u5;
+.super Lkotlin/jvm/internal/t;
+.source "r8-map-id-c6e95f02a960cec3b4177d8b5b818c3f23768df7db706782552fe3d06a1d57cb"
+
+# interfaces
+.implements Lkotlin/jvm/functions/n;
+
+
+# instance fields
+.field public final synthetic a:Landroidx/compose/ui/t;
+
+.field public final synthetic b:Lkotlin/jvm/internal/t;
+
+.field public final synthetic c:Lkotlin/jvm/functions/o;
+
+.field public final synthetic d:I
+
+
+# direct methods
+.method public constructor <init>(Landroidx/compose/ui/t;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/o;I)V
+    .locals 0
+
+    .prologue
+    .line 1
+    iput-object p1, p0, Lcom/adition/ad_sdk/u5;->a:Landroidx/compose/ui/t;
+
+    .line 3
+    check-cast p2, Lkotlin/jvm/internal/t;
+
+    .line 5
+    iput-object p2, p0, Lcom/adition/ad_sdk/u5;->b:Lkotlin/jvm/internal/t;
+
+    .line 7
+    iput-object p3, p0, Lcom/adition/ad_sdk/u5;->c:Lkotlin/jvm/functions/o;
+
+    .line 9
+    iput p4, p0, Lcom/adition/ad_sdk/u5;->d:I
+
+    .line 11
+    const/4 p1, 0x2
+
+    .line 12
+    invoke-direct {p0, p1}, Lkotlin/jvm/internal/t;-><init>(I)V
+
+    .line 15
+    return-void
+.end method
+
+
+# virtual methods
+.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 2
+
+    .prologue
+    .line 1
+    check-cast p1, Landroidx/compose/runtime/o;
+
+    .line 3
+    check-cast p2, Ljava/lang/Number;
+
+    .line 5
+    invoke-virtual {p2}, Ljava/lang/Number;->intValue()I
+
+    .line 8
+    iget-object p2, p0, Lcom/adition/ad_sdk/u5;->a:Landroidx/compose/ui/t;
+
+    .line 10
+    iget-object v0, p0, Lcom/adition/ad_sdk/u5;->b:Lkotlin/jvm/internal/t;
+
+    .line 12
+    iget-object v1, p0, Lcom/adition/ad_sdk/u5;->c:Lkotlin/jvm/functions/o;
+
+    .line 14
+    iget p0, p0, Lcom/adition/ad_sdk/u5;->d:I
+
+    .line 16
+    or-int/lit8 p0, p0, 0x1
+
+    .line 18
+    invoke-static {p0}, Landroidx/compose/runtime/u;->I(I)I
+
+    .line 21
+    move-result p0
+
+    .line 22
+    invoke-static {p2, v0, v1, p1, p0}, Lcom/google/android/gms/internal/mlkit_vision_common/f6;->c(Landroidx/compose/ui/t;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/o;Landroidx/compose/runtime/o;I)V
+
+    .line 25
+    sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
+
+    .line 27
+    return-object p0
+.end method
